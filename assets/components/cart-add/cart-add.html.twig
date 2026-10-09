@@ -1,0 +1,6 @@
+{#- A product put in the cart from wherever it is shown: its choices, how
+    many, the button. Sent without leaving the page, which then says so; the
+    cart's count follows. -#}
+<div {{ component_render_tag_attributes({ class: 'cart-add' }) }}>
+    {{ form_load(render_pass, form, '@WexampleSymfonyCartDsBundle/forms/add_to_cart_form.html.twig') }}
+</div>

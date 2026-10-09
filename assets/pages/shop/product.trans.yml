@@ -1,7 +1,6 @@
 en:
   page_title: Product
   page_icon: ph:bold/tag
-  cart: Cart
   free_amount: The amount you choose
   sold_out: Nothing is left of it for now.
   back: The shop
@@ -9,7 +8,6 @@ en:
 fr:
   page_title: Produit
   page_icon: ph:bold/tag
-  cart: Panier
   free_amount: Le montant de votre choix
   sold_out: Il n'en reste plus pour l'instant.
   back: La boutique

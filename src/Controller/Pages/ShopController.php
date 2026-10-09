@@ -2,11 +2,9 @@
 
 namespace Wexample\SymfonyCartDs\Controller\Pages;
 
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Wexample\SymfonyCart\Repository\ProductRepository;
-use Wexample\SymfonyCartDs\Service\FormProcessor\AddToCartFormProcessor;
 use Wexample\SymfonyCartDs\Service\ShopService;
 use Wexample\SymfonyCartDs\Traits\SymfonyCartDsBundleClassTrait;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
@@ -42,21 +40,13 @@ final class ShopController extends AbstractPagesController
     #[Route(path: '{slug}', name: self::ROUTE_PRODUCT)]
     public function product(
         string $slug,
-        Request $request,
         ProductRepository $products,
         ShopService $shop,
-        AddToCartFormProcessor $processor,
     ): Response {
         $product = $products->findOneBySlug($slug);
 
         if (! $product || ! $product->isSalable()) {
             throw $this->createNotFoundException();
-        }
-
-        $processor->forProduct($product);
-
-        if ($response = $processor->handleSubmissionResponse($request)) {
-            return $response;
         }
 
         // What is left of each choice, for the buyer to see before choosing:
@@ -77,7 +67,6 @@ final class ShopController extends AbstractPagesController
             'product' => $product,
             'left' => array_values(array_filter($left, static fn ($line) => null !== $line['remaining'])),
             'sold_out' => $shop->isSoldOut($product),
-            'add_to_cart_form' => $processor->createForm()->createView(),
         ]);
     }
 }

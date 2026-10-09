@@ -2,7 +2,7 @@
 
 {#- A step of the purchase tunnel: where it stands, then one card holding what
     the step asks and the way on — previous and next in its footer, or under
-    the overlay holding it. -#}
+    the overlay holding it —, the cart beside it. -#}
 {%- set tunnel_base = render_pass.layoutBase|default(null) -%}
 {%- set tunnel_overlay = tunnel_base in ['modal', 'panel'] -%}
 {%- set tunnel_held = page_is_held() -%}
@@ -31,7 +31,11 @@
         {%- endif -%}
     {%- endset -%}
 
-    <div class="stack--vertical" data-page-navigation="contained" data-page-transition="slide">
+    {#- Beside the step, what is being bought (`tunnel_aside`): the step
+        showing the cart itself, or the outcome, leaves it out. -#}
+    {%- set tunnelAside -%}{%- block tunnel_aside -%}{{ cart_summary({ title: true, compact: true }) }}{%- endblock -%}{%- endset -%}
+
+    <div class="{{ tunnelAside|trim is not empty ? 'grid--aside' : 'stack--vertical' }}" data-page-navigation="contained" data-page-transition="slide">
         <section class="block block--card">
             <div class="block--body stack--vertical">
                 <h1 class="page--title">{{ '@page::title'|trans }}</h1>
@@ -42,5 +46,8 @@
                 <div class="block--footer">{{ tunnelButtons }}</div>
             {%- endif -%}
         </section>
+        {%- if tunnelAside|trim is not empty -%}
+            <aside>{{ tunnelAside }}</aside>
+        {%- endif -%}
     </div>
 {%- endblock -%}

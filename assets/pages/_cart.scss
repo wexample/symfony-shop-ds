@@ -1,5 +1,5 @@
 // What the shop and the cart are laid with: the products as cards to pick,
-// a product's own card and its form, the lines of the cart and its total.
+// a product's own card and its form.
 @use '@wexample/symfony-design-system/css/shapes/block';
 @use '@wexample/symfony-design-system/css/shapes/lead';
 @use '@wexample/symfony-design-system/css/shapes/grid';
@@ -11,16 +11,3 @@
 @use '@wexample/symfony-design-system/components/marker/marker';
 @use '@wexample/symfony-design-system/components/properties/properties';
 
-// A line of the cart: the product takes what is left, its price at the end.
-.cart-line--product {
-  flex: 1 1 12rem;
-}
-
-.cart-line--price {
-  margin-inline-start: auto;
-  font-variant-numeric: tabular-nums;
-}
-
-.cart-line--quantity {
-  width: 5rem;
-}

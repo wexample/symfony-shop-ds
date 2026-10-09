@@ -1,0 +1,17 @@
+en:
+  title: Cart
+  empty: Your cart is empty.
+  total: Total
+  vat_included: "Including VAT: %vat%"
+  less: One less
+  more: One more
+  remove: Remove
+
+fr:
+  title: Panier
+  empty: Votre panier est vide.
+  total: Total
+  vat_included: "Dont TVA : %vat%"
+  less: Un de moins
+  more: Un de plus
+  remove: Retirer

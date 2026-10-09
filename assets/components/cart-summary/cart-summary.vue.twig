@@ -1,0 +1,54 @@
+{%- extends '@WexampleSymfonyDesignSystemBundle/components/_abstract/vue/vue.vue.twig' -%}
+
+{%- block vue_config -%}
+    {{ parent() }}
+    {{ trans_js(render_pass, 'WexampleSymfonyCartDsBundle.components.cart-summary.cart-summary::*') }}
+{%- endblock -%}
+
+{%- block vue_body -%}
+    <section class="block block--card cart-summary" :class="{ 'cart-summary--compact': compact, 'is-busy': busy }">
+        <div v-if="title" class="block--title">
+            <span class="block--title-leading" v-html="icon('ph:bold/shopping-cart')"></span>
+            <span class="block--title-label">[[ t('title') ]]</span>
+            <span v-if="cart.count" class="block--title-trailing count">[[ cart.count ]]</span>
+        </div>
+        <div v-if="!cart.items.length" class="block--body">
+            <p class="fallback">[[ t('empty') ]]</p>
+        </div>
+        <ul v-else class="block--body cart-summary--lines">
+            <li v-for="item in cart.items" :key="item.id" class="cart-summary--line">
+                <div class="cart-summary--product">
+                    <strong>[[ item.title ]]</strong>
+                    <span v-if="item.detail" class="text-secondary">[[ item.detail ]]</span>
+                </div>
+                <div v-if="canEdit && !item.fixed" class="cart-summary--quantity">
+                    <button type="button" class="button button--flat button--compact"
+                            :disabled="busy || item.quantity <= 1"
+                            :aria-label="t('less')"
+                            @click="setQuantity(item, item.quantity - 1)"
+                            v-html="icon('ph:bold/minus')"></button>
+                    <span class="cart-summary--count" aria-live="polite">[[ item.quantity ]]</span>
+                    <button type="button" class="button button--flat button--compact"
+                            :disabled="busy || (item.max !== null && item.quantity >= item.max)"
+                            :aria-label="t('more')"
+                            @click="setQuantity(item, item.quantity + 1)"
+                            v-html="icon('ph:bold/plus')"></button>
+                </div>
+                <span v-else-if="!item.fixed" class="text-secondary cart-summary--quantity">× [[ item.quantity ]]</span>
+                <span class="cart-summary--price">[[ item.price ]]</span>
+                <button v-if="canEdit" type="button" class="button button--flat button--compact"
+                        :disabled="busy"
+                        :aria-label="t('remove')"
+                        :title="t('remove')"
+                        @click="remove(item)"
+                        v-html="icon('ph:bold/trash')"></button>
+            </li>
+        </ul>
+        <div v-if="cart.items.length" class="block--footer cart-summary--total">
+            <span v-if="cart.vat" class="text-secondary">[[ t('vat_included', { '%vat%': cart.vat }) ]]</span>
+            <span v-else></span>
+            <span class="cart-summary--total-amount"><span class="text-secondary">[[ t('total') ]]</span> <strong>[[ cart.total ]]</strong></span>
+        </div>
+        <slot></slot>
+    </section>
+{%- endblock -%}

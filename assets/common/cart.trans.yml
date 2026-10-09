@@ -1,4 +1,5 @@
 en:
+  title: Cart
   sold_out: Sold out
   left: "%count% left"
   unlimited: Available
@@ -16,6 +17,7 @@ en:
     out_of_stock: Something in the cart is no longer in stock. Change the cart and try again.
 
 fr:
+  title: Panier
   sold_out: Épuisé
   left: "Plus que %count%"
   unlimited: Disponible

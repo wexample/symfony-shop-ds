@@ -1,0 +1,10 @@
+{#- The way to the cart from anywhere: its icon, how many things it holds,
+    the cart opened in a panel beside the page — a full page still, opened in
+    a new tab. The count follows the cart as it changes on the page. -#}
+<a {{ component_render_tag_attributes({ class: ['cart-button', class]|filter(c => c)|join(' ') }) }}
+   href="{{ href }}"
+   title="{{ label }}"
+   aria-label="{{ label }}">
+    {{- icon('ph:bold/shopping-cart') -}}
+    <span class="count cart-button--count"{% if not count %} hidden{% endif %}>{{ count }}</span>
+</a>

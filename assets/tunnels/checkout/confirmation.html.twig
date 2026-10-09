@@ -2,6 +2,9 @@
 
 {#- The order's payment as payment-ds tells it; failed or given up, the way
     back to choosing how to pay. -#}
+{#- Paid, the cart is an order: nothing left to sum up beside it. -#}
+{%- block tunnel_aside -%}{%- endblock -%}
+
 {%- block tunnel_step_body -%}
     {%- if payment -%}
         {%- include '@WexampleSymfonyPaymentDsBundle/partials/payment-outcome.html.twig' -%}

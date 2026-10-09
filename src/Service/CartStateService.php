@@ -1,0 +1,101 @@
+<?php
+
+namespace Wexample\SymfonyCartDs\Service;
+
+use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Wexample\SymfonyCart\Entity\Cart;
+use Wexample\SymfonyCart\Entity\CartItem;
+use Wexample\SymfonyCart\Enum\CartStatus;
+use Wexample\SymfonyMoney\Service\MoneyFormatter;
+
+/**
+ * The visitor's cart as the components showing it read it: its lines, what
+ * each may still become, the total — the prices written for the locale of the
+ * page. One shape, whether it is drawn with the page or read again after a
+ * change, so every place showing the cart shows the same thing.
+ */
+class CartStateService
+{
+    public function __construct(
+        private readonly CurrentCartService $currentCart,
+        private readonly ShopService $shop,
+        private readonly MoneyFormatter $money,
+        private readonly RequestStack $requestStack,
+        private readonly UrlGeneratorInterface $urlGenerator,
+    ) {
+    }
+
+    public function describeCurrent(): array
+    {
+        return $this->describe($this->currentCart->get());
+    }
+
+    public function describe(?Cart $cart): array
+    {
+        $locale = $this->requestStack->getCurrentRequest()?->getLocale();
+        $items = $cart ? $cart->getItems()->toArray() : [];
+        $currency = $cart?->getCurrencyCode();
+
+        return [
+            'count' => array_sum(array_map(static fn (CartItem $item) => $item->getQuantity(), $items)),
+            // A cart whose payment runs is frozen: shown, not changed.
+            'editable' => (bool) $cart?->isEditable(),
+            'waiting_payment' => CartStatus::WaitingPayment === $cart?->getStatus(),
+            'items' => array_map(fn (CartItem $item) => [
+                'id' => (string) $item->getId(),
+                'title' => $item->getTitle(),
+                'detail' => $this->describeChoice($item),
+                'quantity' => $item->getQuantity(),
+                // A free amount is given once: no quantity to change.
+                'fixed' => $item->getProduct()->isFreeAmount(),
+                'max' => $this->getMaxQuantity($item),
+                'price' => $this->money->format($item->calcPriceFinal(), $currency, $locale),
+            ], $items),
+            'total' => $this->money->format($cart?->calcPriceFinal() ?? 0, $currency, $locale),
+            'vat' => $cart && $cart->calcPriceVat() ? $this->money->format($cart->calcPriceVat(), $currency, $locale) : null,
+            'urls' => [
+                'cart' => $this->urlGenerator->generate('cart_index'),
+                'shop' => $this->urlGenerator->generate('shop_index'),
+            ],
+        ];
+    }
+
+    /**
+     * How many of a line the cart may hold: what is left of its stock, within
+     * the product's own limit per cart.
+     */
+    public function getMaxQuantity(CartItem $item): ?int
+    {
+        $remaining = $this->shop->getRemaining(
+            $item->getProduct(),
+            $item->getSchedule(),
+            $item->getVariations()->first() ?: null,
+        );
+        $limit = $item->getProduct()->getMaxPerCart();
+
+        return match (true) {
+            null === $remaining => $limit,
+            null === $limit => $remaining,
+            default => min($remaining, $limit),
+        };
+    }
+
+    /**
+     * What was chosen with the product: its date, its variations.
+     */
+    private function describeChoice(CartItem $item): ?string
+    {
+        $parts = [];
+
+        if ($schedule = $item->getSchedule()) {
+            $parts[] = $schedule->getLabel() ?: $schedule->getDateStart()->format('Y-m-d H:i');
+        }
+
+        foreach ($item->getVariations() as $variation) {
+            $parts[] = $variation->getName().' — '.$variation->getValue();
+        }
+
+        return $parts ? implode(' · ', $parts) : null;
+    }
+}

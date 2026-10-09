@@ -1,0 +1,73 @@
+@use '@wexample/symfony-design-system/css/shapes/block';
+@use '@wexample/symfony-design-system/css/shapes/count';
+@use '@wexample/symfony-design-system/components/button/button';
+
+// A line per thing in the cart: what it is on the leading side, then how
+// many, what it costs and the way to take it out, aligned from line to line
+// so the prices read as a column. The total closes the card.
+.cart-summary--lines {
+  list-style: none;
+  margin: 0;
+}
+
+.cart-summary--line {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto 6.5rem auto;
+  align-items: center;
+  gap: var(--space-3);
+  padding-block: var(--space-3);
+
+  & + & {
+    border-top: 1px solid var(--border-color-discreet);
+  }
+}
+
+.cart-summary--product {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.cart-summary--quantity {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.cart-summary--count {
+  min-width: 2ch;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.cart-summary--price {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.cart-summary--total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-3);
+}
+
+.cart-summary--total-amount strong {
+  font-size: var(--font-size-4);
+  font-variant-numeric: tabular-nums;
+}
+
+.cart-summary.is-busy .cart-summary--lines {
+  opacity: 0.6;
+}
+
+// In a narrow place — the header's panel, beside a tunnel — the quantity
+// goes under the product, the price stays at the end.
+.cart-summary--compact .cart-summary--line {
+  grid-template-columns: minmax(0, 1fr) auto auto;
+}
+
+.cart-summary--compact .cart-summary--quantity {
+  grid-column: 1;
+  grid-row: 2;
+}

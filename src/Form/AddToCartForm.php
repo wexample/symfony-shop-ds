@@ -31,7 +31,7 @@ class AddToCartForm extends AbstractForm
 
     final public const string OPTION_SCHEDULES = 'schedules';
 
-    public static bool $ajax = false;
+    public static bool $ajax = true;
 
     public function configureOptions(OptionsResolver $resolver): void
     {

@@ -1,8 +1,6 @@
 en:
   page_title: Cart
   page_icon: ph:bold/shopping-cart
-  update: Update
-  remove: Remove
   reopen: Change the cart
   waiting:
     title: A payment of this cart is under way
@@ -11,8 +9,6 @@ en:
 fr:
   page_title: Panier
   page_icon: ph:bold/shopping-cart
-  update: Mettre à jour
-  remove: Retirer
   reopen: Modifier le panier
   waiting:
     title: Un paiement de ce panier est en cours

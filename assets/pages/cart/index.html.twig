@@ -4,28 +4,24 @@
 
 {#- The visitor's cart: its lines, changed or taken out while it may change,
     its total, and the way to ordering it. Frozen while its payment runs:
-    going back to editing it gives that payment up. -#}
+    going back to editing it gives that payment up. Opened in the header's
+    panel as well as on its own. -#}
 {%- block page_body -%}
     {%- set common = 'WexampleSymfonyCartDsBundle.common.cart::' -%}
-    {%- if not cart or cart.empty -%}
-        <p class="fallback">{{ (common ~ 'empty') | trans }}</p>
-        <div class="cluster">
-            {{ button_link('ph:bold/storefront', (common ~ 'shop') | trans, path('shop_index'), { class: 'button--invert' }) }}
-        </div>
-    {%- else -%}
-        {%- if waiting_payment -%}
-            {{ message_info('@page::waiting.title' | trans, '@page::waiting.body' | trans) }}
-        {%- endif -%}
-        {%- include '@WexampleSymfonyCartDsBundle/partials/cart-lines.html.twig' with { editable: not waiting_payment } -%}
-        <div class="cluster">
-            {{ button_link('ph:bold/storefront', (common ~ 'shop') | trans, path('shop_index'), { class: 'button--flat' }) }}
-            {%- if waiting_payment -%}
-                <form method="post" action="{{ path('cart_reopen') }}">
-                    <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
-                    {{ button('ph:bold/pencil-simple', '@page::reopen' | trans, { type: 'submit' }) }}
-                </form>
-            {%- endif -%}
-            {{ button_link('ph:bold/arrow-right', (common ~ 'button.order') | trans, tunnel_entrypoint_url('checkout'), { class: 'button--invert' }) }}
-        </div>
+    {%- if waiting_payment -%}
+        {{ message_info('@page::waiting.title' | trans, '@page::waiting.body' | trans) }}
     {%- endif -%}
+    {{ cart_summary({ editable: not waiting_payment }) }}
+    <div class="cluster">
+        {{ button_link('ph:bold/storefront', (common ~ 'shop') | trans, path('shop_index'), { class: 'button--flat' }) }}
+        {%- if waiting_payment -%}
+            <form method="post" action="{{ path('cart_reopen') }}">
+                <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
+                {{ button('ph:bold/pencil-simple', '@page::reopen' | trans, { type: 'submit' }) }}
+            </form>
+        {%- endif -%}
+        {%- if cart and not cart.empty -%}
+            {{ button_link('ph:bold/arrow-right', (common ~ 'button.order') | trans, tunnel_entrypoint_url('checkout'), { class: 'button--invert' }) }}
+        {%- endif -%}
+    </div>
 {%- endblock -%}

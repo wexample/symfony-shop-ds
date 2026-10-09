@@ -1,5 +1,8 @@
 {%- extends '@WexampleSymfonyCartDsBundle/tunnels/layout.html.twig' -%}
 
+{#- The cart is the step: changed here still, so nothing beside it. -#}
+{%- block tunnel_aside -%}{%- endblock -%}
+
 {%- block tunnel_step_body -%}
-    {%- include '@WexampleSymfonyCartDsBundle/partials/cart-lines.html.twig' -%}
+    {{ cart_summary({ editable: true }) }}
 {%- endblock -%}

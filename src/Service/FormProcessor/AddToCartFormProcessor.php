@@ -5,19 +5,25 @@ namespace Wexample\SymfonyCartDs\Service\FormProcessor;
 use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Form\FormInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Wexample\SymfonyCart\Entity\Product;
+use Wexample\SymfonyCart\Repository\ProductRepository;
 use Wexample\SymfonyCart\Service\CartService;
 use Wexample\SymfonyCartDs\Form\AddToCartForm;
 use Wexample\SymfonyCartDs\Service\CurrentCartService;
 use Wexample\SymfonyCartDs\Service\ShopService;
+use Wexample\SymfonyForms\Controller\FormController;
 use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
+use Wexample\SymfonyHelpers\Helper\RoleHelper;
 use Wexample\SymfonyMoney\Helper\MoneyHelper;
 
 /**
  * A product put in the visitor's cart, as many as are left: more than that
- * comes back as an error on the form. Then the cart is shown.
+ * comes back as an error on the form. Sent without leaving the page, by
+ * anyone — a visitor has a cart too —, to the product's own address: the
+ * page then says it was added, and the cart's count follows.
  */
 class AddToCartFormProcessor extends AbstractFormProcessor
 {
@@ -30,6 +36,7 @@ class AddToCartFormProcessor extends AbstractFormProcessor
         private readonly CurrentCartService $currentCart,
         private readonly CartService $carts,
         private readonly ShopService $shop,
+        private readonly ProductRepository $products,
     ) {
         parent::__construct($formFactory, $requestStack, $urlGenerator);
     }
@@ -39,6 +46,32 @@ class AddToCartFormProcessor extends AbstractFormProcessor
         $this->product = $product;
 
         return $this;
+    }
+
+    public function getRequiredRoles(): array
+    {
+        return [RoleHelper::PUBLIC_ACCESS];
+    }
+
+    public function getFormActionRoute(): string
+    {
+        return 'form_'.FormController::ROUTE_ENTITY_FORM_PROCESSOR_SUBMIT;
+    }
+
+    public function getFormActionArgs($data): array
+    {
+        return parent::getFormActionArgs($data) + ['id' => (string) $this->product?->getId()];
+    }
+
+    /**
+     * Sent to the form endpoint, the product is the one of its address.
+     */
+    public function handleSubmittedRequest(Request $request)
+    {
+        $id = $request->attributes->get('id');
+        $this->product ??= $id ? $this->products->find($id) : null;
+
+        return null;
     }
 
     public function createForm(
@@ -87,6 +120,5 @@ class AddToCartFormProcessor extends AbstractFormProcessor
     public function onValid(FormInterface $form)
     {
         $this->setNotification('@form::added');
-        $this->redirectToRoute('cart_index');
     }
 }
