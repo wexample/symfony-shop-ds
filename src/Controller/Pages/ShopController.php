@@ -59,10 +59,12 @@ final class ShopController extends AbstractPagesController
             return $response;
         }
 
-        // What is left of each choice, for the buyer to see before choosing.
+        // What is left of each choice, for the buyer to see before choosing:
+        // by variation only where the stock is a variation's own.
+        $byVariation = $product->getAvailabilities()->exists(static fn ($key, $availability) => null !== $availability->getVariation());
         $left = [];
         foreach ($shop->getSchedules($product) ?: [null] as $schedule) {
-            foreach ($product->getVariations()->toArray() ?: [null] as $variation) {
+            foreach (($byVariation ? $product->getVariations()->toArray() : []) ?: [null] as $variation) {
                 $left[] = [
                     'schedule' => $schedule,
                     'variation' => $variation,
