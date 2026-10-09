@@ -1,0 +1,13 @@
+en:
+  subject: Your cart is waiting for you
+  intro: "You left these in your cart:"
+  total: "Total: %total%"
+  resume: Go back to my cart
+  outro: Stock is not held until the order is paid. If you no longer want them, ignore this email.
+
+fr:
+  subject: Votre panier vous attend
+  intro: "Vous avez laissé ceci dans votre panier :"
+  total: "Total : %total%"
+  resume: Retrouver mon panier
+  outro: Le stock n'est réservé qu'une fois la commande payée. Si vous n'en voulez plus, ignorez cet email.

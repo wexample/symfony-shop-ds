@@ -5,9 +5,19 @@ services:
         public: false
 
     Wexample\SymfonyCartDs\:
-        resource: '../../{Form,Service,Twig}'
+        resource: '../../{Command,Form,Service,Twig}'
         exclude: '../../Form/Data'
 
     Wexample\SymfonyCartDs\Controller\:
         resource: '../../Controller/'
         tags: ['controller.service_arguments']
+
+    # A tag rather than #[AsPeriodicTask]: an application linking this package
+    # before installing symfony/scheduler would not compile with the attribute,
+    # while a tag nobody reads is left alone.
+    Wexample\SymfonyCartDs\Service\CartReminderService:
+        tags:
+            - name: 'scheduler.task'
+              trigger: 'every'
+              frequency: !php/const Wexample\SymfonyCartDs\Service\CartReminderService::FREQUENCY
+              method: 'remind'

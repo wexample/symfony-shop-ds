@@ -5,7 +5,10 @@ namespace Wexample\SymfonyCartDs\Controller\Pages;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\UriSigner;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Routing\Requirement\Requirement;
+use Wexample\SymfonyCart\Repository\CartRepository;
 use Wexample\SymfonyCart\Enum\CartStatus;
 use Wexample\SymfonyCart\Service\CartCheckoutService;
 use Wexample\SymfonyCartDs\Controller\CartStateController;
@@ -28,6 +31,8 @@ final class CartController extends AbstractPagesController
     final public const string ROUTE_INDEX = VariableHelper::INDEX;
 
     final public const string ROUTE_REOPEN = 'reopen';
+
+    final public const string ROUTE_RESUME = 'resume';
 
     final public const string CSRF_TOKEN_ID = CartStateController::CSRF_TOKEN_ID;
 
@@ -54,6 +59,27 @@ final class CartController extends AbstractPagesController
         if ($cart && CartStatus::WaitingPayment === $cart->getStatus()
             && $this->isCsrfTokenValid(self::CSRF_TOKEN_ID, $request->request->getString('_token'))) {
             $checkout->reopen($cart);
+        }
+
+        return $this->redirectToRoute('cart_index');
+    }
+
+    /**
+     * The link of a reminder: the cart brought back to whatever browser
+     * opens it, while the link lasts and the cart can still be ordered.
+     */
+    #[Route(path: 'resume/{id}', name: self::ROUTE_RESUME, requirements: ['id' => Requirement::UUID])]
+    public function resume(
+        string $id,
+        Request $request,
+        UriSigner $uriSigner,
+        CartRepository $carts,
+        CurrentCartService $currentCart,
+    ): RedirectResponse {
+        $cart = $carts->find($id);
+
+        if ($cart && $uriSigner->checkRequest($request)) {
+            $currentCart->resume($cart);
         }
 
         return $this->redirectToRoute('cart_index');

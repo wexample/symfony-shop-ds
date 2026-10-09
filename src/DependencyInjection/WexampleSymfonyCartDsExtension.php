@@ -11,6 +11,11 @@ class WexampleSymfonyCartDsExtension extends AbstractWexampleSymfonyExtension
         array $configs,
         ContainerBuilder $container
     ): void {
+        $config = $this->processConfiguration(new Configuration(), $configs);
+
+        $container->setParameter('wexample_symfony_cart_ds.checkout.account', $config['checkout']['account']);
+        $container->setParameter('wexample_symfony_cart_ds.reminder', $config['reminder']);
+
         $this->loadConfig(
             __DIR__,
             $container

@@ -32,7 +32,10 @@
     "wexample/symfony-tunnels": ">=10.0.5",
     "wexample/symfony-cart": ">=3.0.1",
     "wexample/symfony-payment": ">=3.0.1",
-    "wexample/symfony-payment-ds": ">=1.0.1"
+    "wexample/symfony-payment-ds": ">=1.0.1",
+    "wexample/symfony-user": ">=11.0.0",
+    "wexample/symfony-user-ds": ">=4.0.0",
+    "wexample/symfony-mail": ">=2.0.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^13"

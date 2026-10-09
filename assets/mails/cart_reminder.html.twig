@@ -1,0 +1,9 @@
+<p>{{ '@mail::intro' | trans }}</p>
+<ul>
+    {%- for item in items %}
+    <li>{{ item.title }}{% if item.quantity > 1 %} × {{ item.quantity }}{% endif %} — {{ item.price }}</li>
+    {%- endfor %}
+</ul>
+<p>{{ '@mail::total' | trans({ '%total%': total }) }}</p>
+<p><a href="{{ url }}">{{ '@mail::resume' | trans }}</a></p>
+<p>{{ '@mail::outro' | trans }}</p>
