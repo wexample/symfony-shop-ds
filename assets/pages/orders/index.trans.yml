@@ -1,0 +1,17 @@
+en:
+  page_title: My orders
+  page_icon: ph:bold/receipt
+  empty: No order yet.
+  column:
+    date: Date
+    items: What
+    status: Status
+
+fr:
+  page_title: Mes commandes
+  page_icon: ph:bold/receipt
+  empty: Aucune commande pour l'instant.
+  column:
+    date: Date
+    items: Contenu
+    status: Statut

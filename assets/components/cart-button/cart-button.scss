@@ -18,3 +18,8 @@
   background: var(--accent-9);
   color: var(--accent-contrast);
 }
+
+// Nothing in the cart, no count: `hidden` would lose to the count's display.
+.cart-button--count[hidden] {
+  display: none;
+}

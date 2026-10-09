@@ -29,6 +29,11 @@ export default {
       type: Boolean,
       default: false
     },
+    // The visitor's cart, followed as it changes; an order is not.
+    live: {
+      type: Boolean,
+      default: true
+    },
     // Its own title, where nothing above says it is the cart.
     title: {
       type: Boolean,
@@ -67,7 +72,10 @@ export default {
   },
 
   mounted() {
-    document.addEventListener(CART_CHANGED, this.onChanged);
+    if (this.live) {
+      document.addEventListener(CART_CHANGED, this.onChanged);
+    }
+
     this.clock = setInterval(() => {
       this.now = Date.now();
     }, 1000);

@@ -1,0 +1,23 @@
+en:
+  page_title: Order
+  page_icon: ph:bold/receipt
+  back: My orders
+  payment: The payment
+  receipt: The receipt
+  field:
+    status: Status
+    date: Date
+    billing: Billing address
+    shipping: Shipping address
+
+fr:
+  page_title: Commande
+  page_icon: ph:bold/receipt
+  back: Mes commandes
+  payment: Le paiement
+  receipt: Le reçu
+  field:
+    status: Statut
+    date: Date
+    billing: Adresse de facturation
+    shipping: Adresse de livraison

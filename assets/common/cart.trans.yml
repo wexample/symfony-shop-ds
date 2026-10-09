@@ -1,5 +1,10 @@
 en:
   title: Cart
+  orders: My orders
+  status:
+    paid: Paid
+    waiting_payment: Being paid
+    canceled: Canceled
   sold_out: Sold out
   left: "%count% left"
   unlimited: Available
@@ -18,6 +23,11 @@ en:
 
 fr:
   title: Panier
+  orders: Mes commandes
+  status:
+    paid: Payée
+    waiting_payment: En cours de paiement
+    canceled: Annulée
   sold_out: Épuisé
   left: "Plus que %count%"
   unlimited: Disponible

@@ -97,7 +97,10 @@ class CartExtension extends AbstractTemplateExtension
                         $context['render_pass'],
                         '@WexampleSymfonyCartDsBundle/components/cart-summary',
                         [
-                            'state' => $this->state->describeCurrent(),
+                            // Another cart than the visitor's own — an order —,
+                            // shown as it is and not followed.
+                            'state' => $options['state'] ?? $this->state->describeCurrent(),
+                            'live' => ! isset($options['state']),
                             // Lines changed or taken out, where the cart is the
                             // page's subject; read only elsewhere.
                             'editable' => $editable,
