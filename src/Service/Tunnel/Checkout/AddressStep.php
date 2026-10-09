@@ -42,9 +42,10 @@ class AddressStep extends AbstractFormTunnelStep
         $data = new CheckoutAddresses();
         $data->email = $cart->getCustomerEmail();
         $data->billing = CheckoutAddress::fromSnapshot($cart->getBillingAddress(), $this->countries);
-        $data->shipping = CheckoutAddress::fromSnapshot($cart->getShippingAddress(), $this->countries);
-        $data->shippingSame = null === $cart->getShippingAddress()
-            || (string) $cart->getShippingAddress() === (string) $cart->getBillingAddress();
+        // Shipped where billed, the shipping address is left empty again.
+        $data->shipping = (string) $cart->getShippingAddress() === (string) $cart->getBillingAddress()
+            ? new CheckoutAddress()
+            : CheckoutAddress::fromSnapshot($cart->getShippingAddress(), $this->countries);
 
         return $data;
     }

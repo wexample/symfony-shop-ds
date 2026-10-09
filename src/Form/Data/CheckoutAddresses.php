@@ -11,8 +11,6 @@ class CheckoutAddresses
 
     public CheckoutAddress $billing;
 
-    public bool $shippingSame = true;
-
     public CheckoutAddress $shipping;
 
     public function __construct()

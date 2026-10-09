@@ -14,7 +14,7 @@ use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
 
 /**
  * The addresses of the visitor's cart, written down on it as typed: the
- * billing one, the shipping one — the billing one again unless another was
+ * billing one, the shipping one — the billing one again when none was
  * given —, and who to tell when no one is signed in.
  */
 class CheckoutAddressFormProcessor extends AbstractFormProcessor
@@ -54,7 +54,7 @@ class CheckoutAddressFormProcessor extends AbstractFormProcessor
 
         $this->cart
             ->setBillingAddress($data->billing)
-            ->setShippingAddress($this->needsShipping() ? ($data->shippingSame ? $data->billing : $data->shipping) : null);
+            ->setShippingAddress($this->needsShipping() ? ($data->shipping->hasPostalAddress() ? $data->shipping : $data->billing) : null);
 
         if ($data->email) {
             $this->cart->setCustomerEmail($data->email);

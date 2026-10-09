@@ -1,19 +1,17 @@
 en:
   billing: Billing address
   shipping: Shipping address
+  shipping_help: Left empty, it is shipped to the billing address.
   field:
     email:
       label: Email
       help: Where the order is confirmed.
-    shippingSame:
-      label: Ship to the billing address
 
 fr:
   billing: Adresse de facturation
   shipping: Adresse de livraison
+  shipping_help: Laissée vide, la livraison se fait à l'adresse de facturation.
   field:
     email:
       label: E-mail
       help: Où la commande est confirmée.
-    shippingSame:
-      label: Livrer à l'adresse de facturation

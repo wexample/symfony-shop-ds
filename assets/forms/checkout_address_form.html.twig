@@ -7,7 +7,7 @@
     {{ form_widget(form.billing) }}
     {%- if form.shipping is defined -%}
         <h3>{{ '@form::shipping'|trans }}</h3>
-        {{ form_row(form.shippingSame) }}
+        <p class="text-secondary">{{ '@form::shipping_help'|trans }}</p>
         {{ form_widget(form.shipping) }}
     {%- endif -%}
 {% endblock %}

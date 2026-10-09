@@ -9,13 +9,12 @@ use Symfony\Component\Validator\Constraints\NotBlank;
 use Wexample\SymfonyCartDs\Form\Data\CheckoutAddresses;
 use Wexample\SymfonyForms\Form\AbstractForm;
 use Wexample\SymfonyForms\Form\Type\EmailInputType;
-use Wexample\SymfonyForms\Form\Type\SwitchInputType;
 use Wexample\SymfonyGeoDs\Form\Type\PostalAddressType;
 
 /**
  * The addresses of an order: the buyer's email when they are not signed in,
  * the billing address, and — only when something is shipped — where to, the
- * billing one unless said otherwise.
+ * billing one when left empty.
  */
 class CheckoutAddressForm extends AbstractForm
 {
@@ -49,12 +48,7 @@ class CheckoutAddressForm extends AbstractForm
         $builder->add('billing', PostalAddressType::class, ['with_name' => true, 'required' => true]);
 
         if ($options[self::OPTION_SHIPPING]) {
-            $builder
-                ->add('shippingSame', SwitchInputType::class, [
-                    self::FIELD_OPTION_NAME_LABEL => true,
-                    self::FIELD_OPTION_NAME_REQUIRED => false,
-                ])
-                ->add('shipping', PostalAddressType::class, ['with_name' => true, 'required' => false]);
+            $builder->add('shipping', PostalAddressType::class, ['with_name' => true, 'required' => false]);
         }
     }
 }
