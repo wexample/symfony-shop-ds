@@ -1,4 +1,5 @@
 <script>
+import Message from '@wexample/symfony-design-system/components/message/message.vue';
 import { CART_CHANGED, cartAnnounce, cartPost } from '../../js/Helper/CartHelper';
 
 const T = 'WexampleSymfonyCartDsBundle.components.cart-summary.cart-summary::';
@@ -6,9 +7,14 @@ const T = 'WexampleSymfonyCartDsBundle.components.cart-summary.cart-summary::';
 // The visitor's cart, line by line, and its total: on the cart page, where a
 // line can change (`editable`), in the header's panel, beside the tunnel —
 // read only there. Every summary and every count on the page show the same
-// cart: a change made in one is told to all (`cart:changed`).
+// cart: a change made in one is told to all (`cart:changed`). While it is
+// being paid, how long its stock is still held for it.
 export default {
   template: '#vue-template-wexample-symfony-cart-ds-bundle-components-cart-summary-cart-summary',
+
+  components: {
+    Message
+  },
 
   props: {
     state: {
@@ -37,22 +43,39 @@ export default {
   data() {
     return {
       cart: this.state,
-      busy: false
+      busy: false,
+      now: Date.now()
     };
   },
 
   computed: {
     canEdit() {
       return this.editable && this.cart.editable && !!this.csrfToken;
+    },
+
+    reservation() {
+      if (!this.cart.reserved_until) {
+        return null;
+      }
+
+      const left = Math.max(0, Math.floor((Date.parse(this.cart.reserved_until) - this.now) / 1000));
+      const minutes = Math.floor(left / 60);
+      const seconds = String(left % 60).padStart(2, '0');
+
+      return { over: left === 0, time: `${minutes}:${seconds}` };
     }
   },
 
   mounted() {
     document.addEventListener(CART_CHANGED, this.onChanged);
+    this.clock = setInterval(() => {
+      this.now = Date.now();
+    }, 1000);
   },
 
   beforeUnmount() {
     document.removeEventListener(CART_CHANGED, this.onChanged);
+    clearInterval(this.clock);
   },
 
   methods: {

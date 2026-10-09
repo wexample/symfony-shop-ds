@@ -1,5 +1,9 @@
 {%- extends '@WexampleSymfonyDesignSystemBundle/components/_abstract/vue/vue.vue.twig' -%}
 
+{%- block vue_require -%}
+    {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/message') -}}
+{%- endblock -%}
+
 {%- block vue_config -%}
     {{ parent() }}
     {{ trans_js(render_pass, 'WexampleSymfonyCartDsBundle.components.cart-summary.cart-summary::*') }}
@@ -11,6 +15,10 @@
             <span class="block--title-leading" v-html="icon('ph:bold/shopping-cart')"></span>
             <span class="block--title-label">[[ t('title') ]]</span>
             <span v-if="cart.count" class="block--title-trailing count">[[ cart.count ]]</span>
+        </div>
+        <div v-if="reservation" class="block--body">
+            <message :type="reservation.over ? 'warning' : 'info'" compact
+                     :title="reservation.over ? t('reservation.over') : t('reservation.running', { '%time%': reservation.time })"></message>
         </div>
         <div v-if="!cart.items.length" class="block--body">
             <p class="fallback">[[ t('empty') ]]</p>

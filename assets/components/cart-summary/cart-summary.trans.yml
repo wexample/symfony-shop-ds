@@ -6,6 +6,9 @@ en:
   less: One less
   more: One more
   remove: Remove
+  reservation:
+    running: "Held for you for another %time%."
+    over: "No longer held: what is left may go to another buyer."
 
 fr:
   title: Panier
@@ -15,3 +18,6 @@ fr:
   less: Un de moins
   more: Un de plus
   remove: Retirer
+  reservation:
+    running: "Réservé pour vous encore %time%."
+    over: "Plus réservé : le stock restant peut partir à un autre acheteur."

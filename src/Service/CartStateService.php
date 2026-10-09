@@ -7,6 +7,7 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Wexample\SymfonyCart\Entity\Cart;
 use Wexample\SymfonyCart\Entity\CartItem;
 use Wexample\SymfonyCart\Enum\CartStatus;
+use Wexample\SymfonyCart\Repository\StockReservationRepository;
 use Wexample\SymfonyMoney\Service\MoneyFormatter;
 
 /**
@@ -23,6 +24,7 @@ class CartStateService
         private readonly MoneyFormatter $money,
         private readonly RequestStack $requestStack,
         private readonly UrlGeneratorInterface $urlGenerator,
+        private readonly StockReservationRepository $reservations,
     ) {
     }
 
@@ -54,6 +56,7 @@ class CartStateService
             ], $items),
             'total' => $this->money->format($cart?->calcPriceFinal() ?? 0, $currency, $locale),
             'vat' => $cart && $cart->calcPriceVat() ? $this->money->format($cart->calcPriceVat(), $currency, $locale) : null,
+            'reserved_until' => $this->getReservedUntil($cart)?->format(DATE_ATOM),
             'urls' => [
                 'cart' => $this->urlGenerator->generate('cart_index'),
                 'shop' => $this->urlGenerator->generate('shop_index'),
@@ -79,6 +82,28 @@ class CartStateService
             null === $limit => $remaining,
             default => min($remaining, $limit),
         };
+    }
+
+    /**
+     * Until when the stock of a cart being paid is held for it: the first of
+     * its holds to end. None while it is being filled, or without a limited
+     * stock.
+     */
+    public function getReservedUntil(?Cart $cart): ?\DateTimeImmutable
+    {
+        if (! $cart || CartStatus::WaitingPayment !== $cart->getStatus()) {
+            return null;
+        }
+
+        $until = null;
+
+        foreach ($this->reservations->findActiveForCart($cart) as $reservation) {
+            if (null === $until || $reservation->getExpiresAt() < $until) {
+                $until = $reservation->getExpiresAt();
+            }
+        }
+
+        return $until;
     }
 
     /**
