@@ -1,0 +1,13 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Wexample\SymfonyCartDs\:
+        resource: '../../{Form,Service,Twig}'
+        exclude: '../../Form/Data'
+
+    Wexample\SymfonyCartDs\Controller\:
+        resource: '../../Controller/'
+        tags: ['controller.service_arguments']

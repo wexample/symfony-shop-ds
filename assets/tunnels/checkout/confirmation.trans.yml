@@ -1,0 +1,11 @@
+en:
+  page_title: Order
+  title: Confirmation
+  lead: Where your order stands.
+  retry: Choose again how to pay
+
+fr:
+  page_title: Commande
+  title: Confirmation
+  lead: Où en est votre commande.
+  retry: Choisir à nouveau comment payer

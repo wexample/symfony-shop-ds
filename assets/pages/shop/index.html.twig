@@ -1,0 +1,31 @@
+{%- extends '@front/layouts/private/layout.html.twig' -%}
+
+{%- set page_show_title = true -%}
+
+{%- block page_title_actions -%}
+    {{ button_link('ph:bold/shopping-cart', '@page::cart' | trans, path('cart_index')) }}
+{%- endblock -%}
+
+{%- block page_body -%}
+    <p class="lead">{{ '@page::intro' | trans }}</p>
+    {%- if products|length -%}
+        <div class="grid grid--3">
+            {%- for product in products -%}
+                <a class="block block--padded block--link" href="{{ path('shop_product', { slug: product.slug }) }}">
+                    <span class="block--link-title">{{ product.title }}</span>
+                    {%- if product.description -%}
+                        <span class="block--link-description">{{ product.description|length > 120 ? product.description|slice(0, 119) ~ '…' : product.description }}</span>
+                    {%- endif -%}
+                    <span class="cluster">
+                        <strong>{{ product.freeAmount ? '@page::free_amount' | trans : product.calcPriceFinal()|price(product.currencyCode, app.request.locale) }}</strong>
+                        {%- if sold_out[loop.index0] -%}
+                            {{ marker('disabled', 'WexampleSymfonyCartDsBundle.common.cart::sold_out' | trans, { compact: true }) }}
+                        {%- endif -%}
+                    </span>
+                </a>
+            {%- endfor -%}
+        </div>
+    {%- else -%}
+        <p class="fallback">{{ '@page::empty' | trans }}</p>
+    {%- endif -%}
+{%- endblock -%}

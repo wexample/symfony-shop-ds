@@ -1,0 +1,7 @@
+{%- extends '@WexampleSymfonyCartDsBundle/tunnels/layout.html.twig' -%}
+
+{#- The form carries no submit of its own: next, in the tunnel's buttons,
+    submits it. -#}
+{%- block tunnel_step_body -%}
+    {{ form_load(render_pass, form, '@WexampleSymfonyCartDsBundle/forms/checkout_address_form.html.twig') }}
+{%- endblock -%}

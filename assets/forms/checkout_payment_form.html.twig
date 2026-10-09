@@ -1,0 +1,6 @@
+{%- extends '@WexampleSymfonyLoaderBundle/bases/form.html.twig' -%}
+
+{#- payment-ds's method field only: the tunnel's next button submits it. -#}
+{% block form_body %}
+    {{ form_row(form.method) }}
+{% endblock %}

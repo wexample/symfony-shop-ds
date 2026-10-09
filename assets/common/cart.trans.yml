@@ -1,0 +1,33 @@
+en:
+  sold_out: Sold out
+  left: "%count% left"
+  unlimited: Available
+  total: Total
+  empty: Your cart is empty.
+  shop: Go to the shop
+  button:
+    pay: Pay
+    order: Order
+  column:
+    product: Product
+    quantity: Quantity
+    price: Price
+  error:
+    out_of_stock: Something in the cart is no longer in stock. Change the cart and try again.
+
+fr:
+  sold_out: Épuisé
+  left: "Plus que %count%"
+  unlimited: Disponible
+  total: Total
+  empty: Votre panier est vide.
+  shop: Aller à la boutique
+  button:
+    pay: Payer
+    order: Commander
+  column:
+    product: Produit
+    quantity: Quantité
+    price: Prix
+  error:
+    out_of_stock: Un article du panier n'est plus en stock. Modifiez le panier et réessayez.

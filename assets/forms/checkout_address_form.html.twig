@@ -1,0 +1,13 @@
+{%- extends '@WexampleSymfonyLoaderBundle/bases/form.html.twig' -%}
+
+{#- The fields only: the tunnel's next button submits the form. -#}
+{% block form_body %}
+    {%- if form.email is defined %}{{ form_row(form.email) }}{% endif -%}
+    <h3>{{ '@form::billing'|trans }}</h3>
+    {{ form_widget(form.billing) }}
+    {%- if form.shipping is defined -%}
+        <h3>{{ '@form::shipping'|trans }}</h3>
+        {{ form_row(form.shippingSame) }}
+        {{ form_widget(form.shipping) }}
+    {%- endif -%}
+{% endblock %}

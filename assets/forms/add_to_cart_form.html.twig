@@ -1,0 +1,8 @@
+{%- extends '@WexampleSymfonyLoaderBundle/bases/form.html.twig' -%}
+
+{% block form_body %}
+    {%- for name in ['variation', 'schedule', 'quantity', 'amount'] -%}
+        {%- if form[name] is defined %}{{ form_row(form[name]) }}{% endif -%}
+    {%- endfor -%}
+    {{ form_actions(form) }}
+{% endblock %}

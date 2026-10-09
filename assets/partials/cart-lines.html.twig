@@ -1,0 +1,41 @@
+{#- What a cart holds, line by line, and its total: on the cart page, where a
+    line can change (`editable`), and in the tunnel, read only. -#}
+{%- set common = 'WexampleSymfonyCartDsBundle.common.cart::' -%}
+{%- set locale = app.request.locale -%}
+<section class="block block--card">
+    <div class="block--body stack--vertical">
+        {%- for item in cart.items -%}
+            <div class="cluster cart-line">
+                <div class="cart-line--product">
+                    <strong>{{ item.title }}</strong>
+                    {%- if item.schedule or item.variations|length -%}
+                        <div class="text-secondary">
+                            {{- item.schedule ? (item.schedule.label ?: item.schedule.dateStart|date('Y-m-d H:i')) -}}
+                            {%- for variation in item.variations %}{{ loop.first and item.schedule ? ' · ' }}{{ variation.name }} — {{ variation.value }}{% endfor -%}
+                        </div>
+                    {%- endif -%}
+                </div>
+                {%- if editable|default(false) -%}
+                    <form method="post" action="{{ path('cart_quantity', { id: item.id }) }}" class="cluster">
+                        <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
+                        <input class="form--input cart-line--quantity" type="number" name="quantity" min="1" value="{{ item.quantity }}" aria-label="{{ (common ~ 'column.quantity') | trans }}">
+                        {{ button('ph:bold/check', 'WexampleSymfonyCartDsBundle.pages.cart.index::update' | trans, { type: 'submit', class: 'button--flat' }) }}
+                    </form>
+                {%- else -%}
+                    <span class="text-secondary">× {{ item.quantity }}</span>
+                {%- endif -%}
+                <span class="cart-line--price">{{ item.calcPriceFinal()|price(cart.currencyCode, locale) }}</span>
+                {%- if editable|default(false) -%}
+                    <form method="post" action="{{ path('cart_remove', { id: item.id }) }}">
+                        <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
+                        {{ button('ph:bold/trash', 'WexampleSymfonyCartDsBundle.pages.cart.index::remove' | trans, { type: 'submit', class: 'button--flat' }) }}
+                    </form>
+                {%- endif -%}
+            </div>
+        {%- endfor -%}
+    </div>
+    <div class="block--footer cluster">
+        <strong>{{ (common ~ 'total') | trans }}</strong>
+        <strong class="cart-line--price">{{ cart.calcPriceFinal()|price(cart.currencyCode, locale) }}</strong>
+    </div>
+</section>

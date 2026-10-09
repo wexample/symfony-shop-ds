@@ -1,0 +1,46 @@
+{%- extends '@front/layouts/private/layout.html.twig' -%}
+
+{#- A step of the purchase tunnel: where it stands, then one card holding what
+    the step asks and the way on — previous and next in its footer, or under
+    the overlay holding it. -#}
+{%- set tunnel_base = render_pass.layoutBase|default(null) -%}
+{%- set tunnel_overlay = tunnel_base in ['modal', 'panel'] -%}
+{%- set tunnel_held = page_is_held() -%}
+{%- set export_navigation = true -%}
+
+{%- block page_navigation -%}
+    {%- if tunnel_overlay -%}
+        {%- include '@WexampleSymfonyTunnelsBundle/partials/tunnel-navigation.html.twig' -%}
+    {%- endif -%}
+{%- endblock -%}
+
+{%- block page_actions -%}
+    {%- if tunnel_held -%}
+        {%- include '@WexampleSymfonyTunnelsBundle/partials/tunnel-buttons.html.twig' -%}
+    {%- endif -%}
+{%- endblock -%}
+
+{%- block page_body -%}
+    {%- if not tunnel_overlay -%}
+        {%- include '@WexampleSymfonyTunnelsBundle/partials/tunnel-navigation.html.twig' -%}
+    {%- endif -%}
+
+    {%- set tunnelButtons -%}
+        {%- if not tunnel_held -%}
+            {%- include '@WexampleSymfonyTunnelsBundle/partials/tunnel-buttons.html.twig' -%}
+        {%- endif -%}
+    {%- endset -%}
+
+    <div class="stack--vertical" data-page-navigation="contained" data-page-transition="slide">
+        <section class="block block--card">
+            <div class="block--body stack--vertical">
+                <h1 class="page--title">{{ '@page::title'|trans }}</h1>
+                <p class="lead">{{ '@page::lead'|trans }}</p>
+                {%- block tunnel_step_body -%}{%- endblock -%}
+            </div>
+            {%- if tunnelButtons|trim is not empty -%}
+                <div class="block--footer">{{ tunnelButtons }}</div>
+            {%- endif -%}
+        </section>
+    </div>
+{%- endblock -%}

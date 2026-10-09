@@ -1,0 +1,18 @@
+{%- extends '@WexampleSymfonyCartDsBundle/tunnels/layout.html.twig' -%}
+
+{#- The order's payment as payment-ds tells it; failed or given up, the way
+    back to choosing how to pay. -#}
+{%- block tunnel_step_body -%}
+    {%- if payment -%}
+        {%- include '@WexampleSymfonyPaymentDsBundle/partials/payment-outcome.html.twig' -%}
+        {%- if payment.status.value in ['failed', 'canceled'] and retry_url -%}
+            <div class="cluster">
+                {{ button_link('ph:bold/arrow-clockwise', '@page::retry'|trans, retry_url, { class: 'button--invert' }) }}
+            </div>
+        {%- elseif payment.status.paid -%}
+            <div class="cluster">
+                {{ button_link('ph:bold/storefront', 'WexampleSymfonyCartDsBundle.common.cart::shop'|trans, path('shop_index')) }}
+            </div>
+        {%- endif -%}
+    {%- endif -%}
+{%- endblock -%}

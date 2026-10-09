@@ -1,0 +1,15 @@
+en:
+  page_title: Shop
+  page_icon: ph:bold/storefront
+  intro: What is for sale. Open one to choose what you want of it and put it in your cart.
+  cart: Cart
+  free_amount: The amount you choose
+  empty: Nothing is for sale yet.
+
+fr:
+  page_title: Boutique
+  page_icon: ph:bold/storefront
+  intro: Ce qui est en vente. Ouvrez-en un pour choisir ce que vous en voulez et le mettre dans votre panier.
+  cart: Panier
+  free_amount: Le montant de votre choix
+  empty: Rien n'est en vente pour l'instant.

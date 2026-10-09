@@ -1,0 +1,33 @@
+en:
+  field:
+    variation:
+      label: Which one
+    schedule:
+      label: When
+    quantity:
+      label: How many
+    amount:
+      label: Amount
+  action:
+    add: Add to cart
+  added: Added to your cart.
+  error:
+    sold_out: Nothing is left of it.
+    only_left: Not that many are left.
+
+fr:
+  field:
+    variation:
+      label: Lequel
+    schedule:
+      label: Quand
+    quantity:
+      label: Combien
+    amount:
+      label: Montant
+  action:
+    add: Ajouter au panier
+  added: Ajouté à votre panier.
+  error:
+    sold_out: Il n'en reste plus.
+    only_left: Il n'en reste pas autant.

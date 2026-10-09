@@ -1,0 +1,31 @@
+{%- extends '@front/layouts/private/layout.html.twig' -%}
+
+{%- set page_show_title = true -%}
+
+{#- The visitor's cart: its lines, changed or taken out while it may change,
+    its total, and the way to ordering it. Frozen while its payment runs:
+    going back to editing it gives that payment up. -#}
+{%- block page_body -%}
+    {%- set common = 'WexampleSymfonyCartDsBundle.common.cart::' -%}
+    {%- if not cart or cart.empty -%}
+        <p class="fallback">{{ (common ~ 'empty') | trans }}</p>
+        <div class="cluster">
+            {{ button_link('ph:bold/storefront', (common ~ 'shop') | trans, path('shop_index'), { class: 'button--invert' }) }}
+        </div>
+    {%- else -%}
+        {%- if waiting_payment -%}
+            {{ message_info('@page::waiting.title' | trans, '@page::waiting.body' | trans) }}
+        {%- endif -%}
+        {%- include '@WexampleSymfonyCartDsBundle/partials/cart-lines.html.twig' with { editable: not waiting_payment } -%}
+        <div class="cluster">
+            {{ button_link('ph:bold/storefront', (common ~ 'shop') | trans, path('shop_index'), { class: 'button--flat' }) }}
+            {%- if waiting_payment -%}
+                <form method="post" action="{{ path('cart_reopen') }}">
+                    <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
+                    {{ button('ph:bold/pencil-simple', '@page::reopen' | trans, { type: 'submit' }) }}
+                </form>
+            {%- endif -%}
+            {{ button_link('ph:bold/arrow-right', (common ~ 'button.order') | trans, path('cart_checkout_index'), { class: 'button--invert' }) }}
+        </div>
+    {%- endif -%}
+{%- endblock -%}

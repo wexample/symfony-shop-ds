@@ -1,0 +1,13 @@
+// What every step of the purchase tunnel is laid with: the card, its title
+// and lead, the stepper, the buttons, the form, the cart's lines, the
+// payment's outcome.
+@use '@wexample/symfony-design-system/css/shapes/block';
+@use '@wexample/symfony-design-system/css/shapes/lead';
+@use '@wexample/symfony-design-system/css/shapes/stack';
+@use '@wexample/symfony-design-system/css/shapes/cluster';
+@use '@wexample/symfony-design-system/css/shapes/form';
+@use '@wexample/symfony-design-system/components/stepper/stepper';
+@use '@wexample/symfony-design-system/components/button/button';
+@use '@wexample/symfony-design-system/components/message/message';
+@use '@wexample/symfony-design-system/components/properties/properties';
+@use '../pages/cart';
