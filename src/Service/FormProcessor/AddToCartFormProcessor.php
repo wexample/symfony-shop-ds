@@ -119,6 +119,12 @@ class AddToCartFormProcessor extends AbstractFormProcessor
 
     public function onValid(FormInterface $form)
     {
-        $this->setNotification('@form::added');
+        // The cart opens beside the page: the visitor goes on shopping.
+        $this->setNotification('@form::added', action: [
+            'icon' => 'ph:bold/shopping-cart',
+            'label' => '@form::open_cart',
+            'href' => $this->urlGenerator->generate('cart_index'),
+            'target' => 'panel',
+        ]);
     }
 }
