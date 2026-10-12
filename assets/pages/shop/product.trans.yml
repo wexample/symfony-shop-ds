@@ -3,11 +3,9 @@ en:
   page_icon: ph:bold/tag
   free_amount: The amount you choose
   sold_out: Nothing is left of it for now.
-  back: The shop
 
 fr:
   page_title: Produit
   page_icon: ph:bold/tag
   free_amount: Le montant de votre choix
   sold_out: Il n'en reste plus pour l'instant.
-  back: La boutique

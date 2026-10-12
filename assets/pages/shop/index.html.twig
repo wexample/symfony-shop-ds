@@ -11,7 +11,9 @@
     {%- if products|length -%}
         <div class="grid grid--3">
             {%- for product in products -%}
-                <a class="block block--padded block--link" href="{{ path('shop_product', { slug: product.slug }) }}">
+                {#- Opened beside the list, in a modal: put in the cart, the list is
+                    still there. A full page still, opened in a new tab. -#}
+                {%- set card -%}
                     <span class="block--link-title">{{ product.title }}</span>
                     {%- if product.description -%}
                         <span class="block--link-description">{{ product.description|length > 120 ? product.description|slice(0, 119) ~ '…' : product.description }}</span>
@@ -22,7 +24,13 @@
                             {{ marker('disabled', 'WexampleSymfonyShopDsBundle.common.cart::sold_out' | trans, { compact: true }) }}
                         {%- endif -%}
                     </span>
-                </a>
+                {%- endset -%}
+                {{ component(render_pass, '@WexampleSymfonyDesignSystemBundle/components/button-target', {
+                    icon: null,
+                    label: '',
+                    html: card,
+                    options: { href: path('shop_product', { slug: product.slug }), target: 'modal', link: true, class: 'block block--padded block--link' },
+                }) }}
             {%- endfor -%}
         </div>
     {%- else -%}

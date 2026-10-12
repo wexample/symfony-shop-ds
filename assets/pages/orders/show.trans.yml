@@ -1,7 +1,6 @@
 en:
   page_title: Order
   page_icon: ph:bold/receipt
-  back: My orders
   payment: The payment
   receipt: The receipt
   field:
@@ -13,7 +12,6 @@ en:
 fr:
   page_title: Commande
   page_icon: ph:bold/receipt
-  back: Mes commandes
   payment: Le paiement
   receipt: Le reçu
   field:

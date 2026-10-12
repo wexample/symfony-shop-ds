@@ -1,6 +1,17 @@
 {%- extends '@front/layouts/private/layout.html.twig' -%}
 
 {%- set page_show_title = true -%}
+{#- A page under another: the way back to it, its actions beside, on top. -#}
+{%- set page_trail = 'back' -%}
+
+{%- block page_title_actions -%}
+    {%- if order.payment -%}
+        {{ button_link('ph:bold/credit-card', '@page::payment' | trans, path('payments_show', { id: order.payment.id })) }}
+        {%- if order.payment.status.paid -%}
+            {{ button_target('ph:bold/file-text', '@page::receipt' | trans, path('payments_receipt', { id: order.payment.id }), 'modal') }}
+        {%- endif -%}
+    {%- endif -%}
+{%- endblock -%}
 
 {#- An order in full: when, where it went, what it held, how it was paid. -#}
 {%- block page_body -%}
@@ -16,14 +27,4 @@
     </section>
 
     {{ cart_summary({ state: order_state }) }}
-
-    <div class="cluster">
-        {{ button_link('ph:bold/arrow-left', '@page::back' | trans, path('orders_index'), { class: 'button--flat' }) }}
-        {%- if order.payment -%}
-            {{ button_link('ph:bold/credit-card', '@page::payment' | trans, path('payments_show', { id: order.payment.id })) }}
-            {%- if order.payment.status.paid -%}
-                {{ button_link('ph:bold/file-text', '@page::receipt' | trans, path('payments_receipt', { id: order.payment.id }), { class: 'button--invert' }) }}
-            {%- endif -%}
-        {%- endif -%}
-    </div>
 {%- endblock -%}

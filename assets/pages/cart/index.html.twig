@@ -2,6 +2,10 @@
 
 {%- set page_show_title = true -%}
 
+{%- block page_title_actions -%}
+    {{ button_link('ph:bold/storefront', 'WexampleSymfonyShopDsBundle.common.cart::shop' | trans, path('shop_index')) }}
+{%- endblock -%}
+
 {#- The visitor's cart: its lines, changed or taken out while it may change,
     its total, and the way to ordering it. Frozen while its payment runs:
     going back to editing it gives that payment up. Opened in the header's
@@ -13,7 +17,6 @@
     {%- endif -%}
     {{ cart_summary({ editable: not waiting_payment }) }}
     <div class="cluster">
-        {{ button_link('ph:bold/storefront', (common ~ 'shop') | trans, path('shop_index'), { class: 'button--flat' }) }}
         {%- if waiting_payment -%}
             <form method="post" action="{{ path('cart_reopen') }}">
                 <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
