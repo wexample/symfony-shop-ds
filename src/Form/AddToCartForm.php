@@ -93,6 +93,7 @@ class AddToCartForm extends AbstractForm
                 self::FIELD_OPTION_NAME_MAPPED => false,
                 'scale' => 0,
                 'data' => 1,
+                NumberInputType::OPTION_STEPPER => true,
                 'constraints' => [new Range(min: 1, max: $product->getMaxPerCart() ?? 99)],
             ]);
         }

@@ -1,6 +1,7 @@
 @use '@wexample/symfony-design-system/css/shapes/block';
 @use '@wexample/symfony-design-system/css/shapes/count';
 @use '@wexample/symfony-design-system/components/button/button';
+@use '@wexample/symfony-design-system/css/shapes/form/stepper';
 
 // A line per thing in the cart: what it is on the leading side, then how
 // many, what it costs and the way to take it out, aligned from line to line
@@ -26,18 +27,6 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-}
-
-.cart-summary--quantity {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-1);
-}
-
-.cart-summary--count {
-  min-width: 2ch;
-  text-align: center;
-  font-variant-numeric: tabular-nums;
 }
 
 .cart-summary--price {

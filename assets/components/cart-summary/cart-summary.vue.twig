@@ -29,13 +29,13 @@
                     <strong>[[ item.title ]]</strong>
                     <span v-if="item.detail" class="text-secondary">[[ item.detail ]]</span>
                 </div>
-                <div v-if="canEdit && !item.fixed" class="cart-summary--quantity">
+                <div v-if="canEdit && !item.fixed" class="form--stepper cart-summary--quantity">
                     <button type="button" class="button button--flat button--compact"
                             :disabled="busy || item.quantity <= 1"
                             :aria-label="t('less')"
                             @click="setQuantity(item, item.quantity - 1)"
                             v-html="icon('ph:bold/minus')"></button>
-                    <span class="cart-summary--count" aria-live="polite">[[ item.quantity ]]</span>
+                    <span class="form--stepper-value" aria-live="polite">[[ item.quantity ]]</span>
                     <button type="button" class="button button--flat button--compact"
                             :disabled="busy || (item.max !== null && item.quantity >= item.max)"
                             :aria-label="t('more')"
