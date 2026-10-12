@@ -1,25 +1,2 @@
+// The count is the design system's, hung on the icon's corner.
 @use '@wexample/symfony-design-system/css/shapes/count';
-
-// The count hangs from the icon's corner, in the accent: something is in the
-// cart, and it is the visitor's.
-.cart-button {
-  position: relative;
-}
-
-.cart-button--count {
-  position: absolute;
-  inset-block-start: -0.55em;
-  inset-inline-end: -0.85em;
-  min-width: 1.5em;
-  padding: 0 0.35em;
-  font-size: 0.65em;
-  line-height: 1.5;
-  text-align: center;
-  background: var(--accent-9);
-  color: var(--accent-contrast);
-}
-
-// Nothing in the cart, no count: `hidden` would lose to the count's display.
-.cart-button--count[hidden] {
-  display: none;
-}

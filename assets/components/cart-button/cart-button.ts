@@ -1,6 +1,7 @@
 import Component from '@wexample/symfony-loader/js/Class/Component';
 import { formSuccessEvent } from '@wexample/symfony-loader/js/Constants/FormEvents';
 import { loadIntoTarget } from '@wexample/symfony-design-system/js/Helper/TargetHelper';
+import { countApply } from '@wexample/symfony-design-system/js/Helper/CountHelper';
 import { CART_CHANGED, cartAnnounce, cartRead } from '../../js/Helper/CartHelper';
 
 // The form putting a product in the cart, by the name the server knows it by.
@@ -37,11 +38,7 @@ export default class extends Component {
   };
 
   private onChanged = (event: Event): void => {
-    const count = (event as CustomEvent).detail?.count ?? 0;
-    const badge = this.el.querySelector<HTMLElement>('.cart-button--count')!;
-
-    badge.textContent = String(count);
-    badge.hidden = !count;
+    countApply(this.el.querySelector<HTMLElement>('.cart-button--count')!, (event as CustomEvent).detail?.count ?? 0);
   };
 
   // Something was put in the cart somewhere on the page: the cart is read
