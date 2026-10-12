@@ -6,7 +6,7 @@
 {#- A product: what it is, what it costs, what is left of each choice, and
     the form putting it in the cart — none when nothing is left. -#}
 {%- block page_body -%}
-    {%- set common = 'WexampleSymfonyCartDsBundle.common.cart::' -%}
+    {%- set common = 'WexampleSymfonyShopDsBundle.common.cart::' -%}
     {%- if product.description -%}
         <p class="lead">{{ product.description }}</p>
     {%- endif -%}

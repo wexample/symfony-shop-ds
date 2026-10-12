@@ -1,12 +1,12 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Controller\Pages;
+namespace Wexample\SymfonyShopDs\Controller\Pages;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
-use Wexample\SymfonyCartDs\Service\Tunnel\CheckoutTunnelManagerService;
-use Wexample\SymfonyCartDs\Traits\SymfonyCartDsBundleClassTrait;
+use Wexample\SymfonyShopDs\Service\Tunnel\CheckoutTunnelManagerService;
+use Wexample\SymfonyShopDs\Traits\SymfonyShopDsBundleClassTrait;
 use Wexample\SymfonyTunnels\Attribute\TunnelRoute;
 use Wexample\SymfonyTunnels\Controller\AbstractTunnelController;
 
@@ -17,7 +17,7 @@ use Wexample\SymfonyTunnels\Controller\AbstractTunnelController;
 #[Route(path: '/cart/checkout/', name: 'cart_checkout_')]
 final class CheckoutTunnelController extends AbstractTunnelController
 {
-    use SymfonyCartDsBundleClassTrait;
+    use SymfonyShopDsBundleClassTrait;
 
     public static function getTunnelManagerClass(): string
     {

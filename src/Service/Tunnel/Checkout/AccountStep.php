@@ -1,13 +1,13 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service\Tunnel\Checkout;
+namespace Wexample\SymfonyShopDs\Service\Tunnel\Checkout;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
-use Wexample\SymfonyCart\Service\CartService;
-use Wexample\SymfonyCartDs\Service\CurrentCartService;
+use Wexample\SymfonyShop\Service\CartService;
+use Wexample\SymfonyShopDs\Service\CurrentCartService;
 use Wexample\SymfonyPayment\Service\PaymentAccessService;
 use Wexample\SymfonyTunnels\Class\TunnelCursor;
 use Wexample\SymfonyTunnels\Service\Step\AbstractTunnelStep;

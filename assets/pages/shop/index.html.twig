@@ -19,7 +19,7 @@
                     <span class="cluster">
                         <strong>{{ product.freeAmount ? '@page::free_amount' | trans : product.calcPriceFinal()|price(product.currencyCode, app.request.locale) }}</strong>
                         {%- if sold_out[loop.index0] -%}
-                            {{ marker('disabled', 'WexampleSymfonyCartDsBundle.common.cart::sold_out' | trans, { compact: true }) }}
+                            {{ marker('disabled', 'WexampleSymfonyShopDsBundle.common.cart::sold_out' | trans, { compact: true }) }}
                         {%- endif -%}
                     </span>
                 </a>

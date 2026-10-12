@@ -1,6 +1,6 @@
-{%- extends '@WexampleSymfonyCartDsBundle/tunnels/layout.html.twig' -%}
+{%- extends '@WexampleSymfonyShopDsBundle/tunnels/layout.html.twig' -%}
 
 {#- payment-ds's form, its submit left to the tunnel's next button. -#}
 {%- block tunnel_step_body -%}
-    {{ form_load(render_pass, form, '@WexampleSymfonyCartDsBundle/forms/checkout_payment_form.html.twig') }}
+    {{ form_load(render_pass, form, '@WexampleSymfonyShopDsBundle/forms/checkout_payment_form.html.twig') }}
 {%- endblock -%}

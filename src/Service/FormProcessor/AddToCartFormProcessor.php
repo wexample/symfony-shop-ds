@@ -1,6 +1,6 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service\FormProcessor;
+namespace Wexample\SymfonyShopDs\Service\FormProcessor;
 
 use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormFactoryInterface;
@@ -8,12 +8,12 @@ use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Wexample\SymfonyCart\Entity\Product;
-use Wexample\SymfonyCart\Repository\ProductRepository;
-use Wexample\SymfonyCart\Service\CartService;
-use Wexample\SymfonyCartDs\Form\AddToCartForm;
-use Wexample\SymfonyCartDs\Service\CurrentCartService;
-use Wexample\SymfonyCartDs\Service\ShopService;
+use Wexample\SymfonyShop\Entity\Product;
+use Wexample\SymfonyShop\Repository\ProductRepository;
+use Wexample\SymfonyShop\Service\CartService;
+use Wexample\SymfonyShopDs\Form\AddToCartForm;
+use Wexample\SymfonyShopDs\Service\CurrentCartService;
+use Wexample\SymfonyShopDs\Service\ShopService;
 use Wexample\SymfonyForms\Controller\FormController;
 use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
 use Wexample\SymfonyHelpers\Helper\RoleHelper;

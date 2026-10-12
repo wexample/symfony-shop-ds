@@ -1,8 +1,8 @@
-domain: symfony-cart-ds.wex
+domain: symfony-shop-ds.wex
 git:
   publication_strategy: main_push
 global:
-  name: symfony-cart-ds
+  name: symfony-shop-ds
   type: php-package
   version: 1.0.1
 wex:

@@ -1,15 +1,15 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service;
+namespace Wexample\SymfonyShopDs\Service;
 
-use Wexample\SymfonyCart\Entity\Product;
-use Wexample\SymfonyCart\Entity\ProductVariation;
-use Wexample\SymfonyCart\Entity\Schedule;
-use Wexample\SymfonyCart\Service\StockService;
+use Wexample\SymfonyShop\Entity\Product;
+use Wexample\SymfonyShop\Entity\ProductVariation;
+use Wexample\SymfonyShop\Entity\Schedule;
+use Wexample\SymfonyShop\Service\StockService;
 
 /**
  * What the shop shows of a product beside its price: the schedules it can be
- * bought for, and how many are left — read as the reservation of symfony-cart
+ * bought for, and how many are left — read as the reservation of symfony-shop
  * reads them: every availability of the product matching the schedule (or
  * any) and the variation (or any), the tightest one winning.
  */

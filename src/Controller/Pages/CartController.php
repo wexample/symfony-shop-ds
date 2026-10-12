@@ -1,6 +1,6 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Controller\Pages;
+namespace Wexample\SymfonyShopDs\Controller\Pages;
 
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -8,12 +8,12 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\UriSigner;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
-use Wexample\SymfonyCart\Repository\CartRepository;
-use Wexample\SymfonyCart\Enum\CartStatus;
-use Wexample\SymfonyCart\Service\CartCheckoutService;
-use Wexample\SymfonyCartDs\Controller\CartStateController;
-use Wexample\SymfonyCartDs\Service\CurrentCartService;
-use Wexample\SymfonyCartDs\Traits\SymfonyCartDsBundleClassTrait;
+use Wexample\SymfonyShop\Repository\CartRepository;
+use Wexample\SymfonyShop\Enum\CartStatus;
+use Wexample\SymfonyShop\Service\CartCheckoutService;
+use Wexample\SymfonyShopDs\Controller\CartStateController;
+use Wexample\SymfonyShopDs\Service\CurrentCartService;
+use Wexample\SymfonyShopDs\Traits\SymfonyShopDsBundleClassTrait;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 
@@ -26,7 +26,7 @@ use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 #[Route(path: '/cart/', name: 'cart_')]
 final class CartController extends AbstractPagesController
 {
-    use SymfonyCartDsBundleClassTrait;
+    use SymfonyShopDsBundleClassTrait;
 
     final public const string ROUTE_INDEX = VariableHelper::INDEX;
 

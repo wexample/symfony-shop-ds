@@ -4,7 +4,7 @@
 
 {#- What the account ordered, the latest first: each order opens in full. -#}
 {%- block page_body -%}
-    {%- set common = 'WexampleSymfonyCartDsBundle.common.cart::' -%}
+    {%- set common = 'WexampleSymfonyShopDsBundle.common.cart::' -%}
     {%- if orders is empty -%}
         <p class="fallback">{{ '@page::empty' | trans }}</p>
         <div class="cluster">

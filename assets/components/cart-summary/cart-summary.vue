@@ -2,7 +2,7 @@
 import Message from '@wexample/symfony-design-system/components/message/message.vue';
 import { CART_CHANGED, cartAnnounce, cartPost } from '../../js/Helper/CartHelper';
 
-const T = 'WexampleSymfonyCartDsBundle.components.cart-summary.cart-summary::';
+const T = 'WexampleSymfonyShopDsBundle.components.cart-summary.cart-summary::';
 
 // The visitor's cart, line by line, and its total: on the cart page, where a
 // line can change (`editable`), in the header's panel, beside the tunnel —
@@ -10,7 +10,7 @@ const T = 'WexampleSymfonyCartDsBundle.components.cart-summary.cart-summary::';
 // cart: a change made in one is told to all (`cart:changed`). While it is
 // being paid, how long its stock is still held for it.
 export default {
-  template: '#vue-template-wexample-symfony-cart-ds-bundle-components-cart-summary-cart-summary',
+  template: '#vue-template-wexample-symfony-shop-ds-bundle-components-cart-summary-cart-summary',
 
   components: {
     Message

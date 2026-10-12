@@ -1,6 +1,6 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Form\Data;
+namespace Wexample\SymfonyShopDs\Form\Data;
 
 /**
  * What the address step asks: who to tell, where to bill, where to ship.

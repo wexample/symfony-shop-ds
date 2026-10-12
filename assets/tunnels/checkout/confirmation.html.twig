@@ -1,4 +1,4 @@
-{%- extends '@WexampleSymfonyCartDsBundle/tunnels/layout.html.twig' -%}
+{%- extends '@WexampleSymfonyShopDsBundle/tunnels/layout.html.twig' -%}
 
 {#- The order's payment as payment-ds tells it; failed or given up, the way
     back to choosing how to pay. -#}
@@ -14,7 +14,7 @@
             </div>
         {%- elseif payment.status.paid -%}
             <div class="cluster">
-                {{ button_link('ph:bold/storefront', 'WexampleSymfonyCartDsBundle.common.cart::shop'|trans, path('shop_index')) }}
+                {{ button_link('ph:bold/storefront', 'WexampleSymfonyShopDsBundle.common.cart::shop'|trans, path('shop_index')) }}
             </div>
         {%- endif -%}
     {%- endif -%}

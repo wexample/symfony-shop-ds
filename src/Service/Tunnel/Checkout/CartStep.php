@@ -1,12 +1,12 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service\Tunnel\Checkout;
+namespace Wexample\SymfonyShopDs\Service\Tunnel\Checkout;
 
 use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Wexample\SymfonyCartDs\DependencyInjection\Configuration;
-use Wexample\SymfonyCartDs\Service\CurrentCartService;
+use Wexample\SymfonyShopDs\DependencyInjection\Configuration;
+use Wexample\SymfonyShopDs\Service\CurrentCartService;
 use Wexample\SymfonyTunnels\Class\TunnelCursor;
 
 /**
@@ -23,7 +23,7 @@ class CartStep extends AbstractCheckoutStep
         private readonly UrlGeneratorInterface $urlGenerator,
         private readonly AddressStep $addressStep,
         private readonly AccountStep $accountStep,
-        #[Autowire(param: 'wexample_symfony_cart_ds.checkout.account')]
+        #[Autowire(param: 'wexample_symfony_shop_ds.checkout.account')]
         private readonly string $account,
     ) {
     }

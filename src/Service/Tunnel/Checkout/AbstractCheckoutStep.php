@@ -1,6 +1,6 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service\Tunnel\Checkout;
+namespace Wexample\SymfonyShopDs\Service\Tunnel\Checkout;
 
 use Wexample\SymfonyTunnels\Service\Step\AbstractTunnelStep;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service;
+namespace Wexample\SymfonyShopDs\Service;
 
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Wexample\SymfonyCart\Entity\Cart;
-use Wexample\SymfonyCart\Entity\CartItem;
-use Wexample\SymfonyCart\Enum\CartStatus;
-use Wexample\SymfonyCart\Repository\StockReservationRepository;
+use Wexample\SymfonyShop\Entity\Cart;
+use Wexample\SymfonyShop\Entity\CartItem;
+use Wexample\SymfonyShop\Enum\CartStatus;
+use Wexample\SymfonyShop\Repository\StockReservationRepository;
 use Wexample\SymfonyMoney\Service\MoneyFormatter;
 
 /**

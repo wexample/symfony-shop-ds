@@ -1,13 +1,13 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service;
+namespace Wexample\SymfonyShopDs\Service;
 
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\RequestStack;
-use Wexample\SymfonyCart\Entity\Cart;
-use Wexample\SymfonyCart\Enum\CartStatus;
-use Wexample\SymfonyCart\Repository\CartRepository;
-use Wexample\SymfonyCart\Service\CartService;
+use Wexample\SymfonyShop\Entity\Cart;
+use Wexample\SymfonyShop\Enum\CartStatus;
+use Wexample\SymfonyShop\Repository\CartRepository;
+use Wexample\SymfonyShop\Service\CartService;
 use Wexample\SymfonyPayment\Service\PaymentAccessService;
 
 /**

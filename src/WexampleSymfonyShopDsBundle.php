@@ -1,12 +1,12 @@
 <?php
 
-namespace Wexample\SymfonyCartDs;
+namespace Wexample\SymfonyShopDs;
 
 use Wexample\SymfonyHelpers\Class\AbstractBundle;
 use Wexample\SymfonyHelpers\Helper\BundleHelper;
 use Wexample\SymfonyHelpers\Interface\LoaderBundleInterface;
 
-class WexampleSymfonyCartDsBundle extends AbstractBundle implements LoaderBundleInterface
+class WexampleSymfonyShopDsBundle extends AbstractBundle implements LoaderBundleInterface
 {
     public static function getLoaderFrontPaths(): array
     {

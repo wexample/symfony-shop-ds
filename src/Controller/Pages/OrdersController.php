@@ -1,17 +1,17 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Controller\Pages;
+namespace Wexample\SymfonyShopDs\Controller\Pages;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
-use Wexample\SymfonyCart\Entity\Cart;
-use Wexample\SymfonyCart\Enum\CartStatus;
-use Wexample\SymfonyCart\Repository\CartRepository;
-use Wexample\SymfonyCartDs\Service\CartStateService;
-use Wexample\SymfonyCartDs\Traits\SymfonyCartDsBundleClassTrait;
+use Wexample\SymfonyShop\Entity\Cart;
+use Wexample\SymfonyShop\Enum\CartStatus;
+use Wexample\SymfonyShop\Repository\CartRepository;
+use Wexample\SymfonyShopDs\Service\CartStateService;
+use Wexample\SymfonyShopDs\Traits\SymfonyShopDsBundleClassTrait;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 use Wexample\SymfonyMoney\Service\MoneyFormatter;
@@ -27,7 +27,7 @@ use Wexample\SymfonyPayment\Service\PaymentAccessService;
 #[IsGranted('IS_AUTHENTICATED')]
 final class OrdersController extends AbstractPagesController
 {
-    use SymfonyCartDsBundleClassTrait;
+    use SymfonyShopDsBundleClassTrait;
 
     final public const string ROUTE_INDEX = VariableHelper::INDEX;
 

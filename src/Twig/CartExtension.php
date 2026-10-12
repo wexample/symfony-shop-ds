@@ -1,17 +1,17 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Twig;
+namespace Wexample\SymfonyShopDs\Twig;
 
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Twig\Environment;
 use Twig\TwigFunction;
-use Wexample\SymfonyCart\Entity\Product;
-use Wexample\SymfonyCartDs\Controller\CartStateController;
-use Wexample\SymfonyCartDs\Service\CartStateService;
-use Wexample\SymfonyCartDs\Service\CurrentCartService;
-use Wexample\SymfonyCartDs\Service\FormProcessor\AddToCartFormProcessor;
+use Wexample\SymfonyShop\Entity\Product;
+use Wexample\SymfonyShopDs\Controller\CartStateController;
+use Wexample\SymfonyShopDs\Service\CartStateService;
+use Wexample\SymfonyShopDs\Service\CurrentCartService;
+use Wexample\SymfonyShopDs\Service\FormProcessor\AddToCartFormProcessor;
 use Wexample\SymfonyDesignSystem\Twig\AbstractTemplateExtension;
 use Wexample\SymfonyLoader\Service\VueService;
 use Wexample\SymfonyLoader\Twig\ComponentsExtension;
@@ -51,11 +51,11 @@ class CartExtension extends AbstractTemplateExtension
                     return $this->renderComponent(
                         $twig,
                         $context,
-                        '@WexampleSymfonyCartDsBundle/components/cart-button',
+                        '@WexampleSymfonyShopDsBundle/components/cart-button',
                         [
                             'count' => $this->currentCart->countItems(),
                             'href' => $this->urlGenerator->generate('cart_index'),
-                            'label' => $this->translator->trans('WexampleSymfonyCartDsBundle.common.cart::title'),
+                            'label' => $this->translator->trans('WexampleSymfonyShopDsBundle.common.cart::title'),
                             // Where it stands: `header--menu-item header--menu-item--icon`
                             // in a header.
                             'class' => $options['class'] ?? null,
@@ -74,7 +74,7 @@ class CartExtension extends AbstractTemplateExtension
                     return $this->renderComponent(
                         $twig,
                         $context,
-                        '@WexampleSymfonyCartDsBundle/components/cart-add',
+                        '@WexampleSymfonyShopDsBundle/components/cart-add',
                         [
                             'form' => $this->addToCart->forProduct($product)->createForm()->createView(),
                             'render_pass' => $context['render_pass'],
@@ -95,7 +95,7 @@ class CartExtension extends AbstractTemplateExtension
                     return $this->vueService->vueRender(
                         $twig,
                         $context['render_pass'],
-                        '@WexampleSymfonyCartDsBundle/components/cart-summary',
+                        '@WexampleSymfonyShopDsBundle/components/cart-summary',
                         [
                             // Another cart than the visitor's own — an order —,
                             // shown as it is and not followed.

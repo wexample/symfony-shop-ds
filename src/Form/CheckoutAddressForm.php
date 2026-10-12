@@ -1,12 +1,12 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Form;
+namespace Wexample\SymfonyShopDs\Form;
 
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Email;
 use Symfony\Component\Validator\Constraints\NotBlank;
-use Wexample\SymfonyCartDs\Form\Data\CheckoutAddresses;
+use Wexample\SymfonyShopDs\Form\Data\CheckoutAddresses;
 use Wexample\SymfonyForms\Form\AbstractForm;
 use Wexample\SymfonyForms\Form\Type\EmailInputType;
 use Wexample\SymfonyGeoDs\Form\Type\PostalAddressType;

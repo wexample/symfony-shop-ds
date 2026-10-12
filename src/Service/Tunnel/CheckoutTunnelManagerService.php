@@ -1,8 +1,8 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service\Tunnel;
+namespace Wexample\SymfonyShopDs\Service\Tunnel;
 
-use Wexample\SymfonyCartDs\Service\Tunnel\Checkout\CartStep;
+use Wexample\SymfonyShopDs\Service\Tunnel\Checkout\CartStep;
 use Wexample\SymfonyTunnels\Interface\TunnelSessionStorageInterface;
 use Wexample\SymfonyTunnels\Service\AbstractTunnelManagerService;
 use Wexample\SymfonyTunnels\Service\Step\AbstractTunnelStep;

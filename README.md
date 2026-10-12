@@ -1,4 +1,4 @@
-# symfony-cart-ds
+# symfony-shop-ds
 
 Version: 1.0.1
 

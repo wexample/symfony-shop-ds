@@ -1,14 +1,14 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Form;
+namespace Wexample\SymfonyShopDs\Form;
 
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\GreaterThan;
 use Symfony\Component\Validator\Constraints\Range;
-use Wexample\SymfonyCart\Entity\Product;
-use Wexample\SymfonyCart\Entity\ProductVariation;
-use Wexample\SymfonyCart\Entity\Schedule;
+use Wexample\SymfonyShop\Entity\Product;
+use Wexample\SymfonyShop\Entity\ProductVariation;
+use Wexample\SymfonyShop\Entity\Schedule;
 use Wexample\SymfonyForms\Form\AbstractForm;
 use Wexample\SymfonyForms\Form\Type\NumberInputType;
 use Wexample\SymfonyForms\Form\Type\RadioInputType;

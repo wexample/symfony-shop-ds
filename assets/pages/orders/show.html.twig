@@ -4,7 +4,7 @@
 
 {#- An order in full: when, where it went, what it held, how it was paid. -#}
 {%- block page_body -%}
-    {%- set common = 'WexampleSymfonyCartDsBundle.common.cart::' -%}
+    {%- set common = 'WexampleSymfonyShopDsBundle.common.cart::' -%}
     {%- set tones = { paid: 'success', waiting_payment: 'info', canceled: 'neutral' } -%}
     <section class="block block--padded">
         {{ properties([

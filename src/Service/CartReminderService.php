@@ -1,6 +1,6 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service;
+namespace Wexample\SymfonyShopDs\Service;
 
 use DateInterval;
 use DateTimeImmutable;
@@ -10,9 +10,9 @@ use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Component\HttpFoundation\UriSigner;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Wexample\SymfonyCart\Entity\Cart;
-use Wexample\SymfonyCart\Enum\CartStatus;
-use Wexample\SymfonyCart\Repository\CartRepository;
+use Wexample\SymfonyShop\Entity\Cart;
+use Wexample\SymfonyShop\Enum\CartStatus;
+use Wexample\SymfonyShop\Repository\CartRepository;
 use Wexample\SymfonyMail\Service\MailSenderService;
 use Wexample\SymfonyMoney\Service\MoneyFormatter;
 
@@ -37,7 +37,7 @@ class CartReminderService
         private readonly UriSigner $uriSigner,
         private readonly UrlGeneratorInterface $urlGenerator,
         private readonly MoneyFormatter $money,
-        #[Autowire(param: 'wexample_symfony_cart_ds.reminder')]
+        #[Autowire(param: 'wexample_symfony_shop_ds.reminder')]
         private readonly array $config,
     ) {
     }
@@ -103,7 +103,7 @@ class CartReminderService
         $this->mailSender->send(
             (new TemplatedEmail())
                 ->to(new Address($cart->getCustomerEmail()))
-                ->htmlTemplate('@WexampleSymfonyCartDsBundle/mails/cart_reminder.html.twig')
+                ->htmlTemplate('@WexampleSymfonyShopDsBundle/mails/cart_reminder.html.twig')
                 ->context([
                     'items' => array_map(fn ($item) => [
                         'title' => $item->getTitle(),

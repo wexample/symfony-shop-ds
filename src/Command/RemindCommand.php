@@ -1,11 +1,11 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Command;
+namespace Wexample\SymfonyShopDs\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Wexample\SymfonyCartDs\Service\CartReminderService;
-use Wexample\SymfonyCartDs\WexampleSymfonyCartDsBundle;
+use Wexample\SymfonyShopDs\Service\CartReminderService;
+use Wexample\SymfonyShopDs\WexampleSymfonyShopDsBundle;
 use Wexample\SymfonyHelpers\Command\AbstractBundleCommand;
 use Wexample\SymfonyHelpers\Service\BundleService;
 
@@ -24,7 +24,7 @@ class RemindCommand extends AbstractBundleCommand
 
     public static function getBundleClassName(): string
     {
-        return WexampleSymfonyCartDsBundle::class;
+        return WexampleSymfonyShopDsBundle::class;
     }
 
     protected function configure(): void

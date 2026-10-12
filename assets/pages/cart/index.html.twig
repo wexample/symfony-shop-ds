@@ -7,7 +7,7 @@
     going back to editing it gives that payment up. Opened in the header's
     panel as well as on its own. -#}
 {%- block page_body -%}
-    {%- set common = 'WexampleSymfonyCartDsBundle.common.cart::' -%}
+    {%- set common = 'WexampleSymfonyShopDsBundle.common.cart::' -%}
     {%- if waiting_payment -%}
         {{ message_info('@page::waiting.title' | trans, '@page::waiting.body' | trans) }}
     {%- endif -%}

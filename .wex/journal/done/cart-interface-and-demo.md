@@ -3,14 +3,18 @@
 Opened: 2026-10-09
 Author: agent:main
 
-Une todo pour `symfony-cart-ds` et `symfony-cart-demo`, vides à ce jour, et pour ce qui manque encore à `symfony-cart`. Le backend est fait et publié : s'en servir, le compléter là où l'interface en a besoin.
+## Closed (2026-10-12)
+
+Done: shop, product page, `cart_add`, `cart_summary`, header `cart_button` with its panel, checkout tunnel (guest or account through symfony-user's steps, cart adopted at sign-in), stock hold countdown, abandoned-cart reminders (`shop-ds:remind`, signed resume link), my orders. Package renamed from symfony-cart-ds to symfony-shop-ds. The owner dropped the product administration: applications fill their catalogue their own way.
+
+Une todo pour `symfony-shop-ds` et `symfony-shop-demo`, vides à ce jour, et pour ce qui manque encore à `symfony-shop`. Le backend est fait et publié : s'en servir, le compléter là où l'interface en a besoin.
 
 **À faire après `symfony-payment-ds`** : son étape de paiement est réutilisée ici (`symfony-payment-ds/.wex/journal/todo/payment-interface-and-demo.md`).
 
 ## À lire d'abord (plutôt que de le répéter ici)
 
-- `symfony-cart/.wex/knowledge/usage/overview.md.j2` : remplir un panier, checkout.
-- `symfony-cart/.wex/journal/todo/extract-from-network.md` : section Status (ce qui est fait) et le détail de ce qui reste (#301, plannings, adresses, tunnel).
+- `symfony-shop/.wex/knowledge/usage/overview.md.j2` : remplir un panier, checkout.
+- `symfony-shop/.wex/journal/todo/extract-from-network.md` : section Status (ce qui est fait) et le détail de ce qui reste (#301, plannings, adresses, tunnel).
 - `symfony-tunnels/.wex/knowledge/usage/overview.md.j2`, et `symfony-tunnels-demo` comme exemple de tunnel sur le design system.
 - `symfony-payment-ds/.wex/journal/todo/payment-interface-and-demo.md` et `symfony-payment/.wex/knowledge/usage/overview.md.j2`.
 - `symfony-money` (formatage des prix, `price` en Twig) et `symfony-geo` (adresses, relation `Country`).

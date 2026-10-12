@@ -1,6 +1,6 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\DependencyInjection;
+namespace Wexample\SymfonyShopDs\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -13,7 +13,7 @@ class Configuration implements ConfigurationInterface
 
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('wexample_symfony_cart_ds');
+        $treeBuilder = new TreeBuilder('wexample_symfony_shop_ds');
 
         $treeBuilder->getRootNode()
             ->children()

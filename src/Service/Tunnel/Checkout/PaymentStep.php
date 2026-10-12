@@ -1,11 +1,11 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service\Tunnel\Checkout;
+namespace Wexample\SymfonyShopDs\Service\Tunnel\Checkout;
 
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Wexample\SymfonyCartDs\Service\CurrentCartService;
-use Wexample\SymfonyCartDs\Service\FormProcessor\CheckoutPaymentFormProcessor;
+use Wexample\SymfonyShopDs\Service\CurrentCartService;
+use Wexample\SymfonyShopDs\Service\FormProcessor\CheckoutPaymentFormProcessor;
 use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
 use Wexample\SymfonyTunnels\Class\TunnelCursor;
 use Wexample\SymfonyTunnels\Enum\TunnelStepPreviousLoadingStrategy;
@@ -54,7 +54,7 @@ class PaymentStep extends AbstractFormTunnelStep
 
     public function buildSubmitLabel(TunnelCursor $cursor): string
     {
-        return 'WexampleSymfonyCartDsBundle.common.cart::button.pay';
+        return 'WexampleSymfonyShopDsBundle.common.cart::button.pay';
     }
 
     public function getSessionExpiration(TunnelCursor $cursor): string

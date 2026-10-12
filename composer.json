@@ -1,17 +1,17 @@
 {
-  "name": "wexample/symfony-cart-ds",
+  "name": "wexample/symfony-shop-ds",
   "version": "1.0.1",
   "type": "library",
   "license": "MIT",
-  "description": "The interface of symfony-cart: a shop, its cart, the purchase tunnel, the buyer's orders and their administration",
+  "description": "The interface of symfony-shop: a shop, its cart, the purchase tunnel, the buyer's orders and their administration",
   "autoload": {
     "psr-4": {
-      "Wexample\\SymfonyCartDs\\": "src/"
+      "Wexample\\SymfonyShopDs\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Wexample\\SymfonyCartDs\\Tests\\": "tests/"
+      "Wexample\\SymfonyShopDs\\Tests\\": "tests/"
     }
   },
   "authors": [
@@ -30,7 +30,7 @@
     "wexample/symfony-money": ">=5.0.0",
     "wexample/symfony-geo": ">=5.0.1",
     "wexample/symfony-tunnels": ">=10.0.5",
-    "wexample/symfony-cart": ">=3.0.1",
+    "wexample/symfony-shop": ">=3.0.1",
     "wexample/symfony-payment": ">=3.0.1",
     "wexample/symfony-payment-ds": ">=1.0.1",
     "wexample/symfony-user": ">=11.0.0",

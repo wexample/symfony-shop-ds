@@ -1,11 +1,11 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\DependencyInjection;
+namespace Wexample\SymfonyShopDs\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Wexample\SymfonyHelpers\DependencyInjection\AbstractWexampleSymfonyExtension;
 
-class WexampleSymfonyCartDsExtension extends AbstractWexampleSymfonyExtension
+class WexampleSymfonyShopDsExtension extends AbstractWexampleSymfonyExtension
 {
     public function load(
         array $configs,
@@ -13,8 +13,8 @@ class WexampleSymfonyCartDsExtension extends AbstractWexampleSymfonyExtension
     ): void {
         $config = $this->processConfiguration(new Configuration(), $configs);
 
-        $container->setParameter('wexample_symfony_cart_ds.checkout.account', $config['checkout']['account']);
-        $container->setParameter('wexample_symfony_cart_ds.reminder', $config['reminder']);
+        $container->setParameter('wexample_symfony_shop_ds.checkout.account', $config['checkout']['account']);
+        $container->setParameter('wexample_symfony_shop_ds.reminder', $config['reminder']);
 
         $this->loadConfig(
             __DIR__,

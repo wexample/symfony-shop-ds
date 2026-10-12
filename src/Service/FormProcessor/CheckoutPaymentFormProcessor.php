@@ -1,15 +1,15 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service\FormProcessor;
+namespace Wexample\SymfonyShopDs\Service\FormProcessor;
 
 use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Wexample\SymfonyCart\Entity\Cart;
-use Wexample\SymfonyCart\Exception\OutOfStockException;
-use Wexample\SymfonyCart\Service\CartCheckoutService;
+use Wexample\SymfonyShop\Entity\Cart;
+use Wexample\SymfonyShop\Exception\OutOfStockException;
+use Wexample\SymfonyShop\Service\CartCheckoutService;
 use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
 use Wexample\SymfonyPayment\Entity\Payment;
 use Wexample\SymfonyPaymentDs\Form\PaymentMethodForm;
@@ -78,7 +78,7 @@ class CheckoutPaymentFormProcessor extends AbstractFormProcessor
                 returnUrl: $this->returnUrl,
             );
         } catch (OutOfStockException) {
-            $form->addError(new FormError('WexampleSymfonyCartDsBundle.common.cart::error.out_of_stock'));
+            $form->addError(new FormError('WexampleSymfonyShopDsBundle.common.cart::error.out_of_stock'));
 
             return false;
         }

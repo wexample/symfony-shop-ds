@@ -1,6 +1,6 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Controller;
+namespace Wexample\SymfonyShopDs\Controller;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -9,10 +9,10 @@ use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
 use Symfony\Component\Security\Csrf\CsrfToken;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
-use Wexample\SymfonyCart\Entity\CartItem;
-use Wexample\SymfonyCart\Service\CartService;
-use Wexample\SymfonyCartDs\Service\CartStateService;
-use Wexample\SymfonyCartDs\Service\CurrentCartService;
+use Wexample\SymfonyShop\Entity\CartItem;
+use Wexample\SymfonyShop\Service\CartService;
+use Wexample\SymfonyShopDs\Service\CartStateService;
+use Wexample\SymfonyShopDs\Service\CurrentCartService;
 
 /**
  * Machine endpoints of the visitor's cart: read, a line changed or taken out.

@@ -1,11 +1,11 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Service\Tunnel\Checkout;
+namespace Wexample\SymfonyShopDs\Service\Tunnel\Checkout;
 
-use Wexample\SymfonyCartDs\Form\Data\CheckoutAddress;
-use Wexample\SymfonyCartDs\Form\Data\CheckoutAddresses;
-use Wexample\SymfonyCartDs\Service\CurrentCartService;
-use Wexample\SymfonyCartDs\Service\FormProcessor\CheckoutAddressFormProcessor;
+use Wexample\SymfonyShopDs\Form\Data\CheckoutAddress;
+use Wexample\SymfonyShopDs\Form\Data\CheckoutAddresses;
+use Wexample\SymfonyShopDs\Service\CurrentCartService;
+use Wexample\SymfonyShopDs\Service\FormProcessor\CheckoutAddressFormProcessor;
 use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
 use Wexample\SymfonyGeo\Repository\CountryRepository;
 use Wexample\SymfonyTunnels\Class\TunnelCursor;

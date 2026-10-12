@@ -1,6 +1,6 @@
 <?php
 
-namespace Wexample\SymfonyCartDs\Form\Data;
+namespace Wexample\SymfonyShopDs\Form\Data;
 
 use Wexample\SymfonyGeo\Entity\AbstractAddress;
 use Wexample\SymfonyGeo\Entity\AddressSnapshot;
