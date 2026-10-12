@@ -6,12 +6,12 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\GreaterThan;
 use Symfony\Component\Validator\Constraints\Range;
-use Wexample\SymfonyShop\Entity\Product;
-use Wexample\SymfonyShop\Entity\ProductVariation;
-use Wexample\SymfonyShop\Entity\Schedule;
 use Wexample\SymfonyForms\Form\AbstractForm;
 use Wexample\SymfonyForms\Form\Type\NumberInputType;
 use Wexample\SymfonyForms\Form\Type\RadioInputType;
+use Wexample\SymfonyShop\Entity\Product;
+use Wexample\SymfonyShop\Entity\ProductVariation;
+use Wexample\SymfonyShop\Entity\Schedule;
 
 /**
  * A product put in the cart: one of its variations, one of its schedules,

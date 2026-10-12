@@ -4,11 +4,11 @@ namespace Wexample\SymfonyShopDs\Controller\Pages;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Wexample\SymfonyHelpers\Helper\VariableHelper;
+use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 use Wexample\SymfonyShop\Repository\ProductRepository;
 use Wexample\SymfonyShopDs\Service\ShopService;
 use Wexample\SymfonyShopDs\Traits\SymfonyShopDsBundleClassTrait;
-use Wexample\SymfonyHelpers\Helper\VariableHelper;
-use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 
 /**
  * What is for sale, and each thing with what can be chosen of it — a

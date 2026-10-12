@@ -7,15 +7,15 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
+use Wexample\SymfonyHelpers\Helper\VariableHelper;
+use Wexample\SymfonyLoader\Controller\AbstractPagesController;
+use Wexample\SymfonyMoney\Service\MoneyFormatter;
+use Wexample\SymfonyPayment\Service\PaymentAccessService;
 use Wexample\SymfonyShop\Entity\Cart;
 use Wexample\SymfonyShop\Enum\CartStatus;
 use Wexample\SymfonyShop\Repository\CartRepository;
 use Wexample\SymfonyShopDs\Service\CartStateService;
 use Wexample\SymfonyShopDs\Traits\SymfonyShopDsBundleClassTrait;
-use Wexample\SymfonyHelpers\Helper\VariableHelper;
-use Wexample\SymfonyLoader\Controller\AbstractPagesController;
-use Wexample\SymfonyMoney\Service\MoneyFormatter;
-use Wexample\SymfonyPayment\Service\PaymentAccessService;
 
 /**
  * What the account ordered: every cart that went to payment — paid, being

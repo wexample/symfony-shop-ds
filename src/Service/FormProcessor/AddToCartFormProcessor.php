@@ -8,16 +8,16 @@ use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Wexample\SymfonyForms\Controller\FormController;
+use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
+use Wexample\SymfonyHelpers\Helper\RoleHelper;
+use Wexample\SymfonyMoney\Helper\MoneyHelper;
 use Wexample\SymfonyShop\Entity\Product;
 use Wexample\SymfonyShop\Repository\ProductRepository;
 use Wexample\SymfonyShop\Service\CartService;
 use Wexample\SymfonyShopDs\Form\AddToCartForm;
 use Wexample\SymfonyShopDs\Service\CurrentCartService;
 use Wexample\SymfonyShopDs\Service\ShopService;
-use Wexample\SymfonyForms\Controller\FormController;
-use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
-use Wexample\SymfonyHelpers\Helper\RoleHelper;
-use Wexample\SymfonyMoney\Helper\MoneyHelper;
 
 /**
  * A product put in the visitor's cart, as many as are left: more than that

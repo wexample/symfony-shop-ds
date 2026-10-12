@@ -4,10 +4,10 @@ namespace Wexample\SymfonyShopDs\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Wexample\SymfonyShopDs\Service\CartReminderService;
-use Wexample\SymfonyShopDs\WexampleSymfonyShopDsBundle;
 use Wexample\SymfonyHelpers\Command\AbstractBundleCommand;
 use Wexample\SymfonyHelpers\Service\BundleService;
+use Wexample\SymfonyShopDs\Service\CartReminderService;
+use Wexample\SymfonyShopDs\WexampleSymfonyShopDsBundle;
 
 /**
  * Writes now to the buyers of carts left on the way, as the scheduler does

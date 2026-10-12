@@ -8,14 +8,14 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\UriSigner;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Requirement\Requirement;
-use Wexample\SymfonyShop\Repository\CartRepository;
+use Wexample\SymfonyHelpers\Helper\VariableHelper;
+use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 use Wexample\SymfonyShop\Enum\CartStatus;
+use Wexample\SymfonyShop\Repository\CartRepository;
 use Wexample\SymfonyShop\Service\CartCheckoutService;
 use Wexample\SymfonyShopDs\Controller\CartStateController;
 use Wexample\SymfonyShopDs\Service\CurrentCartService;
 use Wexample\SymfonyShopDs\Traits\SymfonyShopDsBundleClassTrait;
-use Wexample\SymfonyHelpers\Helper\VariableHelper;
-use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 
 /**
  * The visitor's cart: what it holds, how many of each, the total — its lines

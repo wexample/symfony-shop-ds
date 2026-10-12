@@ -7,14 +7,14 @@ use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Twig\Environment;
 use Twig\TwigFunction;
+use Wexample\SymfonyDesignSystem\Twig\AbstractTemplateExtension;
+use Wexample\SymfonyLoader\Service\VueService;
+use Wexample\SymfonyLoader\Twig\ComponentsExtension;
 use Wexample\SymfonyShop\Entity\Product;
 use Wexample\SymfonyShopDs\Controller\CartStateController;
 use Wexample\SymfonyShopDs\Service\CartStateService;
 use Wexample\SymfonyShopDs\Service\CurrentCartService;
 use Wexample\SymfonyShopDs\Service\FormProcessor\AddToCartFormProcessor;
-use Wexample\SymfonyDesignSystem\Twig\AbstractTemplateExtension;
-use Wexample\SymfonyLoader\Service\VueService;
-use Wexample\SymfonyLoader\Twig\ComponentsExtension;
 
 /**
  * The visitor's cart where a layout or a page shows it: a count, a button

@@ -4,11 +4,11 @@ namespace Wexample\SymfonyShopDs\Service;
 
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\RequestStack;
+use Wexample\SymfonyPayment\Service\PaymentAccessService;
 use Wexample\SymfonyShop\Entity\Cart;
 use Wexample\SymfonyShop\Enum\CartStatus;
 use Wexample\SymfonyShop\Repository\CartRepository;
 use Wexample\SymfonyShop\Service\CartService;
-use Wexample\SymfonyPayment\Service\PaymentAccessService;
 
 /**
  * The visitor's cart: the one being filled or paid — `opened`, or

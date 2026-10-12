@@ -7,10 +7,10 @@ use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
 use Wexample\SymfonyShop\Entity\Cart;
 use Wexample\SymfonyShopDs\Form\CheckoutAddressForm;
 use Wexample\SymfonyShopDs\Form\Data\CheckoutAddresses;
-use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
 
 /**
  * The addresses of the visitor's cart, written down on it as typed: the

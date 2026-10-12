@@ -10,11 +10,11 @@ use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Component\HttpFoundation\UriSigner;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Wexample\SymfonyMail\Service\MailSenderService;
+use Wexample\SymfonyMoney\Service\MoneyFormatter;
 use Wexample\SymfonyShop\Entity\Cart;
 use Wexample\SymfonyShop\Enum\CartStatus;
 use Wexample\SymfonyShop\Repository\CartRepository;
-use Wexample\SymfonyMail\Service\MailSenderService;
-use Wexample\SymfonyMoney\Service\MoneyFormatter;
 
 /**
  * Carts left on the way: filled, an address to write to — the buyer's

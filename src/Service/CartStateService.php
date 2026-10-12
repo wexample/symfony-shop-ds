@@ -4,11 +4,11 @@ namespace Wexample\SymfonyShopDs\Service;
 
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Wexample\SymfonyMoney\Service\MoneyFormatter;
 use Wexample\SymfonyShop\Entity\Cart;
 use Wexample\SymfonyShop\Entity\CartItem;
 use Wexample\SymfonyShop\Enum\CartStatus;
 use Wexample\SymfonyShop\Repository\StockReservationRepository;
-use Wexample\SymfonyMoney\Service\MoneyFormatter;
 
 /**
  * The visitor's cart as the components showing it read it: its lines, what

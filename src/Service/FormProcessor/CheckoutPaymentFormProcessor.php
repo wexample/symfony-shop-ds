@@ -7,13 +7,13 @@ use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Wexample\SymfonyShop\Entity\Cart;
-use Wexample\SymfonyShop\Exception\OutOfStockException;
-use Wexample\SymfonyShop\Service\CartCheckoutService;
 use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
 use Wexample\SymfonyPayment\Entity\Payment;
 use Wexample\SymfonyPaymentDs\Form\PaymentMethodForm;
 use Wexample\SymfonyPaymentDs\Service\PaymentCheckoutService;
+use Wexample\SymfonyShop\Entity\Cart;
+use Wexample\SymfonyShop\Exception\OutOfStockException;
+use Wexample\SymfonyShop\Service\CartCheckoutService;
 
 /**
  * The method chosen for the cart, and the cart checked out by it — frozen,
