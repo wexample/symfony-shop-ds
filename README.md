@@ -1,6 +1,6 @@
 # symfony-shop-ds
 
-Version: 1.0.2
+Version: 2.0.0
 
 The interface of symfony-shop: a shop, its cart, the purchase tunnel, the buyer's orders and their administration
 
@@ -26,20 +26,21 @@ Visit the [Wexample Suite documentation](https://docs.wexample.com) for the comp
 ## Dependencies
 
 - php: >=8.5
-- wexample/symfony-helpers: >=15.0.0
-- wexample/symfony-loader: >=22.0.0
-- wexample/symfony-design-system: >=32.0.0
-- wexample/symfony-api: >=12.0.0
-- wexample/symfony-forms: >=11.0.0
-- wexample/symfony-money: >=5.0.0
-- wexample/symfony-geo: >=5.0.1
+- wexample/symfony-helpers: >=16.0.0
+- wexample/symfony-loader: >=23.0.0
+- wexample/symfony-design-system: >=34.0.0
+- wexample/symfony-api: >=13.0.0
+- wexample/symfony-forms: >=12.0.0
+- wexample/symfony-money: >=6.0.0
+- wexample/symfony-geo: >=6.0.0
 - wexample/symfony-tunnels: >=10.0.5
-- wexample/symfony-shop: >=3.0.1
-- wexample/symfony-payment: >=3.0.1
-- wexample/symfony-payment-ds: >=1.0.1
-- wexample/symfony-user: >=11.0.0
-- wexample/symfony-user-ds: >=4.0.0
+- wexample/symfony-shop: >=4.0.0
+- wexample/symfony-payment: >=4.0.0
+- wexample/symfony-payment-ds: >=2.0.0
+- wexample/symfony-user: >=12.0.0
+- wexample/symfony-user-ds: >=5.0.0
 - wexample/symfony-mail: >=2.0.0
+- wexample/symfony-geo-ds: >=3.0.0
 
 ## Versioning & Compatibility Policy
 
