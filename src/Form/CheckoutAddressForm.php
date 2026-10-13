@@ -8,12 +8,15 @@ use Symfony\Component\Validator\Constraints\Email;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Wexample\SymfonyForms\Form\AbstractForm;
 use Wexample\SymfonyForms\Form\Type\EmailInputType;
+use Wexample\SymfonyForms\Form\Type\TelInputType;
+use Wexample\SymfonyForms\Form\Type\TextInputType;
 use Wexample\SymfonyGeoDs\Form\Type\PostalAddressType;
 use Wexample\SymfonyShopDs\Form\Data\CheckoutAddresses;
 
 /**
  * The addresses of an order: the buyer's email when they are not signed in,
- * the billing address, and — only when something is shipped — where to, the
+ * their phone, their company and VAT number when they buy as a business, the
+ * billing address, and — only when something is shipped — where to, the
  * billing one when left empty.
  */
 class CheckoutAddressForm extends AbstractForm
@@ -44,6 +47,13 @@ class CheckoutAddressForm extends AbstractForm
                 'constraints' => [new NotBlank(), new Email()],
             ]);
         }
+
+        $optional = [self::FIELD_OPTION_NAME_LABEL => true, self::FIELD_OPTION_NAME_REQUIRED => false];
+
+        $builder
+            ->add('phone', TelInputType::class, $optional)
+            ->add('companyName', TextInputType::class, $optional)
+            ->add('vatNumber', TextInputType::class, $optional);
 
         $builder->add('billing', PostalAddressType::class, ['with_name' => true, 'required' => true]);
 

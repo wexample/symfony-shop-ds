@@ -3,7 +3,9 @@ en:
   orders: My orders
   status:
     paid: Paid
+    fulfilled: Delivered
     waiting_payment: Being paid
+    awaiting_validation: Awaiting your payment
     canceled: Canceled
   sold_out: Sold out
   left: "%count% left"
@@ -26,7 +28,9 @@ fr:
   orders: Mes commandes
   status:
     paid: Payée
+    fulfilled: Livrée
     waiting_payment: En cours de paiement
+    awaiting_validation: En attente de votre paiement
     canceled: Annulée
   sold_out: Épuisé
   left: "Plus que %count%"

@@ -11,7 +11,7 @@
             {{ button_link('ph:bold/storefront', (common ~ 'shop') | trans, path('shop_index'), { class: 'button--invert' }) }}
         </div>
     {%- else -%}
-        {%- set tones = { paid: 'success', waiting_payment: 'info', canceled: 'neutral' } -%}
+        {%- set tones = { paid: 'success', fulfilled: 'success', waiting_payment: 'info', awaiting_validation: 'warning', canceled: 'neutral' } -%}
         {{ data_table([
             { key: 'date', label: '@page::column.date' | trans, cell: 'html' },
             { key: 'items', label: '@page::column.items' | trans },

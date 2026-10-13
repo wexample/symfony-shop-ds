@@ -16,7 +16,7 @@
 {#- An order in full: when, where it went, what it held, how it was paid. -#}
 {%- block page_body -%}
     {%- set common = 'WexampleSymfonyShopDsBundle.common.cart::' -%}
-    {%- set tones = { paid: 'success', waiting_payment: 'info', canceled: 'neutral' } -%}
+    {%- set tones = { paid: 'success', fulfilled: 'success', waiting_payment: 'info', awaiting_validation: 'warning', canceled: 'neutral' } -%}
     <section class="block block--padded">
         {{ properties([
             { key: '@page::field.status' | trans, value: marker(tones[order.status.value], (common ~ 'status.' ~ order.status.value) | trans, { compact: true }), html: true },

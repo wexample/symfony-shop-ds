@@ -36,7 +36,7 @@ final class OrdersController extends AbstractPagesController
     /**
      * The carts an order was made of: gone to payment, whatever came of it.
      */
-    private const array ORDERED = [CartStatus::Paid, CartStatus::WaitingPayment, CartStatus::Canceled];
+    private const array ORDERED = [CartStatus::Paid, CartStatus::Fulfilled, CartStatus::WaitingPayment, CartStatus::AwaitingValidation, CartStatus::Canceled];
 
     #[Route(path: '', name: self::ROUTE_INDEX)]
     public function index(

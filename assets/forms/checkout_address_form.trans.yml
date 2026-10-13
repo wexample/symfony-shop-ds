@@ -1,4 +1,6 @@
 en:
+  company: Buying for a company
+  company_help: Left empty for a private purchase.
   billing: Billing address
   shipping: Shipping address
   shipping_help: Left empty, it is shipped to the billing address.
@@ -6,8 +8,19 @@ en:
     email:
       label: Email
       help: Where the order is confirmed.
+    phone:
+      label: Phone
+      help: For the delivery, if needed.
+    companyName:
+      label: Company name
+      help: The name the invoice is made out to.
+    vatNumber:
+      label: VAT number
+      help: With its country prefix. A business from another EU country pays no VAT once the number is confirmed.
 
 fr:
+  company: Achat pour une entreprise
+  company_help: Laissez vide pour un achat à titre privé.
   billing: Adresse de facturation
   shipping: Adresse de livraison
   shipping_help: Laissée vide, la livraison se fait à l'adresse de facturation.
@@ -15,3 +28,12 @@ fr:
     email:
       label: E-mail
       help: Où la commande est confirmée.
+    phone:
+      label: Téléphone
+      help: Pour la livraison, si besoin.
+    companyName:
+      label: Raison sociale
+      help: Le nom auquel la facture est établie.
+    vatNumber:
+      label: Numéro de TVA
+      help: Avec son préfixe pays. Une entreprise d'un autre pays de l'UE ne paie pas de TVA une fois le numéro confirmé.

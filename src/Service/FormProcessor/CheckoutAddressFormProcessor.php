@@ -9,13 +9,16 @@ use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
 use Wexample\SymfonyShop\Entity\Cart;
+use Wexample\SymfonyShop\Service\CartService;
 use Wexample\SymfonyShopDs\Form\CheckoutAddressForm;
 use Wexample\SymfonyShopDs\Form\Data\CheckoutAddresses;
 
 /**
  * The addresses of the visitor's cart, written down on it as typed: the
  * billing one, the shipping one — the billing one again when none was
- * given —, and who to tell when no one is signed in.
+ * given —, who to tell when no one is signed in, and who buys. The VAT of
+ * each line is then charged for that buyer, so the payment step shows what
+ * they will pay.
  */
 class CheckoutAddressFormProcessor extends AbstractFormProcessor
 {
@@ -26,6 +29,7 @@ class CheckoutAddressFormProcessor extends AbstractFormProcessor
         RequestStack $requestStack,
         UrlGeneratorInterface $urlGenerator,
         private readonly EntityManagerInterface $entityManager,
+        private readonly CartService $cartService,
     ) {
         parent::__construct($formFactory, $requestStack, $urlGenerator);
     }
@@ -60,7 +64,14 @@ class CheckoutAddressFormProcessor extends AbstractFormProcessor
             $this->cart->setCustomerEmail($data->email);
         }
 
+        $this->cart
+            ->setCustomerName($data->billing->getFullName() ?? $this->cart->getCustomerName())
+            ->setCustomerPhone($data->phone)
+            ->setCustomerCompanyName($data->companyName)
+            ->setCustomerVatNumber($data->vatNumber);
+
         $this->entityManager->flush();
+        $this->cartService->applyVatRates($this->cart);
     }
 
     public function needsShipping(): bool
