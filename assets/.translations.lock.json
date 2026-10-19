@@ -803,6 +803,20 @@
             "engine": "syrtis"
         }
     },
+    "tunnels/checkout/login.ar.yml": {
+        "lead": {
+            "hash": "98a8886675cf1115f24dcd8402feaa1c",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "576b129caf4f2b87b768c2c51703fecd",
+            "engine": "syrtis"
+        },
+        "title": {
+            "hash": "a4d2313525c47af15e444c88880bc766",
+            "engine": "syrtis"
+        }
+    },
     "tunnels/checkout/login.zh.yml": {
         "lead": {
             "hash": "98a8886675cf1115f24dcd8402feaa1c",
@@ -817,6 +831,20 @@
             "engine": "syrtis"
         }
     },
+    "tunnels/checkout/payment.ar.yml": {
+        "lead": {
+            "hash": "7ca75148b3714e0e682ffed33ea63750",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "576b129caf4f2b87b768c2c51703fecd",
+            "engine": "syrtis"
+        },
+        "title": {
+            "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        }
+    },
     "tunnels/checkout/payment.zh.yml": {
         "lead": {
             "hash": "7ca75148b3714e0e682ffed33ea63750",
@@ -828,6 +856,20 @@
         },
         "title": {
             "hash": "40d67a673a76728922443d561df93608",
+            "engine": "syrtis"
+        }
+    },
+    "tunnels/checkout/user-mail.ar.yml": {
+        "lead": {
+            "hash": "d3c8f2baa7a403cf85f2b689f6228ca7",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "576b129caf4f2b87b768c2c51703fecd",
+            "engine": "syrtis"
+        },
+        "title": {
+            "hash": "3b3f7cab02a17190aac977f53b51986f",
             "engine": "syrtis"
         }
     },
