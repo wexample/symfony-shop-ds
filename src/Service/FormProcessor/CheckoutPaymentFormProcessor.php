@@ -41,6 +41,17 @@ class CheckoutPaymentFormProcessor extends AbstractFormProcessor
     }
 
     /**
+     * The cart and the addresses of the checkout handled, not of the next one.
+     */
+    public function reset(): void
+    {
+        parent::reset();
+        $this->cart = null;
+        $this->nextUrl = null;
+        $this->returnUrl = null;
+    }
+
+    /**
      * The form is payment-ds's, its words with it.
      */
     public static function getFormClass(): string

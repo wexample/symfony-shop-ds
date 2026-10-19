@@ -41,6 +41,15 @@ class AddToCartFormProcessor extends AbstractFormProcessor
         parent::__construct($formFactory, $requestStack, $urlGenerator);
     }
 
+    /**
+     * The product of the submission handled, not of the next one.
+     */
+    public function reset(): void
+    {
+        parent::reset();
+        $this->product = null;
+    }
+
     public function forProduct(Product $product): static
     {
         $this->product = $product;

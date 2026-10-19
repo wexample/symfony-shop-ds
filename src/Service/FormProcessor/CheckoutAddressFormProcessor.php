@@ -34,6 +34,15 @@ class CheckoutAddressFormProcessor extends AbstractFormProcessor
         parent::__construct($formFactory, $requestStack, $urlGenerator);
     }
 
+    /**
+     * The cart of the checkout handled, not of the next one.
+     */
+    public function reset(): void
+    {
+        parent::reset();
+        $this->cart = null;
+    }
+
     public function forCart(Cart $cart): static
     {
         $this->cart = $cart;
