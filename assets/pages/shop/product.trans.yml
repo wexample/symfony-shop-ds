@@ -21,3 +21,117 @@ ar:
   page_icon: 'ph:bold/tag'
   free_amount: 'المبلغ الذي تختاره'
   sold_out: 'لا يوجد شيء متبقي منه في الوقت الحالي.'
+
+hi:
+  page_title: उत्पाद
+  page_icon: 'ph:bold/tag'
+  free_amount: 'आपकी चयनित राशि'
+  sold_out: 'इसका कुछ भी अब नहीं बचा है।'
+
+he:
+  page_title: מוצר
+  page_icon: 'ph:bold/tag'
+  free_amount: 'הסכום שאתה בוחר'
+  sold_out: 'נשאר כלום ממנו כרגע.'
+
+fa:
+  page_title: محصول
+  page_icon: 'ph:bold/tag'
+  free_amount: 'مقداری که انتخاب می‌کنید'
+  sold_out: 'فعلاً هیچ چیزی از آن باقی نمانده.'
+
+ur:
+  page_title: پروڈکٹ
+  page_icon: 'ph:bold/tag'
+  free_amount: 'آپ کی منتخب کردہ رقم'
+  sold_out: 'اس کا کچھ بھی باقی نہیں ہے۔'
+
+ja:
+  page_title: 商品
+  page_icon: 'ph:bold/tag'
+  free_amount: 選択した数量
+  sold_out: 現在は在庫がありません。
+
+ko:
+  page_title: 제품
+  page_icon: 'ph:bold/tag'
+  free_amount: '선택한 수량'
+  sold_out: '현재로서는 남아있는 것이 없습니다.'
+
+bn:
+  page_title: পণ্য
+  page_icon: 'ph:bold/tag'
+  free_amount: 'আপনি যে পরিমাণটি বেছে নিয়েছেন'
+  sold_out: 'এখন এর কিছুই অবশিষ্ট নেই।'
+
+th:
+  page_title: สินค้า
+  page_icon: 'ph:bold/tag'
+  free_amount: จำนวนที่คุณเลือก
+  sold_out: ตอนนี้ไม่มีสินค้าเหลืออยู่แล้ว.
+
+de:
+  page_title: Produkt
+  page_icon: 'ph:bold/tag'
+  free_amount: 'Die Menge, die Sie wählen'
+  sold_out: 'Momentan ist nichts mehr davon verfügbar.'
+
+fi:
+  page_title: Tuote
+  page_icon: 'ph:bold/tag'
+  free_amount: 'Valitsemasi määrä'
+  sold_out: 'Tällä hetkellä ei ole enää mitään jäljellä.'
+
+ru:
+  page_title: Продукт
+  page_icon: 'ph:bold/tag'
+  free_amount: 'Выбранная вами сумма'
+  sold_out: 'На данный момент ничего не осталось.'
+
+pl:
+  page_title: Produkt
+  page_icon: 'ph:bold/tag'
+  free_amount: 'Kwota, którą wybierasz'
+  sold_out: 'Nic z tego nie zostało na teraz.'
+
+es:
+  page_title: Producto
+  page_icon: 'ph:bold/tag'
+  free_amount: 'La cantidad que elijas'
+  sold_out: 'No queda nada por ahora.'
+
+it:
+  page_title: Prodotto
+  page_icon: 'ph:bold/tag'
+  free_amount: "L'importo che scegli"
+  sold_out: 'Non è rimasto nulla per ora.'
+
+pt_BR:
+  page_title: Produto
+  page_icon: 'ph:bold/tag'
+  free_amount: 'A quantidade que você escolher'
+  sold_out: 'Nada está disponível por enquanto.'
+
+tr:
+  page_title: Ürün
+  page_icon: 'ph:bold/tag'
+  free_amount: 'Seçtiğiniz miktar'
+  sold_out: 'Şu an için hiçbiri kalmadı.'
+
+vi:
+  page_title: 'Sản phẩm'
+  page_icon: 'ph:bold/tag'
+  free_amount: 'Số lượng bạn chọn'
+  sold_out: 'Hiện tại không còn gì.'
+
+id:
+  page_title: Produk
+  page_icon: 'ph:bold/tag'
+  free_amount: 'Jumlah yang Anda pilih'
+  sold_out: 'Tidak ada yang tersisa untuk saat ini.'
+
+nl:
+  page_title: Product
+  page_icon: 'ph:bold/tag'
+  free_amount: 'Het bedrag dat je kiest'
+  sold_out: 'Er is momenteel niets meer van beschikbaar.'

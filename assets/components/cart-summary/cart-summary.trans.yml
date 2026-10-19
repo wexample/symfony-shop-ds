@@ -45,3 +45,231 @@ ar:
   reservation:
     running: 'محجوز لك لمدة %time% أخرى.'
     over: 'لم يعد محجوزًا: ما تبقى قد يذهب إلى مشترٍ آخر.'
+
+hi:
+  title: कार्ट
+  empty: 'आपकी कार्ट खाली है।'
+  total: कुल
+  vat_included: 'वैट शामिल है: %vat%'
+  less: 'एक कम'
+  more: 'एक और'
+  remove: हटाएँ
+  reservation:
+    running: 'आपके लिए और %time% के लिए रोका गया।'
+    over: 'अब नहीं रोका गया: जो बचा है वह किसी अन्य खरीदार को जा सकता है।'
+
+he:
+  title: עגלה
+  empty: 'העגלה שלך ריקה.'
+  total: 'סך הכל'
+  vat_included: 'כולל מע"מ: %vat%'
+  less: 'אחד פחות'
+  more: 'אחד יותר'
+  remove: הסר
+  reservation:
+    running: 'שמור עבורך לעוד %time%.'
+    over: 'כבר לא שמור: מה שנשאר עשוי להתקל לקונה אחר.'
+
+fa:
+  title: 'سبد خرید'
+  empty: 'سبد خرید شما خالی است.'
+  total: مجموع
+  vat_included: 'شامل مالیات بر ارزش افزوده: %vat%'
+  less: 'یک عدد کمتر'
+  more: 'یک عدد بیشتر'
+  remove: حذف
+  reservation:
+    running: 'برای شما به مدت %time% دیگر نگه‌داشته شده است.'
+    over: 'دیگر نگه‌داشته نشده: آنچه باقی‌مانده ممکن است به خریدار دیگری برسد.'
+
+ur:
+  title: کارٹ
+  empty: 'آپ کا کارٹ خالی ہے۔'
+  total: کل
+  vat_included: 'ویٹ شامل ہے: %vat%'
+  less: 'ایک کم'
+  more: 'ایک مزید'
+  remove: ہٹائیں
+  reservation:
+    running: 'آپ کے لیے مزید %time% کے لیے محفوظ ہے۔'
+    over: 'اب محفوظ نہیں: جو باقی ہے وہ کسی دوسرے خریدار کے لیے جا سکتا ہے۔'
+
+ja:
+  title: カート
+  empty: カートは空です。
+  total: 合計
+  vat_included: 'VATを含む: %vat%'
+  less: 一つ減らす
+  more: 一つ増やす
+  remove: 削除
+  reservation:
+    running: あと%time%の間、確保されています。
+    over: 'もはや確保されていません: 残りは他の購入者に渡る可能性があります。'
+
+ko:
+  title: 장바구니
+  empty: '장바구니가 비어 있습니다.'
+  total: 합계
+  vat_included: '부가세 포함: %vat%'
+  less: '하나 줄이기'
+  more: '하나 더하기'
+  remove: 삭제
+  reservation:
+    running: '%time% 동안 귀하를 위해 보류 중입니다.'
+    over: '더 이상 보류되지 않음: 남은 것은 다른 구매자에게 갈 수 있습니다.'
+
+bn:
+  title: কার্ট
+  empty: 'আপনার কার্টটি খালি।'
+  total: মোট
+  vat_included: 'ভ্যাট সহ: %vat%'
+  less: 'একটি কম'
+  more: 'একটি বেশি'
+  remove: 'অপসারণ করুন'
+  reservation:
+    running: 'আপনার জন্য আরও %time% ধরে রাখা হয়েছে।'
+    over: 'আর ধরে রাখা হয়নি: যা বাকি আছে তা অন্য ক্রেতার কাছে চলে যেতে পারে।'
+
+th:
+  title: ตะกร้า
+  empty: ตะกร้าของคุณว่างเปล่า
+  total: ยอดรวม
+  vat_included: 'รวม VAT: %vat%'
+  less: ลดลงหนึ่ง
+  more: เพิ่มอีกหนึ่ง
+  remove: ลบ
+  reservation:
+    running: 'ถือไว้ให้คุณอีก %time%'
+    over: 'ไม่ถือไว้แล้ว: สิ่งที่เหลืออาจไปยังผู้ซื้อคนอื่น.'
+
+de:
+  title: Warenkorb
+  empty: 'Ihr Warenkorb ist leer.'
+  total: Gesamt
+  vat_included: 'Inklusive MwSt.: %vat%'
+  less: 'Einen weniger'
+  more: 'Einen mehr'
+  remove: Entfernen
+  reservation:
+    running: 'Für Sie gehalten für weitere %time%.'
+    over: 'Nicht mehr gehalten: Was übrig bleibt, könnte an einen anderen Käufer gehen.'
+
+fi:
+  title: Ostoskori
+  empty: 'Ostoskorisi on tyhjä.'
+  total: Yhteensä
+  vat_included: 'Sisältää ALV:n: %vat%'
+  less: 'Yksi vähemmän'
+  more: 'Yksi enemmän'
+  remove: Poista
+  reservation:
+    running: 'Pidämme varattuna vielä %time%.'
+    over: 'Ei enää varattuna: jäljelle jäävät voivat mennä toiselle ostajalle.'
+
+ru:
+  title: Корзина
+  empty: 'Ваша корзина пуста.'
+  total: Итого
+  vat_included: 'С учетом НДС: %vat%'
+  less: 'На одну меньше'
+  more: 'На одну больше'
+  remove: Удалить
+  reservation:
+    running: 'Забронировано для вас еще на %time%.'
+    over: 'Больше не забронировано: оставшееся может быть куплено другим покупателем.'
+
+pl:
+  title: Koszyk
+  empty: 'Twój koszyk jest pusty.'
+  total: Razem
+  vat_included: 'Z VAT: %vat%'
+  less: 'Jedna mniej'
+  more: 'Jedna więcej'
+  remove: Usuń
+  reservation:
+    running: 'Zarezerwowane dla Ciebie na kolejne %time%.'
+    over: 'Nie jest już zarezerwowane: to, co zostało, może trafić do innego kupującego.'
+
+es:
+  title: Carrito
+  empty: 'Tu carrito está vacío.'
+  total: Total
+  vat_included: 'Incluyendo IVA: %vat%'
+  less: 'Uno menos'
+  more: 'Uno más'
+  remove: Eliminar
+  reservation:
+    running: 'Reservado para ti por otros %time%.'
+    over: 'Ya no está reservado: lo que queda puede ir a otro comprador.'
+
+it:
+  title: Carrello
+  empty: 'Il tuo carrello è vuoto.'
+  total: Totale
+  vat_included: 'Incluso IVA: %vat%'
+  less: 'Uno in meno'
+  more: 'Uno in più'
+  remove: Rimuovi
+  reservation:
+    running: 'Riservato per te per altri %time%.'
+    over: 'Non più riservato: ciò che rimane potrebbe andare a un altro acquirente.'
+
+pt_BR:
+  title: Carrinho
+  empty: 'Seu carrinho está vazio.'
+  total: Total
+  vat_included: 'Incluindo IVA: %vat%'
+  less: 'Um a menos'
+  more: 'Um a mais'
+  remove: Remover
+  reservation:
+    running: 'Reservado para você por mais %time%.'
+    over: 'Não está mais reservado: o que sobrar pode ser vendido para outro comprador.'
+
+tr:
+  title: Sepet
+  empty: 'Sepetiniz boş.'
+  total: Toplam
+  vat_included: 'KDV dahil: %vat%'
+  less: 'Bir az'
+  more: 'Bir fazlası'
+  remove: Kaldır
+  reservation:
+    running: 'Sizin için %time% kadar daha tutuldu.'
+    over: 'Artık tutulmuyor: geriye kalanlar başka bir alıcıya gidebilir.'
+
+vi:
+  title: 'Giỏ hàng'
+  empty: 'Giỏ hàng của bạn đang trống.'
+  total: 'Tổng cộng'
+  vat_included: 'Đã bao gồm VAT: %vat%'
+  less: 'Giảm một'
+  more: 'Tăng một'
+  remove: Xóa
+  reservation:
+    running: 'Đã giữ cho bạn thêm %time%.'
+    over: 'Không còn giữ: những gì còn lại có thể được bán cho người mua khác.'
+
+id:
+  title: Keranjang
+  empty: 'Keranjang Anda kosong.'
+  total: Total
+  vat_included: 'Termasuk PPN: %vat%'
+  less: 'Satu kurang'
+  more: 'Satu lebih'
+  remove: Hapus
+  reservation:
+    running: 'Dipegang untuk Anda selama %time% lagi.'
+    over: 'Tidak lagi dipegang: apa yang tersisa mungkin akan pergi ke pembeli lain.'
+
+nl:
+  title: Winkelwagentje
+  empty: 'Je winkelwagentje is leeg.'
+  total: Totaal
+  vat_included: 'Inclusief BTW: %vat%'
+  less: 'Één minder'
+  more: 'Één meer'
+  remove: Verwijderen
+  reservation:
+    running: 'Voor jou vastgehouden voor nog %time%.'
+    over: 'Niet meer vastgehouden: wat over is, kan naar een andere koper gaan.'

@@ -77,3 +77,383 @@ ar:
     vatNumber:
       label: 'رقم ضريبة القيمة المضافة'
       help: 'مع بادئة دولته. لا تدفع شركة من دولة أخرى في الاتحاد الأوروبي ضريبة القيمة المضافة بمجرد تأكيد الرقم.'
+
+hi:
+  company: 'कंपनी के लिए खरीदारी'
+  company_help: 'निजी खरीद के लिए खाली छोड़ दिया गया।'
+  billing: 'बिलिंग पता'
+  shipping: 'शिपिंग पता'
+  shipping_help: 'खाली छोड़ दिया गया, इसे बिलिंग पते पर भेजा जाएगा।'
+  field:
+    email:
+      label: ईमेल
+      help: 'जहां ऑर्डर की पुष्टि होती है।'
+    phone:
+      label: फोन
+      help: 'डिलीवरी के लिए, यदि आवश्यक हो।'
+    companyName:
+      label: 'कंपनी का नाम'
+      help: 'जिस नाम पर चालान बनाया गया है।'
+    vatNumber:
+      label: 'वैट नंबर'
+      help: 'इसके देश के उपसर्ग के साथ। किसी अन्य EU देश से आने वाला व्यवसाय एक बार नंबर की पुष्टि होने पर कोई वैट नहीं चुकाता।'
+
+he:
+  company: 'קנייה עבור חברה'
+  company_help: 'השאר ריק לרכישה פרטית.'
+  billing: 'כתובת חיוב'
+  shipping: 'כתובת משלוח'
+  shipping_help: 'אם זה נשאר ריק, המשלוח יישלח לכתובת החיוב.'
+  field:
+    email:
+      label: 'דוא"ל'
+      help: 'שם שבו מאשרים את ההזמנה.'
+    phone:
+      label: טלפון
+      help: 'למשלוח, אם צריך.'
+    companyName:
+      label: 'שם החברה'
+      help: 'השם שעליו נכתבת החשבונית.'
+    vatNumber:
+      label: 'מספר מע"מ'
+      help: 'עם הקידומת של המדינה. עסק ממדינה אחרת באיחוד האירופי לא משלם מע"מ לאחר שהמספר מאושר.'
+
+fa:
+  company: 'خرید برای یک شرکت'
+  company_help: 'اگر خالی بماند، برای خرید خصوصی است.'
+  billing: 'آدرس صورتحساب'
+  shipping: 'آدرس تحویل'
+  shipping_help: 'اگر خالی بماند، به آدرس صورتحساب ارسال می‌شود.'
+  field:
+    email:
+      label: ایمیل
+      help: 'جایی که سفارش تأیید می‌شود.'
+    phone:
+      label: تلفن
+      help: 'برای تحویل، در صورت نیاز.'
+    companyName:
+      label: 'نام شرکت'
+      help: 'نامی که فاکتور به آن صادر می‌شود.'
+    vatNumber:
+      label: 'شماره VAT'
+      help: 'با پیشوند کشور خود. یک کسب و کار از کشور دیگر اتحادیه اروپا زمانی که شماره تأیید شود، مالیات بر ارزش افزوده پرداخت نمی‌کند.'
+
+ur:
+  company: 'کمپنی کے لیے خریداری'
+  company_help: 'نجی خریداری کے لیے خالی چھوڑا گیا۔'
+  billing: 'بلنگ کا پتہ'
+  shipping: 'شپنگ کا پتہ'
+  shipping_help: 'خالی چھوڑنے پر، یہ بلنگ کے پتے پر بھیجا جائے گا۔'
+  field:
+    email:
+      label: 'ای میل'
+      help: 'جہاں آرڈر کی تصدیق کی جائے گی۔'
+    phone:
+      label: فون
+      help: 'ترسیل کے لیے، اگر ضرورت ہو۔'
+    companyName:
+      label: 'کمپنی کا نام'
+      help: 'وہ نام جس پر انوائس بنائی گئی ہے۔'
+    vatNumber:
+      label: 'VAT نمبر'
+      help: 'اپنے ملک کے پری فکس کے ساتھ۔ دوسرے EU ملک سے کاروبار کو VAT ادا نہیں کرنا پڑتا جب نمبر کی تصدیق ہو جائے۔'
+
+ja:
+  company: 法人向けの購入
+  company_help: プライベート購入のために空白のままです。
+  billing: 請求先住所
+  shipping: 配送先住所
+  shipping_help: 空白の場合、請求先住所に配送されます。
+  field:
+    email:
+      label: メールアドレス
+      help: 注文が確認される場所。
+    phone:
+      label: 電話番号
+      help: 必要に応じて配送のため。
+    companyName:
+      label: 会社名
+      help: 請求書の宛名。
+    vatNumber:
+      label: VAT番号
+      help: 国のプレフィックス付き。他のEU諸国の事業者は、番号が確認されるとVATを支払いません。
+
+ko:
+  company: '회사를 위한 구매'
+  company_help: '개인 구매를 위한 경우 비워 두세요.'
+  billing: '청구지 주소'
+  shipping: '배송지 주소'
+  shipping_help: '비워 두면 청구지 주소로 배송됩니다.'
+  field:
+    email:
+      label: 이메일
+      help: '주문이 확인되는 곳입니다.'
+    phone:
+      label: 전화
+      help: '배송을 위해 필요할 경우입니다.'
+    companyName:
+      label: '회사 이름'
+      help: '청구서가 작성되는 이름입니다.'
+    vatNumber:
+      label: '부가가치세 번호'
+      help: '국가 접두어와 함께. 다른 EU 국가의 사업체는 번호가 확인되면 부가가치세를 지불하지 않습니다.'
+
+bn:
+  company: 'একটি কোম্পানির জন্য ক্রয়'
+  company_help: 'ব্যক্তিগত ক্রয়ের জন্য ফাঁকা রাখা হয়েছে।'
+  billing: 'বিলিং ঠিকানা'
+  shipping: 'শিপিং ঠিকানা'
+  shipping_help: 'ফাঁকা রাখা হলে, এটি বিলিং ঠিকানায় পাঠানো হবে।'
+  field:
+    email:
+      label: ইমেইল
+      help: 'যেখানে অর্ডারটি নিশ্চিত করা হয়।'
+    phone:
+      label: ফোন
+      help: 'ডেলিভারির জন্য, প্রয়োজনে।'
+    companyName:
+      label: 'কোম্পানির নাম'
+      help: 'যার নামে ইনভয়েস তৈরি করা হয়।'
+    vatNumber:
+      label: 'ভ্যাট নম্বর'
+      help: 'এর দেশের প্রিফিক্স সহ। অন্য EU দেশের একটি ব্যবসা নিশ্চিত হওয়ার পর ভ্যাট প্রদান করে না।'
+
+th:
+  company: ซื้อสำหรับบริษัท
+  company_help: เว้นว่างไว้สำหรับการซื้อส่วนตัว.
+  billing: ที่อยู่สำหรับการเรียกเก็บเงิน
+  shipping: ที่อยู่สำหรับการจัดส่ง
+  shipping_help: 'ถ้าเว้นว่างไว้ จะจัดส่งไปที่อยู่สำหรับการเรียกเก็บเงิน.'
+  field:
+    email:
+      label: อีเมล
+      help: ที่ที่ยืนยันคำสั่งซื้อ.
+    phone:
+      label: โทรศัพท์
+      help: 'สำหรับการจัดส่ง ถ้าจำเป็น.'
+    companyName:
+      label: ชื่อบริษัท
+      help: ชื่อที่ออกใบแจ้งหนี้ให้.
+    vatNumber:
+      label: 'หมายเลข VAT'
+      help: 'พร้อมรหัสประเทศ หากเป็นธุรกิจจากประเทศอื่นใน EU จะไม่ต้องจ่าย VAT เมื่อหมายเลขได้รับการยืนยัน.'
+
+de:
+  company: 'Einkauf für ein Unternehmen'
+  company_help: 'Leer gelassen für einen privaten Kauf.'
+  billing: Rechnungsadresse
+  shipping: Lieferadresse
+  shipping_help: 'Leer gelassen, wird an die Rechnungsadresse versendet.'
+  field:
+    email:
+      label: E-Mail
+      help: 'Wohin die Bestellung bestätigt wird.'
+    phone:
+      label: Telefon
+      help: 'Für die Lieferung, falls notwendig.'
+    companyName:
+      label: Firmenname
+      help: 'Der Name, auf den die Rechnung ausgestellt ist.'
+    vatNumber:
+      label: USt-IdNr.
+      help: 'Mit der Länderkennung. Ein Unternehmen aus einem anderen EU-Land zahlt keine USt., sobald die Nummer bestätigt ist.'
+
+fi:
+  company: 'Osto yritykselle'
+  company_help: 'Jätetty tyhjäksi yksityisostosta.'
+  billing: Laskutusosoite
+  shipping: Toimitusosoite
+  shipping_help: 'Jätetty tyhjäksi, se toimitetaan laskutusosoitteeseen.'
+  field:
+    email:
+      label: Sähköposti
+      help: 'Missä tilaus vahvistetaan.'
+    phone:
+      label: Puhelin
+      help: 'Toimitusta varten, jos tarpeen.'
+    companyName:
+      label: 'Yrityksen nimi'
+      help: 'Nimi, johon lasku on osoitettu.'
+    vatNumber:
+      label: ALV-numero
+      help: 'Maan etuliitteellä. Toinen EU-maan yritys ei maksa ALV:tä, kun numero on vahvistettu.'
+
+ru:
+  company: 'Покупка для компании'
+  company_help: 'Оставлено пустым для частной покупки.'
+  billing: 'Платежный адрес'
+  shipping: 'Адрес доставки'
+  shipping_help: 'Оставлено пустым, отправка производится на платежный адрес.'
+  field:
+    email:
+      label: 'Электронная почта'
+      help: 'На неё подтверждается заказ.'
+    phone:
+      label: Телефон
+      help: 'Для доставки, если необходимо.'
+    companyName:
+      label: 'Название компании'
+      help: 'Имя, на которое оформлен счет.'
+    vatNumber:
+      label: 'Номер НДС'
+      help: 'С префиксом страны. Компания из другой страны ЕС не платит НДС после подтверждения номера.'
+
+pl:
+  company: 'Zakup dla firmy'
+  company_help: 'Pozostawione puste dla zakupu prywatnego.'
+  billing: 'Adres rozliczeniowy'
+  shipping: 'Adres dostawy'
+  shipping_help: 'Pozostawione puste, zostanie wysłane na adres rozliczeniowy.'
+  field:
+    email:
+      label: Email
+      help: 'Na ten adres zostanie potwierdzone zamówienie.'
+    phone:
+      label: Telefon
+      help: 'Do dostawy, jeśli to konieczne.'
+    companyName:
+      label: 'Nazwa firmy'
+      help: 'Nazwa, na którą wystawiana jest faktura.'
+    vatNumber:
+      label: 'Numer VAT'
+      help: 'Z prefiksem kraju. Firma z innego kraju UE nie płaci VAT po potwierdzeniu numeru.'
+
+es:
+  company: 'Compra para una empresa'
+  company_help: 'Dejado vacío para una compra privada.'
+  billing: 'Dirección de facturación'
+  shipping: 'Dirección de envío'
+  shipping_help: 'Si se deja vacío, se envía a la dirección de facturación.'
+  field:
+    email:
+      label: 'Correo electrónico'
+      help: 'Donde se confirma el pedido.'
+    phone:
+      label: Teléfono
+      help: 'Para la entrega, si es necesario.'
+    companyName:
+      label: 'Nombre de la empresa'
+      help: 'El nombre al que se emite la factura.'
+    vatNumber:
+      label: 'Número de IVA'
+      help: 'Con su prefijo de país. Una empresa de otro país de la UE no paga IVA una vez que se confirma el número.'
+
+it:
+  company: "Acquisto per un'azienda"
+  company_help: 'Lasciato vuoto per un acquisto privato.'
+  billing: 'Indirizzo di fatturazione'
+  shipping: 'Indirizzo di spedizione'
+  shipping_help: "Lasciato vuoto, sarà spedito all'indirizzo di fatturazione."
+  field:
+    email:
+      label: Email
+      help: "Dove viene confermato l'ordine."
+    phone:
+      label: Telefono
+      help: 'Per la consegna, se necessario.'
+    companyName:
+      label: "Nome dell'azienda"
+      help: 'Il nome a cui è intestata la fattura.'
+    vatNumber:
+      label: 'Numero di partita IVA'
+      help: "Con il suo prefisso nazionale. Un'azienda di un altro paese UE non paga IVA una volta confermato il numero."
+
+pt_BR:
+  company: 'Compra para uma empresa'
+  company_help: 'Deixado em branco para uma compra particular.'
+  billing: 'Endereço de faturamento'
+  shipping: 'Endereço de entrega'
+  shipping_help: 'Deixado em branco, será enviado para o endereço de faturamento.'
+  field:
+    email:
+      label: Email
+      help: 'Onde o pedido é confirmado.'
+    phone:
+      label: Telefone
+      help: 'Para a entrega, se necessário.'
+    companyName:
+      label: 'Nome da empresa'
+      help: 'O nome para o qual a fatura é emitida.'
+    vatNumber:
+      label: 'Número de IVA'
+      help: 'Com o prefixo do seu país. Uma empresa de outro país da UE não paga IVA uma vez que o número é confirmado.'
+
+tr:
+  company: 'Bir şirket için satın alma'
+  company_help: 'Özel bir satın alma için boş bırakılmıştır.'
+  billing: 'Fatura adresi'
+  shipping: 'Teslimat adresi'
+  shipping_help: 'Boş bırakıldığında, fatura adresine gönderilir.'
+  field:
+    email:
+      label: E-posta
+      help: 'Siparişin onaylandığı yer.'
+    phone:
+      label: Telefon
+      help: 'Gerekirse teslimat için.'
+    companyName:
+      label: 'Şirket adı'
+      help: 'Faturanın düzenlendiği isim.'
+    vatNumber:
+      label: 'KDV numarası'
+      help: 'Ülke ön eki ile birlikte. Başka bir AB ülkesinden bir işletme, numara onaylandığında KDV ödemez.'
+
+vi:
+  company: 'Mua cho một công ty'
+  company_help: 'Để trống cho một giao dịch cá nhân.'
+  billing: 'Địa chỉ thanh toán'
+  shipping: 'Địa chỉ giao hàng'
+  shipping_help: 'Để trống, hàng sẽ được gửi đến địa chỉ thanh toán.'
+  field:
+    email:
+      label: Email
+      help: 'Nơi đơn hàng được xác nhận.'
+    phone:
+      label: 'Điện thoại'
+      help: 'Để giao hàng, nếu cần.'
+    companyName:
+      label: 'Tên công ty'
+      help: 'Tên mà hóa đơn được lập cho.'
+    vatNumber:
+      label: 'Số VAT'
+      help: 'Kèm theo mã quốc gia. Một doanh nghiệp từ quốc gia EU khác không phải trả VAT khi số này được xác nhận.'
+
+id:
+  company: 'Pembelian untuk perusahaan'
+  company_help: 'Dibiarkan kosong untuk pembelian pribadi.'
+  billing: 'Alamat penagihan'
+  shipping: 'Alamat pengiriman'
+  shipping_help: 'Dibiarkan kosong, akan dikirim ke alamat penagihan.'
+  field:
+    email:
+      label: Email
+      help: 'Tempat konfirmasi pesanan.'
+    phone:
+      label: Telepon
+      help: 'Untuk pengiriman, jika diperlukan.'
+    companyName:
+      label: 'Nama perusahaan'
+      help: 'Nama yang tertera di faktur.'
+    vatNumber:
+      label: 'Nomor PPN'
+      help: 'Dengan awalan negara. Bisnis dari negara UE lain tidak membayar PPN setelah nomor dikonfirmasi.'
+
+nl:
+  company: 'Aankoop voor een bedrijf'
+  company_help: 'Laat leeg voor een privé-aankoop.'
+  billing: Factuuradres
+  shipping: Verzendadres
+  shipping_help: 'Laat leeg, het wordt verzonden naar het factuuradres.'
+  field:
+    email:
+      label: E-mail
+      help: 'Waar de bestelling wordt bevestigd.'
+    phone:
+      label: Telefoon
+      help: 'Voor de levering, indien nodig.'
+    companyName:
+      label: Bedrijfsnaam
+      help: 'De naam waar de factuur op is gesteld.'
+    vatNumber:
+      label: BTW-nummer
+      help: 'Met zijn landprefix. Een bedrijf uit een ander EU-land betaalt geen BTW zodra het nummer is bevestigd.'

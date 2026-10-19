@@ -33,3 +33,174 @@ ar:
     date: التاريخ
     items: ما
     status: الحالة
+
+hi:
+  page_title: 'मेरे ऑर्डर'
+  page_icon: 'ph:bold/receipt'
+  empty: 'अभी तक कोई ऑर्डर नहीं।'
+  column:
+    date: तारीख
+    items: क्या
+    status: स्थिति
+
+he:
+  page_title: 'ההזמנות שלי'
+  page_icon: 'ph:bold/receipt'
+  empty: 'עדיין אין הזמנות.'
+  column:
+    date: תאריך
+    items: מה
+    status: סטטוס
+
+fa:
+  page_title: 'سفارش‌های من'
+  page_icon: 'ph:bold/receipt'
+  empty: 'هنوز سفارشی وجود ندارد.'
+  column:
+    date: تاریخ
+    items: 'چه چیزی'
+    status: وضعیت
+
+ur:
+  page_title: 'میرے آرڈر'
+  page_icon: 'ph:bold/receipt'
+  empty: 'ابھی تک کوئی آرڈر نہیں ہے۔'
+  column:
+    date: تاریخ
+    items: کیا
+    status: حالت
+
+ja:
+  page_title: 私の注文
+  page_icon: 'ph:bold/receipt'
+  empty: まだ注文はありません。
+  column:
+    date: 日付
+    items: アイテム
+    status: ステータス
+
+ko:
+  page_title: '내 주문'
+  page_icon: 'ph:bold/receipt'
+  empty: '주문이 없습니다.'
+  column:
+    date: 날짜
+    items: 항목
+    status: 상태
+
+bn:
+  page_title: 'আমার অর্ডারগুলি'
+  page_icon: 'ph:bold/receipt'
+  empty: 'এখনো কোন অর্ডার নেই।'
+  column:
+    date: তারিখ
+    items: কি
+    status: অবস্থা
+
+th:
+  page_title: คำสั่งซื้อของฉัน
+  page_icon: 'ph:bold/receipt'
+  empty: ยังไม่มีคำสั่งซื้อ.
+  column:
+    date: วันที่
+    items: สิ่งที่
+    status: สถานะ
+
+de:
+  page_title: 'Meine Bestellungen'
+  page_icon: 'ph:bold/receipt'
+  empty: 'Noch keine Bestellung.'
+  column:
+    date: Datum
+    items: Was
+    status: Status
+
+fi:
+  page_title: Odotukseni
+  page_icon: 'ph:bold/receipt'
+  empty: 'Ei vielä tilauksia.'
+  column:
+    date: Päivämäärä
+    items: Mitä
+    status: Tila
+
+ru:
+  page_title: 'Мои заказы'
+  page_icon: 'ph:bold/receipt'
+  empty: 'Пока нет заказов.'
+  column:
+    date: Дата
+    items: Что
+    status: Статус
+
+pl:
+  page_title: 'Moje zamówienia'
+  page_icon: 'ph:bold/receipt'
+  empty: 'Brak zamówień.'
+  column:
+    date: Data
+    items: Co
+    status: Status
+
+es:
+  page_title: 'Mis pedidos'
+  page_icon: 'ph:bold/receipt'
+  empty: 'Aún no hay pedidos.'
+  column:
+    date: Fecha
+    items: Qué
+    status: Estado
+
+it:
+  page_title: 'I miei ordini'
+  page_icon: 'ph:bold/receipt'
+  empty: 'Nessun ordine ancora.'
+  column:
+    date: Data
+    items: Cosa
+    status: Stato
+
+pt_BR:
+  page_title: 'Meus pedidos'
+  page_icon: 'ph:bold/receipt'
+  empty: 'Nenhum pedido ainda.'
+  column:
+    date: Data
+    items: 'O que'
+    status: Status
+
+tr:
+  page_title: Siparişlerim
+  page_icon: 'ph:bold/receipt'
+  empty: 'Henüz sipariş yok.'
+  column:
+    date: Tarih
+    items: Neler
+    status: Durum
+
+vi:
+  page_title: 'Đơn hàng của tôi'
+  page_icon: 'ph:bold/receipt'
+  empty: 'Chưa có đơn hàng nào.'
+  column:
+    date: Ngày
+    items: 'Sản phẩm'
+    status: 'Trạng thái'
+
+id:
+  page_title: 'Pesanan saya'
+  page_icon: 'ph:bold/receipt'
+  empty: 'Belum ada pesanan.'
+  column:
+    date: Tanggal
+    items: Apa
+    status: Status
+
+nl:
+  page_title: 'Mijn bestellingen'
+  page_icon: 'ph:bold/receipt'
+  empty: 'Nog geen bestelling.'
+  column:
+    date: Datum
+    items: Wat
+    status: Status

@@ -17,3 +17,98 @@ ar:
   page_title: طلب
   title: 'تسجيل الدخول'
   lead: 'هذا العنوان لديه حساب. سجل الدخول للطلب باستخدامه - عربة التسوق تأتي معك.'
+
+hi:
+  page_title: ऑर्डर
+  title: 'साइन इन करें'
+  lead: 'इस पते के पास एक खाता है। इसे ऑर्डर करने के लिए साइन इन करें - कार्ट भी साथ आता है।'
+
+he:
+  page_title: הזמנה
+  title: התחברות
+  lead: 'לכתובת הזו יש חשבון. התחבר כדי להזמין עם זה — העגלת קניות מגיעה יחד.'
+
+fa:
+  page_title: سفارش
+  title: ورود
+  lead: 'این آدرس دارای یک حساب کاربری است. برای سفارش با آن وارد شوید — سبد خرید نیز همراه می‌آید.'
+
+ur:
+  page_title: آرڈر
+  title: 'لاگ ان کریں'
+  lead: 'اس پتے کے ساتھ ایک اکاؤنٹ ہے۔ آرڈر کرنے کے لیے لاگ ان کریں — کارٹ بھی ساتھ آتا ہے۔'
+
+ja:
+  page_title: 注文
+  title: サインイン
+  lead: 'このアドレスにはアカウントがあります。これで注文するにはサインインしてください — カートが一緒に来ます。'
+
+ko:
+  page_title: 주문
+  title: 로그인
+  lead: '이 주소는 계정을 가지고 있습니다. 주문하려면 로그인하세요 — 장바구니도 함께 제공됩니다.'
+
+bn:
+  page_title: অর্ডার
+  title: 'সাইন ইন'
+  lead: 'এই ঠিকানার একটি অ্যাকাউন্ট আছে। এর সাথে অর্ডার দিতে সাইন ইন করুন — কার্টও সাথে আসবে।'
+
+th:
+  page_title: การสั่งซื้อ
+  title: เข้าสู่ระบบ
+  lead: 'ที่อยู่นี้มีบัญชีผู้ใช้ เข้าสู่ระบบเพื่อสั่งซื้อโดยใช้ที่อยู่นี้ — ตะกร้าสินค้าจะถูกนำมาด้วย.'
+
+de:
+  page_title: Bestellung
+  title: Anmelden
+  lead: 'Diese Adresse hat ein Konto. Melden Sie sich an, um damit zu bestellen – der Warenkorb kommt mit.'
+
+fi:
+  page_title: Tilaus
+  title: 'Kirjaudu sisään'
+  lead: 'Tällä osoitteella on tili. Kirjaudu sisään tilataksesi sen kanssa — ostoskori tulee mukana.'
+
+ru:
+  page_title: Заказ
+  title: Войти
+  lead: 'У этого адреса есть аккаунт. Войдите, чтобы сделать заказ — корзина подгрузится.'
+
+pl:
+  page_title: Zamówienie
+  title: 'Zaloguj się'
+  lead: 'Ten adres ma konto. Zaloguj się, aby zamówić — koszyk zostanie dołączony.'
+
+es:
+  page_title: Pedido
+  title: 'Iniciar sesión'
+  lead: 'Esta dirección tiene una cuenta. Inicia sesión para realizar el pedido con ella: el carrito viene incluido.'
+
+it:
+  page_title: Ordine
+  title: Accedi
+  lead: 'Questo indirizzo ha un account. Accedi per ordinare con esso — il carrello verrà incluso.'
+
+pt_BR:
+  page_title: Pedido
+  title: Entrar
+  lead: 'Este endereço possui uma conta. Faça login para pedir com ele — o carrinho vem junto.'
+
+tr:
+  page_title: Sipariş
+  title: 'Giriş yap'
+  lead: 'Bu adresin bir hesabı var. Sipariş vermek için giriş yapın — sepet de burada.'
+
+vi:
+  page_title: 'Đặt hàng'
+  title: 'Đăng nhập'
+  lead: 'Địa chỉ này đã có tài khoản. Đăng nhập để đặt hàng với nó — giỏ hàng sẽ được thêm vào.'
+
+id:
+  page_title: Pesanan
+  title: Masuk
+  lead: 'Alamat ini memiliki akun. Masuk untuk memesan dengan alamat ini — keranjang belanja sudah tersedia.'
+
+nl:
+  page_title: Bestelling
+  title: Inloggen
+  lead: 'Dit adres heeft een account. Log in om ermee te bestellen — de winkelwagentje gaat mee.'

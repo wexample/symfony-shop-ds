@@ -29,3 +29,155 @@ ar:
   waiting:
     title: 'عملية الدفع لهذه العربة جارية'
     body: 'يتم الاحتفاظ بمخزونها أثناء التنفيذ. تغيير العربة يلغي الدفع.'
+
+hi:
+  page_title: कार्ट
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'कार्ट बदलें'
+  waiting:
+    title: 'इस कार्ट का भुगतान चल रहा है'
+    body: 'इसका स्टॉक तब तक रोका गया है जब तक यह चल रहा है। कार्ट बदलने से भुगतान रद्द हो जाता है।'
+
+he:
+  page_title: עגלה
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'שנה את העגלה'
+  waiting:
+    title: 'תשלום עבור עגלה זו בתהליך'
+    body: 'המלאי שלה מוחזק בזמן שהעסקה מתבצעת. שינוי העגלה מבטל את התשלום.'
+
+fa:
+  page_title: 'سبد خرید'
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'تغییر سبد خرید'
+  waiting:
+    title: 'یک پرداخت برای این سبد در حال انجام است'
+    body: 'موجودی آن در حین پردازش نگهداری می‌شود. تغییر سبد خرید، پرداخت را لغو می‌کند.'
+
+ur:
+  page_title: کارٹ
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'کارٹ تبدیل کریں'
+  waiting:
+    title: 'اس کارٹ کی ادائیگی جاری ہے'
+    body: 'اس کا اسٹاک محفوظ ہے جب تک کہ یہ جاری ہے۔ کارٹ تبدیل کرنے سے ادائیگی ختم ہو جاتی ہے۔'
+
+ja:
+  page_title: カート
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: カートを変更
+  waiting:
+    title: このカートの支払いが進行中です
+    body: 処理中は在庫が保持されます。カートを変更すると支払いがキャンセルされます。
+
+ko:
+  page_title: 장바구니
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: '장바구니 변경'
+  waiting:
+    title: '이 장바구니의 결제가 진행 중입니다'
+    body: '결제가 진행되는 동안 재고가 보류됩니다. 장바구니를 변경하면 결제가 취소됩니다.'
+
+bn:
+  page_title: কার্ট
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'কার্ট পরিবর্তন করুন'
+  waiting:
+    title: 'এই কার্টের একটি পেমেন্ট চলমান'
+    body: 'এটি চলাকালীন স্টক ধারণ করা হয়েছে। কার্ট পরিবর্তন করালে পেমেন্ট বাতিল হয়ে যাবে।'
+
+th:
+  page_title: ตะกร้า
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: เปลี่ยนตะกร้า
+  waiting:
+    title: การชำระเงินสำหรับตะกร้านี้กำลังดำเนินการอยู่
+    body: 'สินค้าจะถูกกันไว้ระหว่างที่กำลังดำเนินการ การเปลี่ยนตะกร้าจะทำให้การชำระเงินถูกยกเลิก.'
+
+de:
+  page_title: Warenkorb
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'Warenkorb ändern'
+  waiting:
+    title: 'Eine Zahlung für diesen Warenkorb ist im Gange'
+    body: 'Der Bestand wird währenddessen reserviert. Den Warenkorb zu ändern gibt die Zahlung auf.'
+
+fi:
+  page_title: Ostoskori
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'Muuta ostoskoria'
+  waiting:
+    title: 'Tämän ostoskorin maksua käsitellään'
+    body: 'Sen varasto pidetään varattuna maksuprosessin ajan. Ostoskorin muuttaminen peruuttaa maksun.'
+
+ru:
+  page_title: Корзина
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'Изменить корзину'
+  waiting:
+    title: 'Оплата этой корзины в процессе'
+    body: 'Запас удерживается, пока она выполняется. Изменение корзины отменяет оплату.'
+
+pl:
+  page_title: Koszyk
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'Zmień koszyk'
+  waiting:
+    title: 'Płatność za ten koszyk jest w toku'
+    body: 'Jego stan jest zarezerwowany, podczas gdy trwa. Zmiana koszyka rezygnuje z płatności.'
+
+es:
+  page_title: Carrito
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'Cambiar el carrito'
+  waiting:
+    title: 'Un pago de este carrito está en proceso'
+    body: 'Su stock está reservado mientras se procesa. Cambiar el carrito cancela el pago.'
+
+it:
+  page_title: Carrello
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'Cambia il carrello'
+  waiting:
+    title: 'Un pagamento di questo carrello è in corso'
+    body: 'Il suo stock è riservato mentre è in esecuzione. Cambiare il carrello annulla il pagamento.'
+
+pt_BR:
+  page_title: Carrinho
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'Alterar o carrinho'
+  waiting:
+    title: 'Um pagamento deste carrinho está em andamento'
+    body: 'Seu estoque está reservado enquanto isso ocorre. Alterar o carrinho cancela o pagamento.'
+
+tr:
+  page_title: Sepet
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'Sepeti değiştir'
+  waiting:
+    title: 'Bu sepet için bir ödeme devam ediyor'
+    body: 'Ödeme süresince stoğu tutulur. Sepeti değiştirmek ödemeyi iptal eder.'
+
+vi:
+  page_title: 'Giỏ hàng'
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'Thay đổi giỏ hàng'
+  waiting:
+    title: 'Một khoản thanh toán cho giỏ hàng này đang được thực hiện'
+    body: 'Hàng tồn kho của nó đang được giữ trong khi thực hiện. Thay đổi giỏ hàng sẽ hủy bỏ khoản thanh toán.'
+
+id:
+  page_title: Keranjang
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'Ubah keranjang'
+  waiting:
+    title: 'Pembayaran untuk keranjang ini sedang berlangsung'
+    body: 'Stoknya ditahan selama proses berlangsung. Mengubah keranjang akan membatalkan pembayaran.'
+
+nl:
+  page_title: Winkelwagentje
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'Wijzig het winkelwagentje'
+  waiting:
+    title: 'Een betaling van dit winkelwagentje is in behandeling'
+    body: 'De voorraad is gereserveerd terwijl het loopt. Het wijzigen van het winkelwagentje annuleert de betaling.'

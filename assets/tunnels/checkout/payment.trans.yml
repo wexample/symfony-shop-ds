@@ -17,3 +17,98 @@ ar:
   page_title: طلب
   title: دفع
   lead: 'طريقة الدفع. يتم الاحتفاظ بالمخزون لك أثناء الدفع.'
+
+hi:
+  page_title: ऑर्डर
+  title: भुगतान
+  lead: 'आप कैसे भुगतान करते हैं। स्टॉक आपके लिए तब तक रखा जाता है जब तक आप भुगतान नहीं करते।'
+
+he:
+  page_title: הזמנה
+  title: תשלום
+  lead: 'איך אתה משלם. המלאי נשמר עבורך בזמן שאתה משלם.'
+
+fa:
+  page_title: سفارش
+  title: پرداخت
+  lead: 'روش پرداخت شما. کالا برای شما در حین پرداخت نگهداری می‌شود.'
+
+ur:
+  page_title: آرڈر
+  title: ادائیگی
+  lead: 'آپ کس طرح ادائیگی کرتے ہیں۔ اسٹاک آپ کے لیے محفوظ کیا جاتا ہے جب تک کہ آپ ادائیگی نہ کریں۔'
+
+ja:
+  page_title: 注文
+  title: 支払い
+  lead: 支払い方法。支払い中は在庫が確保されています。
+
+ko:
+  page_title: 주문
+  title: 결제
+  lead: '결제 방법. 결제하는 동안 재고가 보유됩니다.'
+
+bn:
+  page_title: অর্ডার
+  title: পেমেন্ট
+  lead: 'আপনি কীভাবে পেমেন্ট করবেন। আপনার পেমেন্ট করার সময় স্টকটি আপনার জন্য ধরে রাখা হয়।'
+
+th:
+  page_title: คำสั่งซื้อ
+  title: การชำระเงิน
+  lead: 'วิธีการชำระเงิน สินค้าจะถูกสงวนไว้ให้คุณขณะที่คุณชำระเงิน.'
+
+de:
+  page_title: Bestellung
+  title: Zahlung
+  lead: 'Wie Sie bezahlen. Der Bestand wird für Sie reserviert, während Sie bezahlen.'
+
+fi:
+  page_title: Tilaus
+  title: Maksu
+  lead: 'Maksutapa. Tuotteet pidetään varattuna sinulle maksamisen ajan.'
+
+ru:
+  page_title: Заказ
+  title: Оплата
+  lead: 'Способ оплаты. Товар резервируется за вами, пока вы производите оплату.'
+
+pl:
+  page_title: Zamówienie
+  title: Płatność
+  lead: 'Jak płacisz. Towar jest zarezerwowany dla Ciebie, podczas gdy dokonujesz płatności.'
+
+es:
+  page_title: Pedido
+  title: Pago
+  lead: 'Cómo pagas. El stock se reserva para ti mientras pagas.'
+
+it:
+  page_title: Ordine
+  title: Pagamento
+  lead: 'Come paghi. La merce è riservata per te mentre effettui il pagamento.'
+
+pt_BR:
+  page_title: Pedido
+  title: Pagamento
+  lead: 'Como você paga. O estoque é reservado para você enquanto você paga.'
+
+tr:
+  page_title: Sipariş
+  title: Ödeme
+  lead: 'Ödeme yönteminiz. Ödeme yaparken stok sizin için ayrılır.'
+
+vi:
+  page_title: 'Đặt hàng'
+  title: 'Thanh toán'
+  lead: 'Cách bạn thanh toán. Hàng hóa sẽ được giữ cho bạn trong khi bạn thanh toán.'
+
+id:
+  page_title: Pesanan
+  title: Pembayaran
+  lead: 'Cara Anda membayar. Stok akan ditahan untuk Anda sementara Anda melakukan pembayaran.'
+
+nl:
+  page_title: Bestelling
+  title: Betaling
+  lead: 'Hoe je betaalt. De voorraad wordt voor je gereserveerd terwijl je betaalt.'

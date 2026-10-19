@@ -41,3 +41,212 @@ ar:
     date: التاريخ
     billing: 'عنوان الفوترة'
     shipping: 'عنوان الشحن'
+
+hi:
+  page_title: आदेश
+  page_icon: 'ph:bold/receipt'
+  payment: भुगतान
+  receipt: रसीद
+  field:
+    status: स्थिति
+    date: तारीख
+    billing: 'बिलिंग पता'
+    shipping: 'शिपिंग पता'
+
+he:
+  page_title: הזמנה
+  page_icon: 'ph:bold/receipt'
+  payment: התשלום
+  receipt: הקבלה
+  field:
+    status: סטטוס
+    date: תאריך
+    billing: 'כתובת חיוב'
+    shipping: 'כתובת משלוח'
+
+fa:
+  page_title: سفارش
+  page_icon: 'ph:bold/receipt'
+  payment: پرداخت
+  receipt: فاکتور
+  field:
+    status: وضعیت
+    date: تاریخ
+    billing: 'آدرس صورتحساب'
+    shipping: 'آدرس حمل و نقل'
+
+ur:
+  page_title: آرڈر
+  page_icon: 'ph:bold/receipt'
+  payment: ادائیگی
+  receipt: ' رسید'
+  field:
+    status: حالت
+    date: تاریخ
+    billing: 'بلنگ پتہ'
+    shipping: 'شپنگ پتہ'
+
+ja:
+  page_title: 注文
+  page_icon: 'ph:bold/receipt'
+  payment: 支払い
+  receipt: 領収書
+  field:
+    status: ステータス
+    date: 日付
+    billing: 請求先住所
+    shipping: 配送先住所
+
+ko:
+  page_title: 주문
+  page_icon: 'ph:bold/receipt'
+  payment: 결제
+  receipt: 영수증
+  field:
+    status: 상태
+    date: 날짜
+    billing: '청구지 주소'
+    shipping: '배송지 주소'
+
+bn:
+  page_title: অর্ডার
+  page_icon: 'ph:bold/receipt'
+  payment: পেমেন্ট
+  receipt: রসিদ
+  field:
+    status: স্থিতি
+    date: তারিখ
+    billing: 'বিলিং ঠিকানা'
+    shipping: 'শিপিং ঠিকানা'
+
+th:
+  page_title: คำสั่งซื้อ
+  page_icon: 'ph:bold/receipt'
+  payment: การชำระเงิน
+  receipt: ใบเสร็จ
+  field:
+    status: สถานะ
+    date: วันที่
+    billing: ที่อยู่สำหรับการเรียกเก็บเงิน
+    shipping: ที่อยู่สำหรับการจัดส่ง
+
+de:
+  page_title: Bestellung
+  page_icon: 'ph:bold/receipt'
+  payment: 'Die Zahlung'
+  receipt: 'Die Quittung'
+  field:
+    status: Status
+    date: Datum
+    billing: Rechnungsadresse
+    shipping: Lieferadresse
+
+fi:
+  page_title: 'Tilauksen tekeminen'
+  page_icon: 'ph:bold/receipt'
+  payment: Maksu
+  receipt: Kuitti
+  field:
+    status: Tila
+    date: Päivämäärä
+    billing: Laskutusosoite
+    shipping: Toimitusosoite
+
+ru:
+  page_title: Заказ
+  page_icon: 'ph:bold/receipt'
+  payment: Оплата
+  receipt: Чек
+  field:
+    status: Статус
+    date: Дата
+    billing: 'Платежный адрес'
+    shipping: 'Адрес доставки'
+
+pl:
+  page_title: Zamówienie
+  page_icon: 'ph:bold/receipt'
+  payment: Płatność
+  receipt: Paragon
+  field:
+    status: Status
+    date: Data
+    billing: 'Adres rozliczeniowy'
+    shipping: 'Adres dostawy'
+
+es:
+  page_title: Pedido
+  page_icon: 'ph:bold/receipt'
+  payment: 'El pago'
+  receipt: 'El recibo'
+  field:
+    status: Estado
+    date: Fecha
+    billing: 'Dirección de facturación'
+    shipping: 'Dirección de envío'
+
+it:
+  page_title: Ordine
+  page_icon: 'ph:bold/receipt'
+  payment: 'Il pagamento'
+  receipt: 'La ricevuta'
+  field:
+    status: Stato
+    date: Data
+    billing: 'Indirizzo di fatturazione'
+    shipping: 'Indirizzo di spedizione'
+
+pt_BR:
+  page_title: Pedido
+  page_icon: 'ph:bold/receipt'
+  payment: 'O pagamento'
+  receipt: 'O recibo'
+  field:
+    status: Status
+    date: Data
+    billing: 'Endereço de cobrança'
+    shipping: 'Endereço de entrega'
+
+tr:
+  page_title: Sipariş
+  page_icon: 'ph:bold/receipt'
+  payment: Ödeme
+  receipt: Fiş
+  field:
+    status: Durum
+    date: Tarih
+    billing: 'Fatura adresi'
+    shipping: 'Teslimat adresi'
+
+vi:
+  page_title: 'Đơn hàng'
+  page_icon: 'ph:bold/receipt'
+  payment: 'Thanh toán'
+  receipt: 'Biên nhận'
+  field:
+    status: 'Trạng thái'
+    date: Ngày
+    billing: 'Địa chỉ thanh toán'
+    shipping: 'Địa chỉ giao hàng'
+
+id:
+  page_title: Pesanan
+  page_icon: 'ph:bold/receipt'
+  payment: Pembayaran
+  receipt: Struk
+  field:
+    status: Status
+    date: Tanggal
+    billing: 'Alamat penagihan'
+    shipping: 'Alamat pengiriman'
+
+nl:
+  page_title: Bestelling
+  page_icon: 'ph:bold/receipt'
+  payment: 'De betaling'
+  receipt: 'De ontvangstbewijs'
+  field:
+    status: Status
+    date: Datum
+    billing: Factuuradres
+    shipping: Verzendadres

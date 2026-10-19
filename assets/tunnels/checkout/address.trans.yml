@@ -17,3 +17,98 @@ ar:
   page_title: الطلب
   title: العناوين
   lead: 'مكان الفوترة، وأين يتم الشحن عندما يتم شحن شيء ما.'
+
+hi:
+  page_title: ऑर्डर
+  title: पते
+  lead: 'जहां बिल भेजना है, और जब कुछ भेजा जाता है तो कहां भेजना है।'
+
+he:
+  page_title: הזמנה
+  title: כתובות
+  lead: 'איפה לחייב, ואיפה לשלוח כשמשהו נשלח.'
+
+fa:
+  page_title: سفارش
+  title: آدرس‌ها
+  lead: 'کجا صورتحساب ارسال شود و کجا کالا ارسال گردد.'
+
+ur:
+  page_title: آرڈر
+  title: پتے
+  lead: 'بلنگ کہاں کی جائے، اور جب کچھ بھیجا جائے تو کہاں بھیجنا ہے۔'
+
+ja:
+  page_title: 注文
+  title: 住所
+  lead: 請求先と発送先を指定してください。
+
+ko:
+  page_title: 주문
+  title: 주소
+  lead: '청구할 곳과 배송할 곳을 선택하세요.'
+
+bn:
+  page_title: অর্ডার
+  title: ঠিকানা
+  lead: 'বিল দেওয়ার স্থান এবং কিছু পাঠানোর সময় কোথায় পাঠানো হবে।'
+
+th:
+  page_title: คำสั่งซื้อ
+  title: ที่อยู่
+  lead: 'ที่เรียกเก็บเงิน และที่จัดส่งเมื่อมีการจัดส่งสินค้า'
+
+de:
+  page_title: Bestellung
+  title: Adressen
+  lead: 'Wo die Rechnung gesendet wird und wo etwas hingeschickt werden soll.'
+
+fi:
+  page_title: Tilaa
+  title: Osoitteet
+  lead: 'Missä laskutetaan ja minne lähetetään, kun jokin lähetetään.'
+
+ru:
+  page_title: Заказ
+  title: Адреса
+  lead: 'Куда выставить счет и куда отправить, когда что-то отправляется.'
+
+pl:
+  page_title: Zamówienie
+  title: Adresy
+  lead: 'Gdzie wystawić rachunek i gdzie dostarczyć, gdy coś jest wysyłane.'
+
+es:
+  page_title: Pedido
+  title: Direcciones
+  lead: 'Dónde facturar y dónde enviar cuando algo es enviado.'
+
+it:
+  page_title: Ordine
+  title: Indirizzi
+  lead: 'Dove fatturare e dove spedire quando qualcosa viene spedito.'
+
+pt_BR:
+  page_title: Pedido
+  title: Endereços
+  lead: 'Onde cobrar e onde enviar quando algo for enviado.'
+
+tr:
+  page_title: Sipariş
+  title: Adresler
+  lead: 'Fatura adresi ve gönderim adresi, bir şey gönderildiğinde nereye gönderileceği.'
+
+vi:
+  page_title: 'Đặt hàng'
+  title: 'Địa chỉ'
+  lead: 'Nơi thanh toán và nơi giao hàng khi có hàng được gửi đi.'
+
+id:
+  page_title: Pesanan
+  title: Alamat
+  lead: 'Tempat untuk penagihan, dan tempat untuk pengiriman ketika sesuatu dikirim.'
+
+nl:
+  page_title: Bestelling
+  title: Adressen
+  lead: 'Waar te factureren en waar te verzenden wanneer iets wordt verzonden.'

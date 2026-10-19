@@ -97,3 +97,478 @@ ar:
     price: السعر
   error:
     out_of_stock: 'هناك شيء في العربة لم يعد متوفرًا في المخزون. عدل العربة وحاول مرة أخرى.'
+
+hi:
+  title: कार्ट
+  orders: 'मेरे ऑर्डर'
+  status:
+    paid: 'भुगतान किया गया'
+    fulfilled: 'डिलीवर किया गया'
+    waiting_payment: 'भुगतान हो रहा है'
+    awaiting_validation: 'आपके भुगतान की प्रतीक्षा है'
+    canceled: 'रद्द किया गया'
+  sold_out: 'बिक चुका है'
+  left: '%count% बचा हुआ'
+  unlimited: उपलब्ध
+  total: कुल
+  empty: 'आपकी कार्ट खाली है।'
+  shop: 'दुकान पर जाएं'
+  button:
+    pay: 'भुगतान करें'
+    order: 'ऑर्डर करें'
+  column:
+    product: उत्पाद
+    quantity: मात्रा
+    price: कीमत
+  error:
+    out_of_stock: 'कार्ट में कुछ भी अब स्टॉक में नहीं है। कार्ट बदलें और फिर से प्रयास करें।'
+
+he:
+  title: 'עגלת קניות'
+  orders: 'ההזמנות שלי'
+  status:
+    paid: שולם
+    fulfilled: נמסר
+    waiting_payment: 'בתהליך תשלום'
+    awaiting_validation: 'ממתין לתשלום שלך'
+    canceled: בוטל
+  sold_out: 'אזל מהמלאי'
+  left: '%count% נותרו'
+  unlimited: זמין
+  total: 'סך הכל'
+  empty: 'העגלת קניות שלך ריקה.'
+  shop: 'להיכנס לחנות'
+  button:
+    pay: שלם
+    order: הזמן
+  column:
+    product: מוצר
+    quantity: כמות
+    price: מחיר
+  error:
+    out_of_stock: 'משהו בעגלה כבר לא במלאי. שנה את העגלה ונסה שוב.'
+
+fa:
+  title: 'سبد خرید'
+  orders: 'سفارشات من'
+  status:
+    paid: 'پرداخت شده'
+    fulfilled: 'تحویل شده'
+    waiting_payment: 'در حال پرداخت'
+    awaiting_validation: 'منتظر پرداخت شما'
+    canceled: 'لغو شده'
+  sold_out: 'تمام شده'
+  left: '%count% باقی مانده'
+  unlimited: 'در دسترس'
+  total: مجموع
+  empty: 'سبد خرید شما خالی است.'
+  shop: 'به فروشگاه بروید'
+  button:
+    pay: پرداخت
+    order: سفارش
+  column:
+    product: محصول
+    quantity: تعداد
+    price: قیمت
+  error:
+    out_of_stock: 'چیزی در سبد خرید دیگر در دسترس نیست. سبد خرید را تغییر دهید و دوباره امتحان کنید.'
+
+ur:
+  title: کارٹ
+  orders: 'میرے آرڈر'
+  status:
+    paid: 'ادا شدہ'
+    fulfilled: 'ترسیل کر دی گئی'
+    waiting_payment: 'ادائیگی ہو رہی ہے'
+    awaiting_validation: 'آپ کی ادائیگی کا انتظار ہے'
+    canceled: منسوخ
+  sold_out: 'تمام فروخت ہو چکا ہے'
+  left: '%count% باقی ہیں'
+  unlimited: دستیاب
+  total: کل
+  empty: 'آپ کا کارٹ خالی ہے۔'
+  shop: 'دکان پر جائیں'
+  button:
+    pay: 'ادائیگی کریں'
+    order: 'آرڈر کریں'
+  column:
+    product: پروڈکٹ
+    quantity: مقدار
+    price: قیمت
+  error:
+    out_of_stock: 'کارٹ میں کچھ چیزیں اب دستیاب نہیں ہیں۔ کارٹ میں تبدیلی کریں اور دوبارہ کوشش کریں۔'
+
+ja:
+  title: カート
+  orders: 私の注文
+  status:
+    paid: 支払い済み
+    fulfilled: 配達済み
+    waiting_payment: 支払い中
+    awaiting_validation: お支払いをお待ちしています
+    canceled: キャンセル済み
+  sold_out: 売り切れ
+  left: '%count% 個の残り'
+  unlimited: 在庫あり
+  total: 合計
+  empty: カートは空です。
+  shop: ショップに行く
+  button:
+    pay: 支払い
+    order: 注文
+  column:
+    product: 商品
+    quantity: 数量
+    price: 価格
+  error:
+    out_of_stock: カート内の何かが在庫切れです。カートを変更して再試行してください。
+
+ko:
+  title: 장바구니
+  orders: '내 주문'
+  status:
+    paid: '결제 완료'
+    fulfilled: '배송 완료'
+    waiting_payment: '결제 중'
+    awaiting_validation: '결제를 기다리는 중'
+    canceled: 취소됨
+  sold_out: 품절
+  left: '%count% 개 남음'
+  unlimited: '구매 가능'
+  total: 합계
+  empty: '장바구니가 비어 있습니다.'
+  shop: '상점으로 가기'
+  button:
+    pay: 결제
+    order: 주문
+  column:
+    product: 상품
+    quantity: 수량
+    price: 가격
+  error:
+    out_of_stock: '장바구니의 일부 상품이 더 이상 재고가 없습니다. 장바구니를 변경하고 다시 시도하세요.'
+
+bn:
+  title: কার্ট
+  orders: 'আমার অর্ডার'
+  status:
+    paid: 'পেমেন্ট হয়েছে'
+    fulfilled: 'ডেলিভারি হয়েছে'
+    waiting_payment: 'পেমেন্ট প্রক্রিয়াধীন'
+    awaiting_validation: 'আপনার পেমেন্টের প্রতীক্ষায়'
+    canceled: 'বাতিল করা হয়েছে'
+  sold_out: 'স্টকে নেই'
+  left: '%count% বাকি আছে'
+  unlimited: উপলব্ধ
+  total: মোট
+  empty: 'আপনার কার্ট খালি।'
+  shop: 'দোকানে যান'
+  button:
+    pay: 'পেমেন্ট করুন'
+    order: 'অর্ডার করুন'
+  column:
+    product: পণ্য
+    quantity: পরিমাণ
+    price: মূল্য
+  error:
+    out_of_stock: 'কার্টে কিছু পণ্য আর স্টকে নেই। কার্ট পরিবর্তন করুন এবং আবার চেষ্টা করুন।'
+
+th:
+  title: รถเข็น
+  orders: คำสั่งซื้อของฉัน
+  status:
+    paid: ชำระเงินแล้ว
+    fulfilled: จัดส่งแล้ว
+    waiting_payment: กำลังชำระเงิน
+    awaiting_validation: รอการชำระเงินของคุณ
+    canceled: ยกเลิก
+  sold_out: สินค้าหมด
+  left: '%count% ชิ้นที่เหลือ'
+  unlimited: มีให้บริการ
+  total: รวม
+  empty: รถเข็นของคุณว่างเปล่า
+  shop: ไปที่ร้าน
+  button:
+    pay: ชำระเงิน
+    order: สั่งซื้อ
+  column:
+    product: สินค้า
+    quantity: จำนวน
+    price: ราคา
+  error:
+    out_of_stock: 'มีบางอย่างในรถเข็นที่ไม่สามารถให้บริการได้อีกต่อไป กรุณาเปลี่ยนแปลงรถเข็นและลองใหม่อีกครั้ง.'
+
+de:
+  title: Warenkorb
+  orders: 'Meine Bestellungen'
+  status:
+    paid: Bezahlt
+    fulfilled: Geliefert
+    waiting_payment: 'Wird bezahlt'
+    awaiting_validation: 'Warten auf Ihre Zahlung'
+    canceled: Storniert
+  sold_out: Ausverkauft
+  left: '%count% übrig'
+  unlimited: Verfügbar
+  total: Gesamt
+  empty: 'Ihr Warenkorb ist leer.'
+  shop: 'Zum Shop gehen'
+  button:
+    pay: Zahlen
+    order: Bestellen
+  column:
+    product: Produkt
+    quantity: Menge
+    price: Preis
+  error:
+    out_of_stock: 'Etwas im Warenkorb ist nicht mehr auf Lager. Ändern Sie den Warenkorb und versuchen Sie es erneut.'
+
+fi:
+  title: Ostoskori
+  orders: Omani
+  status:
+    paid: Maksettu
+    fulfilled: Toimitettu
+    waiting_payment: 'Odotetaan maksua'
+    awaiting_validation: 'Odotetaan maksua'
+    canceled: Peruttu
+  sold_out: Loppuunmyyty
+  left: '%count% jäljellä'
+  unlimited: Saatavilla
+  total: Yhteensä
+  empty: 'Ostoskorisi on tyhjentynyt.'
+  shop: 'Siirry kauppaan'
+  button:
+    pay: Maksa
+    order: Tilaa
+  column:
+    product: Tuote
+    quantity: Määrä
+    price: Hinta
+  error:
+    out_of_stock: 'Ostoskorissa on jotain, mitä ei ole enää varastossa. Muokkaa ostoskoria ja yritä uudelleen.'
+
+ru:
+  title: Корзина
+  orders: 'Мои заказы'
+  status:
+    paid: Оплачено
+    fulfilled: Доставлено
+    waiting_payment: 'Ожидает оплаты'
+    awaiting_validation: 'Ожидает вашего платежа'
+    canceled: Отменено
+  sold_out: Распродано
+  left: '%count% осталось'
+  unlimited: 'В наличии'
+  total: Итого
+  empty: 'Ваша корзина пуста.'
+  shop: 'Перейти в магазин'
+  button:
+    pay: Оплатить
+    order: Заказать
+  column:
+    product: Товар
+    quantity: Количество
+    price: Цена
+  error:
+    out_of_stock: 'Что-то в корзине больше не в наличии. Измените корзину и попробуйте снова.'
+
+pl:
+  title: Koszyk
+  orders: 'Moje zamówienia'
+  status:
+    paid: Opłacone
+    fulfilled: Dostarczone
+    waiting_payment: 'W trakcie płatności'
+    awaiting_validation: 'Oczekuje na Twoją płatność'
+    canceled: Anulowane
+  sold_out: Wyprzedane
+  left: '%count% pozostało'
+  unlimited: Dostępne
+  total: Razem
+  empty: 'Twój koszyk jest pusty.'
+  shop: 'Przejdź do sklepu'
+  button:
+    pay: Zapłać
+    order: Zamów
+  column:
+    product: Produkt
+    quantity: Ilość
+    price: Cena
+  error:
+    out_of_stock: 'Coś w koszyku nie jest już dostępne. Zmień koszyk i spróbuj ponownie.'
+
+es:
+  title: Carrito
+  orders: 'Mis pedidos'
+  status:
+    paid: Pagado
+    fulfilled: Entregado
+    waiting_payment: 'Siendo pagado'
+    awaiting_validation: 'Esperando tu pago'
+    canceled: Cancelado
+  sold_out: Agotado
+  left: '%count% restantes'
+  unlimited: Disponible
+  total: Total
+  empty: 'Tu carrito está vacío.'
+  shop: 'Ir a la tienda'
+  button:
+    pay: Pagar
+    order: Pedir
+  column:
+    product: Producto
+    quantity: Cantidad
+    price: Precio
+  error:
+    out_of_stock: 'Algo en el carrito ya no está en stock. Cambia el carrito y prueba de nuevo.'
+
+it:
+  title: Carrello
+  orders: 'I miei ordini'
+  status:
+    paid: Pagato
+    fulfilled: Consegnato
+    waiting_payment: 'In attesa di pagamento'
+    awaiting_validation: 'In attesa del tuo pagamento'
+    canceled: Annullato
+  sold_out: Esaurito
+  left: '%count% rimasti'
+  unlimited: Disponibile
+  total: Totale
+  empty: 'Il tuo carrello è vuoto.'
+  shop: 'Vai al negozio'
+  button:
+    pay: Paga
+    order: Ordina
+  column:
+    product: Prodotto
+    quantity: Quantità
+    price: Prezzo
+  error:
+    out_of_stock: 'Qualcosa nel carrello non è più disponibile. Modifica il carrello e riprova.'
+
+pt_BR:
+  title: Carrinho
+  orders: 'Meus pedidos'
+  status:
+    paid: Pago
+    fulfilled: Entregue
+    waiting_payment: 'Aguardando pagamento'
+    awaiting_validation: 'Aguardando seu pagamento'
+    canceled: Cancelado
+  sold_out: Esgotado
+  left: '%count% restante'
+  unlimited: Disponível
+  total: Total
+  empty: 'Seu carrinho está vazio.'
+  shop: 'Ir para a loja'
+  button:
+    pay: Pagar
+    order: Pedido
+  column:
+    product: Produto
+    quantity: Quantidade
+    price: Preço
+  error:
+    out_of_stock: 'Algo no carrinho não está mais em estoque. Altere o carrinho e tente novamente.'
+
+tr:
+  title: Sepet
+  orders: Siparişlerim
+  status:
+    paid: Ödendi
+    fulfilled: 'Teslim edildi'
+    waiting_payment: 'Ödeme bekleniyor'
+    awaiting_validation: 'Ödemenizi bekliyoruz'
+    canceled: 'İptal edildi'
+  sold_out: Tükendi
+  left: '%count% kaldı'
+  unlimited: Mevcut
+  total: Toplam
+  empty: 'Sepetiniz boş.'
+  shop: "Dükkan'a git"
+  button:
+    pay: Öde
+    order: 'Sipariş ver'
+  column:
+    product: Ürün
+    quantity: Miktar
+    price: Fiyat
+  error:
+    out_of_stock: 'Sepetteki bir ürün artık stokta yok. Sepeti değiştirin ve tekrar deneyin.'
+
+vi:
+  title: 'Giỏ hàng'
+  orders: 'Đơn hàng của tôi'
+  status:
+    paid: 'Đã thanh toán'
+    fulfilled: 'Đã giao'
+    waiting_payment: 'Đang được thanh toán'
+    awaiting_validation: 'Chờ thanh toán của bạn'
+    canceled: 'Đã hủy'
+  sold_out: 'Hết hàng'
+  left: '%count% còn lại'
+  unlimited: 'Có sẵn'
+  total: 'Tổng cộng'
+  empty: 'Giỏ hàng của bạn đang trống.'
+  shop: 'Đi đến cửa hàng'
+  button:
+    pay: 'Thanh toán'
+    order: 'Đặt hàng'
+  column:
+    product: 'Sản phẩm'
+    quantity: 'Số lượng'
+    price: Giá
+  error:
+    out_of_stock: 'Có thứ gì đó trong giỏ hàng không còn hàng. Vui lòng thay đổi giỏ hàng và thử lại.'
+
+id:
+  title: Keranjang
+  orders: 'Pesanan saya'
+  status:
+    paid: 'Sudah dibayar'
+    fulfilled: Dikirim
+    waiting_payment: 'Sedang dibayar'
+    awaiting_validation: 'Menunggu pembayaran Anda'
+    canceled: Dibatalkan
+  sold_out: 'Habis terjual'
+  left: '%count% tersisa'
+  unlimited: Tersedia
+  total: Total
+  empty: 'Keranjang Anda kosong.'
+  shop: 'Pergi ke toko'
+  button:
+    pay: Bayar
+    order: Pesan
+  column:
+    product: Produk
+    quantity: Jumlah
+    price: Harga
+  error:
+    out_of_stock: 'Beberapa barang di keranjang tidak lagi tersedia. Ubah keranjang dan coba lagi.'
+
+nl:
+  title: Winkelwagentje
+  orders: 'Mijn bestellingen'
+  status:
+    paid: Betaald
+    fulfilled: Afgeleverd
+    waiting_payment: 'In afwachting van betaling'
+    awaiting_validation: 'In afwachting van uw betaling'
+    canceled: Geannuleerd
+  sold_out: Uitverkocht
+  left: '%count% over'
+  unlimited: Beschikbaar
+  total: Totaal
+  empty: 'Uw winkelwagentje is leeg.'
+  shop: 'Ga naar de winkel'
+  button:
+    pay: Betalen
+    order: Bestellen
+  column:
+    product: Product
+    quantity: Aantal
+    price: Prijs
+  error:
+    out_of_stock: 'Iets in het winkelwagentje is niet meer op voorraad. Wijzig het winkelwagentje en probeer het opnieuw.'

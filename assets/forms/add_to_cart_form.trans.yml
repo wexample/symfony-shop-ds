@@ -69,3 +69,345 @@ ar:
   error:
     sold_out: 'لم يتبقى أي شيء منه.'
     only_left: 'لم يتبقَ هذا العدد.'
+
+hi:
+  field:
+    variation:
+      label: 'कौन सा'
+    schedule:
+      label: कब
+    quantity:
+      label: कितने
+    amount:
+      label: राशि
+  action:
+    add: 'कार्ट में जोड़ें'
+  added: 'आपके कार्ट में जोड़ दिया गया।'
+  open_cart: 'कार्ट खोलें'
+  error:
+    sold_out: 'कुछ भी बचा नहीं है।'
+    only_left: 'इतने ही बचे हैं।'
+
+he:
+  field:
+    variation:
+      label: 'איזה אחד'
+    schedule:
+      label: מתי
+    quantity:
+      label: כמה
+    amount:
+      label: סכום
+  action:
+    add: 'הוסף לעגלת הקניות'
+  added: 'הוסף לעגלת הקניות שלך.'
+  open_cart: 'פתח את העגלה'
+  error:
+    sold_out: 'אין יותר מהמוצר הזה.'
+    only_left: 'לא נשארו כל כך הרבה.'
+
+fa:
+  field:
+    variation:
+      label: 'کدام یک'
+    schedule:
+      label: کی
+    quantity:
+      label: 'چند تا'
+    amount:
+      label: مقدار
+  action:
+    add: 'اضافه به سبد خرید'
+  added: 'به سبد خرید شما اضافه شد.'
+  open_cart: 'باز کردن سبد خرید'
+  error:
+    sold_out: 'هیچ چیزی از آن باقی نمانده است.'
+    only_left: 'این تعداد باقی مانده است.'
+
+ur:
+  field:
+    variation:
+      label: 'کون سا'
+    schedule:
+      label: کب
+    quantity:
+      label: کتنے
+    amount:
+      label: رقم
+  action:
+    add: 'کارٹ میں شامل کریں'
+  added: 'آپ کے کارٹ میں شامل کر دیا گیا۔'
+  open_cart: 'کارٹ کھولیں'
+  error:
+    sold_out: 'اس میں کچھ بھی باقی نہیں ہے۔'
+    only_left: 'اتنے زیادہ باقی نہیں ہیں۔'
+
+ja:
+  field:
+    variation:
+      label: どれですか
+    schedule:
+      label: いつ
+    quantity:
+      label: いくつ
+    amount:
+      label: 金額
+  action:
+    add: カートに追加
+  added: カートに追加されました。
+  open_cart: カートを開く
+  error:
+    sold_out: 在庫がありません。
+    only_left: 残りはそれほど多くありません。
+
+ko:
+  field:
+    variation:
+      label: '어느 것을 선택하시겠습니까'
+    schedule:
+      label: 언제
+    quantity:
+      label: '몇 개'
+    amount:
+      label: 금액
+  action:
+    add: '장바구니에 추가'
+  added: '장바구니에 추가되었습니다.'
+  open_cart: '장바구니 열기'
+  error:
+    sold_out: '재고가 없습니다.'
+    only_left: '남은 수량이 그리 많지 않습니다.'
+
+bn:
+  field:
+    variation:
+      label: কোনটি
+    schedule:
+      label: কখন
+    quantity:
+      label: কতটি
+    amount:
+      label: পরিমাণ
+  action:
+    add: 'কার্টে যুক্ত করুন'
+  added: 'আপনার কার্টে যুক্ত করা হয়েছে।'
+  open_cart: 'কার্ট খুলুন'
+  error:
+    sold_out: 'এটি আর নেই।'
+    only_left: 'এতগুলো আর নেই।'
+
+th:
+  field:
+    variation:
+      label: อันไหน
+    schedule:
+      label: เมื่อไหร่
+    quantity:
+      label: จำนวนเท่าไหร่
+    amount:
+      label: จำนวนเงิน
+  action:
+    add: เพิ่มลงในตะกร้า
+  added: เพิ่มลงในตะกร้าแล้ว.
+  open_cart: เปิดตะกร้า
+  error:
+    sold_out: ไม่มีของเหลือแล้ว.
+    only_left: เหลือไม่มากแล้ว.
+
+de:
+  field:
+    variation:
+      label: Welche
+    schedule:
+      label: Wann
+    quantity:
+      label: 'Wie viele'
+    amount:
+      label: Betrag
+  action:
+    add: 'In den Warenkorb'
+  added: 'In Ihren Warenkorb gelegt.'
+  open_cart: 'Warenkorb öffnen'
+  error:
+    sold_out: 'Nichts mehr davon verfügbar.'
+    only_left: 'Nicht mehr so viele verfügbar.'
+
+fi:
+  field:
+    variation:
+      label: 'Mikä niistä'
+    schedule:
+      label: Milloin
+    quantity:
+      label: 'Kuinka monta'
+    amount:
+      label: Määrä
+  action:
+    add: 'Lisää ostoskoriin'
+  added: 'Lisätty ostoskoriisi.'
+  open_cart: 'Avaa ostoskori'
+  error:
+    sold_out: 'Ei enää jäljellä.'
+    only_left: 'Ei ole jäljellä niin montaa.'
+
+ru:
+  field:
+    variation:
+      label: 'Какой из'
+    schedule:
+      label: Когда
+    quantity:
+      label: Сколько
+    amount:
+      label: Сумма
+  action:
+    add: 'Добавить в корзину'
+  added: 'Добавлено в вашу корзину.'
+  open_cart: 'Открыть корзину'
+  error:
+    sold_out: 'Ничего не осталось.'
+    only_left: 'Не так много осталось.'
+
+pl:
+  field:
+    variation:
+      label: Który
+    schedule:
+      label: Kiedy
+    quantity:
+      label: Ile
+    amount:
+      label: Kwota
+  action:
+    add: 'Dodaj do koszyka'
+  added: 'Dodano do koszyka.'
+  open_cart: 'Otwórz koszyk'
+  error:
+    sold_out: 'Nic już nie zostało.'
+    only_left: 'Nie ma już tak wielu.'
+
+es:
+  field:
+    variation:
+      label: Cuál
+    schedule:
+      label: Cuándo
+    quantity:
+      label: Cuántos
+    amount:
+      label: Cantidad
+  action:
+    add: 'Añadir al carrito'
+  added: 'Añadido a tu carrito.'
+  open_cart: 'Abrir el carrito'
+  error:
+    sold_out: 'No queda nada de eso.'
+    only_left: 'No quedan tantos.'
+
+it:
+  field:
+    variation:
+      label: Quale
+    schedule:
+      label: Quando
+    quantity:
+      label: Quanti
+    amount:
+      label: Importo
+  action:
+    add: 'Aggiungi al carrello'
+  added: 'Aggiunto al tuo carrello.'
+  open_cart: 'Apri il carrello'
+  error:
+    sold_out: 'Non ne è rimasto nulla.'
+    only_left: 'Non ne sono rimasti così tanti.'
+
+pt_BR:
+  field:
+    variation:
+      label: 'Qual deles'
+    schedule:
+      label: Quando
+    quantity:
+      label: Quantos
+    amount:
+      label: Valor
+  action:
+    add: 'Adicionar ao carrinho'
+  added: 'Adicionado ao seu carrinho.'
+  open_cart: 'Abrir o carrinho'
+  error:
+    sold_out: 'Não há mais disso.'
+    only_left: 'Não sobraram tantas assim.'
+
+tr:
+  field:
+    variation:
+      label: Hangisi
+    schedule:
+      label: 'Ne zaman'
+    quantity:
+      label: 'Kaç tane'
+    amount:
+      label: Tutar
+  action:
+    add: 'Sepete ekle'
+  added: 'Sepetinize eklendi.'
+  open_cart: 'Sepeti aç'
+  error:
+    sold_out: 'Hiçbir şey kalmadı.'
+    only_left: 'Bu kadar az kaldı.'
+
+vi:
+  field:
+    variation:
+      label: 'Cái nào'
+    schedule:
+      label: 'Khi nào'
+    quantity:
+      label: 'Bao nhiêu'
+    amount:
+      label: 'Số tiền'
+  action:
+    add: 'Thêm vào giỏ hàng'
+  added: 'Đã thêm vào giỏ hàng của bạn.'
+  open_cart: 'Mở giỏ hàng'
+  error:
+    sold_out: 'Không còn gì nữa.'
+    only_left: 'Chỉ còn lại ít thôi.'
+
+id:
+  field:
+    variation:
+      label: 'Yang mana'
+    schedule:
+      label: Kapan
+    quantity:
+      label: 'Berapa banyak'
+    amount:
+      label: Jumlah
+  action:
+    add: 'Tambahkan ke keranjang'
+  added: 'Ditambahkan ke keranjang Anda.'
+  open_cart: 'Buka keranjang'
+  error:
+    sold_out: 'Tidak ada yang tersisa.'
+    only_left: 'Tidak ada yang tersisa sebanyak itu.'
+
+nl:
+  field:
+    variation:
+      label: Welke
+    schedule:
+      label: Wanneer
+    quantity:
+      label: Hoeveel
+    amount:
+      label: Bedrag
+  action:
+    add: 'Aan winkelwagentje toevoegen'
+  added: 'Toegevoegd aan je winkelwagentje.'
+  open_cart: 'Open het winkelwagentje'
+  error:
+    sold_out: 'Er is niets meer van over.'
+    only_left: 'Er zijn niet zoveel meer over.'

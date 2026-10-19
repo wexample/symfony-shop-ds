@@ -25,3 +25,136 @@ ar:
   total: 'المجموع: %total%'
   resume: 'ارجع إلى عربتي'
   outro: 'لا يتم حجز المخزون حتى يتم دفع الطلب. إذا لم تعد ترغب فيهم، تجاهل هذا البريد الإلكتروني.'
+
+hi:
+  subject: 'आपका कार्ट आपका इंतज़ार कर रहा है'
+  intro: 'आपने अपने कार्ट में ये छोड़ा है:'
+  total: 'कुल: %total%'
+  resume: 'मेरे कार्ट पर वापस जाएं'
+  outro: 'स्टॉक तब तक नहीं रखा जाता जब तक ऑर्डर का भुगतान नहीं किया जाता। अगर आप इन्हें नहीं रखना चाहते, तो इस ईमेल को अनदेखा करें।'
+
+he:
+  subject: 'העגלה שלך מחכה לך'
+  intro: 'השארת את אלה בעגלה שלך:'
+  total: 'סך הכל: %total%'
+  resume: 'חזור לעגלה שלי'
+  outro: 'המלאי לא נשמר עד שהתשלום מבוצע. אם אינך רוצה אותם יותר, התעלם מהמייל הזה.'
+
+fa:
+  subject: 'سبد خرید شما در انتظار شماست'
+  intro: 'شما این موارد را در سبد خرید خود گذاشته‌اید:'
+  total: 'مجموع: %total%'
+  resume: 'برگشت به سبد خرید من'
+  outro: 'محصولات تا زمان پرداخت سفارش نگهداری نمی‌شوند. اگر دیگر نمی‌خواهید، این ایمیل را نادیده بگیرید.'
+
+ur:
+  subject: 'آپ کا کارٹ آپ کا انتظار کر رہا ہے'
+  intro: 'آپ نے یہ چیزیں اپنے کارٹ میں چھوڑ دی ہیں:'
+  total: 'کل: %total%'
+  resume: 'میرے کارٹ پر واپس جائیں'
+  outro: 'اسٹاک اس وقت تک محفوظ نہیں ہوتا جب تک کہ آرڈر کی ادائیگی نہ کی جائے۔ اگر آپ مزید انہیں نہیں چاہتے تو اس ای میل کو نظر انداز کریں۔'
+
+ja:
+  subject: あなたのカートが待っています
+  intro: カートにこれらを残しました：
+  total: '合計： %total%'
+  resume: カートに戻る
+  outro: 注文が支払われるまで在庫は確保されません。不要な場合は、このメールを無視してください。
+
+ko:
+  subject: '장바구니가 당신을 기다리고 있습니다'
+  intro: '장바구니에 담은 아이템:'
+  total: '합계: %total%'
+  resume: '장바구니로 돌아가기'
+  outro: '주문이 결제될 때까지 재고가 확보되지 않습니다. 더 이상 원하지 않으시면 이 이메일을 무시하세요.'
+
+bn:
+  subject: 'আপনার কার্ট আপনার জন্য অপেক্ষা করছে'
+  intro: 'আপনি এগুলো আপনার কার্টে রেখে এসেছেন:'
+  total: 'মোট: %total%'
+  resume: 'আমার কার্টে ফিরে যান'
+  outro: 'অর্ডার পরিশোধ না হওয়া পর্যন্ত স্টক ধরে রাখা হয় না। আপনি যদি আর এগুলো না চান, তবে এই ইমেইলটি উপেক্ষা করুন।'
+
+th:
+  subject: ตะกร้าของคุณรอคุณอยู่
+  intro: 'คุณได้ทิ้งสิ่งเหล่านี้ไว้ในตะกร้า:'
+  total: 'รวม: %total%'
+  resume: กลับไปที่ตะกร้าของฉัน
+  outro: 'สินค้าจะไม่ถูกเก็บจนกว่าการสั่งซื้อต้องชำระเงิน ถ้าคุณไม่ต้องการอีกแล้ว กรุณาเพิกเฉยต่ออีเมลนี้.'
+
+de:
+  subject: 'Ihr Warenkorb wartet auf Sie'
+  intro: 'Sie haben Folgendes in Ihrem Warenkorb gelassen:'
+  total: 'Gesamt: %total%'
+  resume: 'Zurück zu meinem Warenkorb'
+  outro: 'Der Vorrat wird nicht reserviert, bis die Bestellung bezahlt ist. Wenn Sie sie nicht mehr möchten, ignorieren Sie diese E-Mail.'
+
+fi:
+  subject: 'Ostoskorisi odottaa sinua'
+  intro: 'Jätit nämä ostoskoriisi:'
+  total: 'Yhteensä: %total%'
+  resume: 'Palaa ostoskoriini'
+  outro: 'Varastoa ei pidetä varattuna ennen kuin tilaus on maksettu. Jos et enää halua näitä, voit jättää tämän sähköpostin huomiotta.'
+
+ru:
+  subject: 'Ваша корзина вас ждет'
+  intro: 'Вы оставили это в своей корзине:'
+  total: 'Итого: %total%'
+  resume: 'Вернуться в мою корзину'
+  outro: 'Товары не резервируются до оплаты заказа. Если вы больше не хотите их, проигнорируйте это письмо.'
+
+pl:
+  subject: 'Twój koszyk czeka na Ciebie'
+  intro: 'Zostawiłeś to w swoim koszyku:'
+  total: 'Łącznie: %total%'
+  resume: 'Wróć do mojego koszyka'
+  outro: 'Towar nie jest rezerwowany do momentu opłacenia zamówienia. Jeśli już ich nie chcesz, zignoruj ten e-mail.'
+
+es:
+  subject: 'Tu carrito te está esperando'
+  intro: 'Dejaste esto en tu carrito:'
+  total: 'Total: %total%'
+  resume: 'Regresar a mi carrito'
+  outro: 'El stock no se mantiene hasta que se paga el pedido. Si ya no los quieres, ignora este correo.'
+
+it:
+  subject: 'Il tuo carrello ti aspetta'
+  intro: 'Hai lasciato questi nel tuo carrello:'
+  total: 'Totale: %total%'
+  resume: 'Torna al mio carrello'
+  outro: "La merce non è riservata fino al pagamento dell'ordine. Se non li vuoi più, ignora questa email."
+
+pt_BR:
+  subject: 'Seu carrinho está te esperando'
+  intro: 'Você deixou isso no seu carrinho:'
+  total: 'Total: %total%'
+  resume: 'Voltar para meu carrinho'
+  outro: 'O estoque não é reservado até que o pedido seja pago. Se você não quiser mais, ignore este e-mail.'
+
+tr:
+  subject: 'Sepetiniz sizi bekliyor'
+  intro: 'Sepetinizde bunlar kaldı:'
+  total: 'Toplam: %total%'
+  resume: 'Sepetime geri dön'
+  outro: 'Stok, sipariş ödenene kadar tutulmaz. Artık istemiyorsanız, bu e-postayı göz ardı edin.'
+
+vi:
+  subject: 'Giỏ hàng của bạn đang chờ bạn'
+  intro: 'Bạn đã để những món này trong giỏ hàng:'
+  total: 'Tổng cộng: %total%'
+  resume: 'Quay lại giỏ hàng của tôi'
+  outro: 'Hàng hóa không được giữ lại cho đến khi đơn hàng được thanh toán. Nếu bạn không còn muốn chúng, hãy bỏ qua email này.'
+
+id:
+  subject: 'Keranjang Anda menunggu'
+  intro: 'Anda meninggalkan ini di keranjang Anda:'
+  total: 'Total: %total%'
+  resume: 'Kembali ke keranjang saya'
+  outro: 'Stok tidak akan ditahan sampai pesanan dibayar. Jika Anda tidak lagi menginginkannya, abaikan email ini.'
+
+nl:
+  subject: 'Je winkelwagentje wacht op je'
+  intro: 'Je hebt deze in je winkelwagentje achtergelaten:'
+  total: 'Totaal: %total%'
+  resume: 'Terug naar mijn winkelwagentje'
+  outro: 'Voorraad wordt niet vastgehouden totdat de bestelling is betaald. Als je ze niet meer wilt, negeer deze e-mail.'

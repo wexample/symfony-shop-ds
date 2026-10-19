@@ -17,3 +17,98 @@ ar:
   page_title: طلب
   title: طلبك
   lead: 'ما على وشك طلبه.'
+
+hi:
+  page_title: आर्डर
+  title: 'आपका आर्डर'
+  lead: 'जो आप ऑर्डर करने जा रहे हैं।'
+
+he:
+  page_title: הזמנה
+  title: 'ההזמנה שלך'
+  lead: 'מה שאתה עומד להזמין.'
+
+fa:
+  page_title: سفارش
+  title: 'سفارش شما'
+  lead: 'آنچه که در حال سفارش آن هستید.'
+
+ur:
+  page_title: آرڈر
+  title: 'آپ کا آرڈر'
+  lead: 'جو آپ آرڈر کرنے والے ہیں۔'
+
+ja:
+  page_title: 注文
+  title: あなたの注文
+  lead: これから注文しようとしているもの。
+
+ko:
+  page_title: 주문
+  title: '귀하의 주문'
+  lead: '주문하려는 내용입니다.'
+
+bn:
+  page_title: অর্ডার
+  title: 'আপনার অর্ডার'
+  lead: 'আপনি যা অর্ডার করতে যাচ্ছেন।'
+
+th:
+  page_title: คำสั่งซื้อ
+  title: คำสั่งซื้อของคุณ
+  lead: สิ่งที่คุณกำลังจะสั่งซื้อ.
+
+de:
+  page_title: Bestellung
+  title: 'Ihre Bestellung'
+  lead: 'Was Sie gleich bestellen werden.'
+
+fi:
+  page_title: Tilaus
+  title: Tilauksesi
+  lead: 'Mitä olet tilaamassa.'
+
+ru:
+  page_title: Заказ
+  title: 'Ваш заказ'
+  lead: 'Что вы собираетесь заказать.'
+
+pl:
+  page_title: Zamówienie
+  title: 'Twoje zamówienie'
+  lead: 'Co zamierzasz zamówić.'
+
+es:
+  page_title: Pedido
+  title: 'Tu pedido'
+  lead: 'Lo que estás a punto de pedir.'
+
+it:
+  page_title: Ordine
+  title: 'Il tuo ordine'
+  lead: 'Cosa stai per ordinare.'
+
+pt_BR:
+  page_title: Pedido
+  title: 'Seu pedido'
+  lead: 'O que você está prestes a pedir.'
+
+tr:
+  page_title: Sipariş
+  title: Siparişiniz
+  lead: 'Sipariş vermek üzere olduğunuz şey.'
+
+vi:
+  page_title: 'Đặt hàng'
+  title: 'Đơn hàng của bạn'
+  lead: 'Những gì bạn sắp đặt.'
+
+id:
+  page_title: Pesanan
+  title: 'Pesanan Anda'
+  lead: 'Apa yang akan Anda pesan.'
+
+nl:
+  page_title: Bestelling
+  title: 'Uw bestelling'
+  lead: 'Wat u op het punt staat te bestellen.'

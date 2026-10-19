@@ -17,3 +17,98 @@ ar:
   page_title: طلب
   title: 'بريدك الإلكتروني'
   lead: 'عنوان مرتبط بحساب يقوم بتسجيل الدخول بعد ذلك؛ أي عنوان آخر يتطلب إنشاء حساب لمتابعة الطلب.'
+
+hi:
+  page_title: आदेश
+  title: 'आपका ईमेल'
+  lead: 'एक पता जो खाते के साथ साइन इन करता है; कोई अन्य एक खाता बनाता है, आदेश का पालन करने के लिए।'
+
+he:
+  page_title: הזמנה
+  title: 'האימייל שלך'
+  lead: 'כתובת עם חשבון מתחברת בהמשך; כל כתובת אחרת פותחת חשבון, כדי לעקוב אחרי ההזמנה.'
+
+fa:
+  page_title: سفارش
+  title: 'ایمیل شما'
+  lead: 'آدرسی که با یک حساب کاربری وارد می‌شود؛ هر آدرس دیگری یک حساب کاربری ایجاد می‌کند تا سفارش را پیگیری کند.'
+
+ur:
+  page_title: آرڈر
+  title: 'آپ کا ای میل'
+  lead: 'ایک پتہ جس کے ساتھ اکاؤنٹ سائن ان ہوتا ہے؛ کوئی دوسرا ایک اکاؤنٹ بناتا ہے، تاکہ آرڈر کی پیروی کی جا سکے.'
+
+ja:
+  page_title: 注文
+  title: あなたのメールアドレス
+  lead: アカウントがあるアドレスでサインインします。その他のアドレスはアカウントを作成し、注文を続行します。
+
+ko:
+  page_title: 주문
+  title: '귀하의 이메일'
+  lead: '계정으로 로그인할 주소는 다음에; 다른 주소는 주문을 따르기 위해 계정을 만들어야 합니다.'
+
+bn:
+  page_title: অর্ডার
+  title: 'আপনার ইমেইল'
+  lead: 'একটি ঠিকানা অ্যাকাউন্টে সাইন ইন করে; অন্য যেকোনোটি একটি অ্যাকাউন্ট তৈরি করে, অর্ডারটি অনুসরণ করতে।'
+
+th:
+  page_title: สั่งซื้อ
+  title: อีเมลของคุณ
+  lead: 'ที่อยู่ที่มีบัญชีเข้าสู่ระบบถัดไป; ที่อยู่ใด ๆ อื่นจะต้องสร้างบัญชีเพื่อทำตามคำสั่งซื้อ'
+
+de:
+  page_title: Bestellung
+  title: 'Ihre E-Mail'
+  lead: 'Eine Adresse mit einem Konto meldet sich als Nächstes an; jede andere erhält ein Konto, um der Bestellung zu folgen.'
+
+fi:
+  page_title: Tilaa
+  title: Sähköpostisi
+  lead: 'Osoite, jolla on tili, kirjautuu seuraavaksi; muu osoite saa tilin, jotta voi jatkaa tilaamista.'
+
+ru:
+  page_title: Заказ
+  title: 'Ваш email'
+  lead: 'Адрес с учетной записью войдет в систему, любой другой получит учетную запись для оформления заказа.'
+
+pl:
+  page_title: Zamówienie
+  title: 'Twój e-mail'
+  lead: 'Adres z kontem loguje się następnie; każdy inny zakłada konto, aby śledzić zamówienie.'
+
+es:
+  page_title: Orden
+  title: 'Tu correo electrónico'
+  lead: 'Una dirección con una cuenta inicia sesión a continuación; cualquier otra obtiene una cuenta, para seguir el pedido.'
+
+it:
+  page_title: Ordine
+  title: 'La tua email'
+  lead: "Un indirizzo con un account effettua il login successivo; qualsiasi altro riceve un account, per seguire l'ordine."
+
+pt_BR:
+  page_title: Pedido
+  title: 'Seu e-mail'
+  lead: 'Um endereço com uma conta faz login a seguir; qualquer outro cria uma conta, para seguir o pedido.'
+
+tr:
+  page_title: Sipariş
+  title: 'E-posta adresiniz'
+  lead: 'Bir hesapla giriş yapan bir adres; diğer biri bir hesap alır, siparişi takip etmek için.'
+
+vi:
+  page_title: 'Đặt hàng'
+  title: 'Email của bạn'
+  lead: 'Một địa chỉ có tài khoản sẽ đăng nhập tiếp theo; bất kỳ địa chỉ nào khác sẽ tạo tài khoản để theo dõi đơn hàng.'
+
+id:
+  page_title: Pesanan
+  title: 'Email Anda'
+  lead: 'Alamat dengan akun akan masuk berikutnya; yang lainnya akan mendapatkan akun, untuk mengikuti pesanan.'
+
+nl:
+  page_title: Bestelling
+  title: 'Uw e-mailadres'
+  lead: 'Een adres met een account logt in; elk ander adres krijgt een account om de bestelling te volgen.'
