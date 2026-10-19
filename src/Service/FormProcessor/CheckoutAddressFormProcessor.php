@@ -6,6 +6,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
 use Wexample\SymfonyShop\Entity\Cart;
@@ -54,6 +55,12 @@ class CheckoutAddressFormProcessor extends AbstractFormProcessor
         $data = null,
         array $options = []
     ): FormInterface {
+        // Given its cart by the checkout step: sent from anywhere else, there
+        // is none to address.
+        if (null === $this->cart) {
+            throw new NotFoundHttpException('No cart to check out.');
+        }
+
         return parent::createForm($data, $options + [
             CheckoutAddressForm::OPTION_ASK_EMAIL => null === $this->cart->getOwnerReference(),
             CheckoutAddressForm::OPTION_SHIPPING => $this->needsShipping(),

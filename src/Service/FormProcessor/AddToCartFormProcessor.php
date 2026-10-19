@@ -7,6 +7,7 @@ use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Wexample\SymfonyForms\Controller\FormController;
 use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
@@ -87,6 +88,11 @@ class AddToCartFormProcessor extends AbstractFormProcessor
         $data = null,
         array $options = []
     ): FormInterface {
+        // Sent without a product, or with one that is gone: nothing to add.
+        if (null === $this->product) {
+            throw new NotFoundHttpException('No product to add to the cart.');
+        }
+
         return parent::createForm($data, $options + [
             AddToCartForm::OPTION_PRODUCT => $this->product,
             AddToCartForm::OPTION_SCHEDULES => $this->shop->getSchedules($this->product),
