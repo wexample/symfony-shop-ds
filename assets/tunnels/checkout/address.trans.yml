@@ -7,3 +7,13 @@ fr:
   page_title: Commande
   title: Adresses
   lead: Où facturer, et où livrer quand quelque chose est livré.
+
+zh:
+  page_title: 订单
+  title: 地址
+  lead: 账单地址和发货地址。
+
+ar:
+  page_title: الطلب
+  title: العناوين
+  lead: 'مكان الفوترة، وأين يتم الشحن عندما يتم شحن شيء ما.'

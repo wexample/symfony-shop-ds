@@ -13,3 +13,19 @@ fr:
   cart: Panier
   free_amount: Le montant de votre choix
   empty: Rien n'est en vente pour l'instant.
+
+zh:
+  page_title: 商店
+  page_icon: 'ph:bold/storefront'
+  intro: 正在出售的商品。打开一个以选择您想要的商品并将其放入购物车。
+  cart: 购物车
+  free_amount: 您选择的金额
+  empty: 尚未有商品出售。
+
+ar:
+  page_title: متجر
+  page_icon: 'ph:bold/storefront'
+  intro: 'ما هو معروض للبيع. افتح واحدًا لاختيار ما تريده منه وضعه في عربة التسوق.'
+  cart: 'عربة التسوق'
+  free_amount: 'المبلغ الذي تختاره'
+  empty: 'لا يوجد شيء للبيع بعد.'

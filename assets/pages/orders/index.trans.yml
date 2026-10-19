@@ -15,3 +15,21 @@ fr:
     date: Date
     items: Contenu
     status: Statut
+
+zh:
+  page_title: 我的订单
+  page_icon: 'ph:bold/receipt'
+  empty: 还没有订单。
+  column:
+    date: 日期
+    items: 商品
+    status: 状态
+
+ar:
+  page_title: طلباتي
+  page_icon: 'ph:bold/receipt'
+  empty: 'لا توجد طلبات حتى الآن.'
+  column:
+    date: التاريخ
+    items: ما
+    status: الحالة

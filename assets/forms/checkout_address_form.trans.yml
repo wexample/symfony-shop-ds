@@ -37,3 +37,43 @@ fr:
     vatNumber:
       label: Numéro de TVA
       help: Avec son préfixe pays. Une entreprise d'un autre pays de l'UE ne paie pas de TVA une fois le numéro confirmé.
+
+zh:
+  company: 为公司购买
+  company_help: 如果是私人购买，请留空。
+  billing: 账单地址
+  shipping: 收货地址
+  shipping_help: 留空则发货至账单地址。
+  field:
+    email:
+      label: 电子邮件
+      help: 订单确认将发送至此。
+    phone:
+      label: 电话
+      help: 如有需要，用于送货。
+    companyName:
+      label: 公司名称
+      help: 发票抬头的名称。
+    vatNumber:
+      label: 增值税号码
+      help: 需带国家代码。其他欧盟国家的企业在确认后可免交增值税。
+
+ar:
+  company: 'شراء لشركة'
+  company_help: 'تم تركه فارغًا لشراء خاص.'
+  billing: 'عنوان الفوترة'
+  shipping: 'عنوان الشحن'
+  shipping_help: 'تم تركه فارغًا، سيتم الشحن إلى عنوان الفوترة.'
+  field:
+    email:
+      label: 'البريد الإلكتروني'
+      help: 'حيث يتم تأكيد الطلب.'
+    phone:
+      label: الهاتف
+      help: 'للتوصيل، إذا لزم الأمر.'
+    companyName:
+      label: 'اسم الشركة'
+      help: 'الاسم الذي يتم إصدار الفاتورة به.'
+    vatNumber:
+      label: 'رقم ضريبة القيمة المضافة'
+      help: 'مع بادئة دولته. لا تدفع شركة من دولة أخرى في الاتحاد الأوروبي ضريبة القيمة المضافة بمجرد تأكيد الرقم.'

@@ -7,3 +7,8 @@ fr:
   page_title: Commande
   title: Connexion
   lead: Cette adresse a un compte. Connectez-vous pour commander avec — le panier suit.
+
+zh:
+  page_title: 订单
+  title: 登录
+  lead: '该地址已注册账户。请登录以进行订单 - 购物车会随之而来。'

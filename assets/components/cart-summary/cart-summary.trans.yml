@@ -21,3 +21,27 @@ fr:
   reservation:
     running: "Réservé pour vous encore %time%."
     over: "Plus réservé : le stock restant peut partir à un autre acheteur."
+
+zh:
+  title: 购物车
+  empty: 您的购物车是空的。
+  total: 总计
+  vat_included: 含增值税：%vat%
+  less: 减少一个
+  more: 增加一个
+  remove: 移除
+  reservation:
+    running: '为您保留另一个 %time%。'
+    over: 不再保留：剩下的可能会被其他买家购买。
+
+ar:
+  title: 'عربة التسوق'
+  empty: 'عربتك فارغة.'
+  total: الإجمالي
+  vat_included: 'يشمل ضريبة القيمة المضافة: %vat%'
+  less: 'أقل واحدة'
+  more: 'واحدة إضافية'
+  remove: إزالة
+  reservation:
+    running: 'محجوز لك لمدة %time% أخرى.'
+    over: 'لم يعد محجوزًا: ما تبقى قد يذهب إلى مشترٍ آخر.'

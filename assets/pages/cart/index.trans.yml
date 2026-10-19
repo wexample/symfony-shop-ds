@@ -13,3 +13,19 @@ fr:
   waiting:
     title: Un paiement de ce panier est en cours
     body: Son stock est réservé tant qu'il dure. Modifier le panier abandonne ce paiement.
+
+zh:
+  page_title: 购物车
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 更改购物车
+  waiting:
+    title: 该购物车的付款正在进行中
+    body: 在处理期间，其库存被保留。更改购物车将放弃付款。
+
+ar:
+  page_title: 'عربة التسوق'
+  page_icon: 'ph:bold/shopping-cart'
+  reopen: 'تغيير العربة'
+  waiting:
+    title: 'عملية الدفع لهذه العربة جارية'
+    body: 'يتم الاحتفاظ بمخزونها أثناء التنفيذ. تغيير العربة يلغي الدفع.'

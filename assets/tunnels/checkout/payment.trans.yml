@@ -7,3 +7,8 @@ fr:
   page_title: Commande
   title: Paiement
   lead: Comment vous payez. Le stock vous est réservé le temps du paiement.
+
+zh:
+  page_title: 订单
+  title: 付款
+  lead: 支付方式。在您付款期间，库存为您保留。

@@ -47,3 +47,53 @@ fr:
     price: Prix
   error:
     out_of_stock: Un article du panier n'est plus en stock. Modifiez le panier et réessayez.
+
+zh:
+  title: 购物车
+  orders: 我的订单
+  status:
+    paid: 已付款
+    fulfilled: 已发货
+    waiting_payment: 正在支付
+    awaiting_validation: 等待您的付款
+    canceled: 已取消
+  sold_out: 售罄
+  left: '%count% 剩余'
+  unlimited: 可用
+  total: 总计
+  empty: 您的购物车是空的。
+  shop: 前往商店
+  button:
+    pay: 支付
+    order: 下单
+  column:
+    product: 商品
+    quantity: 数量
+    price: 价格
+  error:
+    out_of_stock: 购物车中的某些商品已缺货。请更改购物车并重试。
+
+ar:
+  title: 'عربة التسوق'
+  orders: طلباتي
+  status:
+    paid: مدفوع
+    fulfilled: 'تم التسليم'
+    waiting_payment: 'قيد الدفع'
+    awaiting_validation: 'في انتظار دفعك'
+    canceled: ملغى
+  sold_out: 'نفد المخزون'
+  left: '%count% متبقي'
+  unlimited: متاح
+  total: الإجمالي
+  empty: 'عربتك فارغة.'
+  shop: 'اذهب إلى المتجر'
+  button:
+    pay: دفع
+    order: طلب
+  column:
+    product: المنتج
+    quantity: الكمية
+    price: السعر
+  error:
+    out_of_stock: 'هناك شيء في العربة لم يعد متوفرًا في المخزون. عدل العربة وحاول مرة أخرى.'

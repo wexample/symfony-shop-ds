@@ -7,3 +7,8 @@ fr:
   page_title: Commande
   title: Votre email
   lead: Une adresse qui a un compte s'y connecte ensuite ; une autre en reçoit un, pour suivre la commande.
+
+zh:
+  page_title: 订单
+  title: 您的电子邮件
+  lead: 拥有账户的地址将会登录；其他地址将会创建账户以跟踪订单。

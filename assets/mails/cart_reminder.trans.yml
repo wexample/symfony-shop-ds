@@ -11,3 +11,17 @@ fr:
   total: "Total : %total%"
   resume: Retrouver mon panier
   outro: Le stock n'est réservé qu'une fois la commande payée. Si vous n'en voulez plus, ignorez cet email.
+
+zh:
+  subject: 您的购物车在等待您
+  intro: 您在购物车中留下了这些：
+  total: 总计：%total%
+  resume: 返回我的购物车
+  outro: 库存不会在订单支付之前保留。如果您不再想要这些，请忽略此邮件。
+
+ar:
+  subject: 'عربتك في انتظارك'
+  intro: 'لقد تركت هذه في عربتك:'
+  total: 'المجموع: %total%'
+  resume: 'ارجع إلى عربتي'
+  outro: 'لا يتم حجز المخزون حتى يتم دفع الطلب. إذا لم تعد ترغب فيهم، تجاهل هذا البريد الإلكتروني.'

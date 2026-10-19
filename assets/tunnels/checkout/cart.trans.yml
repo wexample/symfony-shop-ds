@@ -7,3 +7,13 @@ fr:
   page_title: Commande
   title: Votre commande
   lead: Ce que vous vous apprêtez à commander.
+
+zh:
+  page_title: 订单
+  title: 您的订单
+  lead: 您即将订购的内容。
+
+ar:
+  page_title: طلب
+  title: طلبك
+  lead: 'ما على وشك طلبه.'

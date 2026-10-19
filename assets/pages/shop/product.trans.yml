@@ -9,3 +9,15 @@ fr:
   page_icon: ph:bold/tag
   free_amount: Le montant de votre choix
   sold_out: Il n'en reste plus pour l'instant.
+
+zh:
+  page_title: 产品
+  page_icon: 'ph:bold/tag'
+  free_amount: 您选择的数量
+  sold_out: 目前已售罄。
+
+ar:
+  page_title: المنتج
+  page_icon: 'ph:bold/tag'
+  free_amount: 'المبلغ الذي تختاره'
+  sold_out: 'لا يوجد شيء متبقي منه في الوقت الحالي.'

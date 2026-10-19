@@ -19,3 +19,25 @@ fr:
     date: Date
     billing: Adresse de facturation
     shipping: Adresse de livraison
+
+zh:
+  page_title: 订单
+  page_icon: 'ph:bold/receipt'
+  payment: 付款
+  receipt: 收据
+  field:
+    status: 状态
+    date: 日期
+    billing: 账单地址
+    shipping: 收货地址
+
+ar:
+  page_title: طلب
+  page_icon: 'ph:bold/receipt'
+  payment: الدفع
+  receipt: الإيصال
+  field:
+    status: الحالة
+    date: التاريخ
+    billing: 'عنوان الفوترة'
+    shipping: 'عنوان الشحن'

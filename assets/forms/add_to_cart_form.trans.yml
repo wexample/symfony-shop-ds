@@ -33,3 +33,39 @@ fr:
   error:
     sold_out: Il n'en reste plus.
     only_left: Il n'en reste pas autant.
+
+zh:
+  field:
+    variation:
+      label: 哪个
+    schedule:
+      label: 什么时候
+    quantity:
+      label: 数量
+    amount:
+      label: 金额
+  action:
+    add: 加入购物车
+  added: 已加入购物车。
+  open_cart: 打开购物车
+  error:
+    sold_out: 没有剩下了。
+    only_left: 只剩下这么多了。
+
+ar:
+  field:
+    variation:
+      label: 'أي واحد'
+    schedule:
+      label: متى
+    quantity:
+      label: 'كم عدد'
+    amount:
+      label: المبلغ
+  action:
+    add: 'أضف إلى السلة'
+  added: 'تمت الإضافة إلى سلتك.'
+  open_cart: 'افتح السلة'
+  error:
+    sold_out: 'لم يتبقى أي شيء منه.'
+    only_left: 'لم يتبقَ هذا العدد.'
