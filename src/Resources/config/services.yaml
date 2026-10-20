@@ -8,6 +8,10 @@ services:
         resource: '../../{Command,Form,Service,Twig}'
         exclude: '../../Form/Data'
 
+    Wexample\SymfonyShopDs\Normalizer\:
+        resource: '../../Normalizer/*'
+        tags: ['serializer.normalizer']
+
     Wexample\SymfonyShopDs\Controller\:
         resource: '../../Controller/'
         tags: ['controller.service_arguments']

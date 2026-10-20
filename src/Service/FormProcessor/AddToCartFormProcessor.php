@@ -16,9 +16,9 @@ use Wexample\SymfonyMoney\Helper\MoneyHelper;
 use Wexample\SymfonyShop\Entity\Product;
 use Wexample\SymfonyShop\Repository\ProductRepository;
 use Wexample\SymfonyShop\Service\CartService;
+use Wexample\SymfonyShop\Service\ProductOfferService;
 use Wexample\SymfonyShopDs\Form\AddToCartForm;
 use Wexample\SymfonyShopDs\Service\CurrentCartService;
-use Wexample\SymfonyShopDs\Service\ShopService;
 
 /**
  * A product put in the visitor's cart, as many as are left: more than that
@@ -36,7 +36,7 @@ class AddToCartFormProcessor extends AbstractFormProcessor
         UrlGeneratorInterface $urlGenerator,
         private readonly CurrentCartService $currentCart,
         private readonly CartService $carts,
-        private readonly ShopService $shop,
+        private readonly ProductOfferService $offers,
         private readonly ProductRepository $products,
     ) {
         parent::__construct($formFactory, $requestStack, $urlGenerator);
@@ -95,7 +95,7 @@ class AddToCartFormProcessor extends AbstractFormProcessor
 
         return parent::createForm($data, $options + [
             AddToCartForm::OPTION_PRODUCT => $this->product,
-            AddToCartForm::OPTION_SCHEDULES => $this->shop->getSchedules($this->product),
+            AddToCartForm::OPTION_SCHEDULES => $this->offers->getSchedules($this->product),
         ]);
     }
 
@@ -108,7 +108,7 @@ class AddToCartFormProcessor extends AbstractFormProcessor
         $variation = $form->has(AddToCartForm::FIELD_VARIATION) ? $form->get(AddToCartForm::FIELD_VARIATION)->getData() : null;
         $schedule = $form->has(AddToCartForm::FIELD_SCHEDULE) ? $form->get(AddToCartForm::FIELD_SCHEDULE)->getData() : null;
         $quantity = $form->has(AddToCartForm::FIELD_QUANTITY) ? (int) $form->get(AddToCartForm::FIELD_QUANTITY)->getData() : 1;
-        $remaining = $this->shop->getRemaining($this->product, $schedule, $variation);
+        $remaining = $this->offers->getRemaining($this->product, $schedule, $variation);
 
         if (null !== $remaining && $quantity > $remaining) {
             $form->addError(new FormError(0 === $remaining ? '@form::error.sold_out' : '@form::error.only_left'));

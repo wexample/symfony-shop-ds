@@ -4,11 +4,16 @@
 {#- A page under another: the way back to it, its actions beside, on top. -#}
 {%- set page_trail = 'back' -%}
 {%- set page_title = product.title -%}
+{#- Described for the engines with its offers (ProductSchemaOrgNormalizer). -#}
+{%- set document_subject = product -%}
 
-{#- A product: what it is, what it costs, what is left of each choice, and
-    the form putting it in the cart — none when nothing is left. -#}
+{#- A product: what it is, what it costs, what each choice costs where it
+    changes the price and what is left of it, and the form putting it in the
+    cart — none when nothing is left. -#}
 {%- block page_body -%}
     {%- set common = 'WexampleSymfonyShopDsBundle.common.cart::' -%}
+    {%- set price = product.freeAmount ? null : product.calcPriceFinal() -%}
+    {%- set lines = offers|filter(offer => offer.remaining is not null or offer.priceFinal != price) -%}
     {%- if product.description -%}
         <p class="lead">{{ product.description }}</p>
     {%- endif -%}
@@ -20,10 +25,13 @@
             <span class="block--title-trailing">{{ product.freeAmount ? '@page::free_amount' | trans : product.calcPriceFinal()|price(product.currencyCode, app.request.locale) }}</span>
         </div>
         <div class="block--body stack--vertical">
-            {%- if left|length -%}
-                {{ properties(left|map(line => {
-                    key: [line.schedule ? (line.schedule.label ?: line.schedule.dateStart|date('Y-m-d H:i')) : null, line.variation ? line.variation.name ~ ' — ' ~ line.variation.value : null]|filter(v => v)|join(' · ') ?: product.title,
-                    value: line.remaining == 0 ? (common ~ 'sold_out') | trans : (common ~ 'left') | trans({ '%count%': line.remaining }),
+            {%- if lines|length -%}
+                {{ properties(lines|map(offer => {
+                    key: [offer.schedule ? (offer.schedule.label ?: offer.schedule.dateStart|date('Y-m-d H:i')) : null, offer.variation ? offer.variation.name ~ ' — ' ~ offer.variation.value : null]|filter(v => v)|join(' · ') ?: product.title,
+                    value: [
+                        offer.priceFinal != price ? offer.priceFinal|price(offer.currencyCode, app.request.locale) : null,
+                        offer.remaining is null ? null : (offer.remaining == 0 ? (common ~ 'sold_out') | trans : (common ~ 'left') | trans({ '%count%': offer.remaining })),
+                    ]|filter(v => v)|join(' · '),
                 })) }}
             {%- endif -%}
             {%- if sold_out -%}

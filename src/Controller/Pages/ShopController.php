@@ -7,7 +7,7 @@ use Symfony\Component\Routing\Attribute\Route;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 use Wexample\SymfonyShop\Repository\ProductRepository;
-use Wexample\SymfonyShopDs\Service\ShopService;
+use Wexample\SymfonyShop\Service\ProductOfferService;
 use Wexample\SymfonyShopDs\Traits\SymfonyShopDsBundleClassTrait;
 
 /**
@@ -27,13 +27,13 @@ final class ShopController extends AbstractPagesController
     #[Route(path: '', name: self::ROUTE_INDEX)]
     public function index(
         ProductRepository $products,
-        ShopService $shop,
+        ProductOfferService $offers,
     ): Response {
         $salable = $products->findSalable();
 
         return $this->renderPage(self::ROUTE_INDEX, [
             'products' => $salable,
-            'sold_out' => array_map(static fn ($product) => $shop->isSoldOut($product), $salable),
+            'sold_out' => array_map(static fn ($product) => $offers->isSoldOut($product), $salable),
         ]);
     }
 
@@ -41,7 +41,7 @@ final class ShopController extends AbstractPagesController
     public function product(
         string $slug,
         ProductRepository $products,
-        ShopService $shop,
+        ProductOfferService $offers,
     ): Response {
         $product = $products->findOneBySlug($slug);
 
@@ -49,24 +49,13 @@ final class ShopController extends AbstractPagesController
             throw $this->createNotFoundException();
         }
 
-        // What is left of each choice, for the buyer to see before choosing:
-        // by variation only where the stock is a variation's own.
-        $byVariation = $product->getAvailabilities()->exists(static fn ($key, $availability) => null !== $availability->getVariation());
-        $left = [];
-        foreach ($shop->getSchedules($product) ?: [null] as $schedule) {
-            foreach (($byVariation ? $product->getVariations()->toArray() : []) ?: [null] as $variation) {
-                $left[] = [
-                    'schedule' => $schedule,
-                    'variation' => $variation,
-                    'remaining' => $shop->getRemaining($product, $schedule, $variation),
-                ];
-            }
-        }
-
         return $this->renderPage(self::ROUTE_PRODUCT, [
             'product' => $product,
-            'left' => array_values(array_filter($left, static fn ($line) => null !== $line['remaining'])),
-            'sold_out' => $shop->isSoldOut($product),
+            // Each schedule and each variation changing something, with its
+            // price and what is left of it: what the buyer sees before
+            // choosing.
+            'offers' => $offers->getOffers($product),
+            'sold_out' => $offers->isSoldOut($product),
         ]);
     }
 }

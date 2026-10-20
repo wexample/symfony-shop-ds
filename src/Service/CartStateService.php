@@ -9,6 +9,7 @@ use Wexample\SymfonyShop\Entity\Cart;
 use Wexample\SymfonyShop\Entity\CartItem;
 use Wexample\SymfonyShop\Enum\CartStatus;
 use Wexample\SymfonyShop\Repository\StockReservationRepository;
+use Wexample\SymfonyShop\Service\ProductOfferService;
 
 /**
  * The visitor's cart as the components showing it read it: its lines, what
@@ -20,7 +21,7 @@ class CartStateService
 {
     public function __construct(
         private readonly CurrentCartService $currentCart,
-        private readonly ShopService $shop,
+        private readonly ProductOfferService $offers,
         private readonly MoneyFormatter $money,
         private readonly RequestStack $requestStack,
         private readonly UrlGeneratorInterface $urlGenerator,
@@ -70,7 +71,7 @@ class CartStateService
      */
     public function getMaxQuantity(CartItem $item): ?int
     {
-        $remaining = $this->shop->getRemaining(
+        $remaining = $this->offers->getRemaining(
             $item->getProduct(),
             $item->getSchedule(),
             $item->getVariations()->first() ?: null,
