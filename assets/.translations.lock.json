@@ -6556,6 +6556,10 @@
             "hash": "79f8dbb331b4aeca632b4c372341b566",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "1bae9c9a57461f24057dddfc8b31e2fc",
             "engine": "syrtis"
@@ -6580,6 +6584,10 @@
     "pages/shop/index.bn.yml": {
         "cart": {
             "hash": "79f8dbb331b4aeca632b4c372341b566",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
             "engine": "syrtis"
         },
         "empty": {
@@ -6608,6 +6616,10 @@
             "hash": "79f8dbb331b4aeca632b4c372341b566",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "1bae9c9a57461f24057dddfc8b31e2fc",
             "engine": "syrtis"
@@ -6632,6 +6644,10 @@
     "pages/shop/index.es.yml": {
         "cart": {
             "hash": "79f8dbb331b4aeca632b4c372341b566",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
             "engine": "syrtis"
         },
         "empty": {
@@ -6660,6 +6676,10 @@
             "hash": "79f8dbb331b4aeca632b4c372341b566",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "1bae9c9a57461f24057dddfc8b31e2fc",
             "engine": "syrtis"
@@ -6686,6 +6706,10 @@
             "hash": "79f8dbb331b4aeca632b4c372341b566",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "1bae9c9a57461f24057dddfc8b31e2fc",
             "engine": "syrtis"
@@ -6707,9 +6731,19 @@
             "engine": "syrtis"
         }
     },
+    "pages/shop/index.fr.yml": {
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        }
+    },
     "pages/shop/index.he.yml": {
         "cart": {
             "hash": "79f8dbb331b4aeca632b4c372341b566",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
             "engine": "syrtis"
         },
         "empty": {
@@ -6738,6 +6772,10 @@
             "hash": "79f8dbb331b4aeca632b4c372341b566",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "1bae9c9a57461f24057dddfc8b31e2fc",
             "engine": "syrtis"
@@ -6762,6 +6800,10 @@
     "pages/shop/index.id.yml": {
         "cart": {
             "hash": "79f8dbb331b4aeca632b4c372341b566",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
             "engine": "syrtis"
         },
         "empty": {
@@ -6790,6 +6832,10 @@
             "hash": "79f8dbb331b4aeca632b4c372341b566",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "1bae9c9a57461f24057dddfc8b31e2fc",
             "engine": "syrtis"
@@ -6814,6 +6860,10 @@
     "pages/shop/index.ja.yml": {
         "cart": {
             "hash": "79f8dbb331b4aeca632b4c372341b566",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
             "engine": "syrtis"
         },
         "empty": {
@@ -6842,6 +6892,10 @@
             "hash": "79f8dbb331b4aeca632b4c372341b566",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "1bae9c9a57461f24057dddfc8b31e2fc",
             "engine": "syrtis"
@@ -6866,6 +6920,10 @@
     "pages/shop/index.nl.yml": {
         "cart": {
             "hash": "79f8dbb331b4aeca632b4c372341b566",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
             "engine": "syrtis"
         },
         "empty": {
@@ -6894,6 +6952,10 @@
             "hash": "79f8dbb331b4aeca632b4c372341b566",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "1bae9c9a57461f24057dddfc8b31e2fc",
             "engine": "syrtis"
@@ -6918,6 +6980,10 @@
     "pages/shop/index.pt_BR.yml": {
         "cart": {
             "hash": "79f8dbb331b4aeca632b4c372341b566",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
             "engine": "syrtis"
         },
         "empty": {
@@ -6946,6 +7012,10 @@
             "hash": "79f8dbb331b4aeca632b4c372341b566",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "1bae9c9a57461f24057dddfc8b31e2fc",
             "engine": "syrtis"
@@ -6970,6 +7040,10 @@
     "pages/shop/index.th.yml": {
         "cart": {
             "hash": "79f8dbb331b4aeca632b4c372341b566",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
             "engine": "syrtis"
         },
         "empty": {
@@ -6998,6 +7072,10 @@
             "hash": "79f8dbb331b4aeca632b4c372341b566",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "1bae9c9a57461f24057dddfc8b31e2fc",
             "engine": "syrtis"
@@ -7022,6 +7100,10 @@
     "pages/shop/index.ur.yml": {
         "cart": {
             "hash": "79f8dbb331b4aeca632b4c372341b566",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
             "engine": "syrtis"
         },
         "empty": {
@@ -7050,6 +7132,10 @@
             "hash": "79f8dbb331b4aeca632b4c372341b566",
             "engine": "syrtis"
         },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
+            "engine": "syrtis"
+        },
         "empty": {
             "hash": "1bae9c9a57461f24057dddfc8b31e2fc",
             "engine": "syrtis"
@@ -7074,6 +7160,10 @@
     "pages/shop/index.zh.yml": {
         "cart": {
             "hash": "79f8dbb331b4aeca632b4c372341b566",
+            "engine": "syrtis"
+        },
+        "document_title": {
+            "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
             "engine": "syrtis"
         },
         "empty": {
