@@ -1,5 +1,6 @@
 en:
   page_title: Shop
+  page_description: "An online shop catalogue: products to configure and add to the cart — shipped goods, dated workshops, donations of a chosen amount."
   page_icon: ph:bold/storefront
   intro: What is for sale. Open one to choose what you want of it and put it in your cart.
   cart: Cart
@@ -8,6 +9,7 @@ en:
 
 fr:
   page_title: Boutique
+  page_description: "Le catalogue d'une boutique en ligne : des produits à configurer et ajouter au panier — articles expédiés, ateliers datés, dons d'un montant choisi."
   page_icon: ph:bold/storefront
   intro: Ce qui est en vente. Ouvrez-en un pour choisir ce que vous en voulez et le mettre dans votre panier.
   cart: Panier
@@ -16,6 +18,7 @@ fr:
 
 zh:
   page_title: 商店
+  page_description: "网上商店的商品目录：可配置并加入购物车的商品——配送商品、按日期安排的工作坊、自定金额的捐款。"
   page_icon: 'ph:bold/storefront'
   intro: 正在出售的商品。打开一个以选择您想要的商品并将其放入购物车。
   cart: 购物车
@@ -24,6 +27,7 @@ zh:
 
 ar:
   page_title: متجر
+  page_description: "كتالوج متجر إلكتروني: منتجات تُضبط وتُضاف إلى السلة — سلع تُشحن، ورش عمل بمواعيد، وتبرعات بمبلغ تختاره."
   page_icon: 'ph:bold/storefront'
   intro: 'ما هو معروض للبيع. افتح واحدًا لاختيار ما تريده منه وضعه في عربة التسوق.'
   cart: 'عربة التسوق'
@@ -32,6 +36,7 @@ ar:
 
 hi:
   page_title: दुकान
+  page_description: "ऑनलाइन दुकान का कैटलॉग: कॉन्फ़िगर करके कार्ट में डालने वाले उत्पाद — भेजा जाने वाला सामान, तय तारीख़ की कार्यशालाएँ, मनचाही राशि के दान।"
   page_icon: 'ph:bold/storefront'
   intro: 'क्या बिक रहा है। एक खोलें ताकि आप जो चाहें उसे चुन सकें और अपने कार्ट में डाल सकें।'
   cart: कार्ट
@@ -40,6 +45,7 @@ hi:
 
 he:
   page_title: חנות
+  page_description: "קטלוג של חנות מקוונת: מוצרים להגדרה ולהוספה לעגלה — פריטים במשלוח, סדנאות בתאריכים, ותרומות בסכום לבחירה."
   page_icon: 'ph:bold/storefront'
   intro: 'מה למכירה. פתח אחת כדי לבחור מה שאתה רוצה לשים בעגלת הקניות שלך.'
   cart: 'עגלת קניות'
@@ -48,6 +54,7 @@ he:
 
 fa:
   page_title: فروشگاه
+  page_description: "کاتالوگ یک فروشگاه آنلاین: محصولاتی برای تنظیم و افزودن به سبد — کالاهای ارسالی، کارگاه‌های تاریخ‌دار، کمک‌های مالی با مبلغ دلخواه."
   page_icon: 'ph:bold/storefront'
   intro: 'چه چیزی برای فروش است. یکی را باز کنید تا آنچه را می‌خواهید انتخاب کنید و در سبد خرید خود قرار دهید.'
   cart: 'سبد خرید'
@@ -56,6 +63,7 @@ fa:
 
 ur:
   page_title: دکان
+  page_description: "آن لائن دکان کا کیٹلاگ: ترتیب دے کر کارٹ میں ڈالنے والی مصنوعات — بھیجا جانے والا سامان، مقررہ تاریخوں کی ورکشاپس، من پسند رقم کے عطیات۔"
   page_icon: 'ph:bold/storefront'
   intro: 'کیا بیچنے کے لیے ہے۔ ایک کھولیں تاکہ آپ اس میں سے جو چاہتے ہیں منتخب کریں اور اسے اپنی ٹوکری میں ڈالیں۔'
   cart: ٹوکرہ
@@ -64,6 +72,7 @@ ur:
 
 ja:
   page_title: ショップ
+  page_description: "オンラインショップのカタログ。設定してカートに入れる商品は、配送品、日程の決まったワークショップ、金額を選べる寄付。"
   page_icon: 'ph:bold/storefront'
   intro: 販売されている商品です。選択してカートに入れるために開いてください。
   cart: カート
@@ -72,6 +81,7 @@ ja:
 
 ko:
   page_title: 상점
+  page_description: "온라인 상점의 카탈로그: 옵션을 정해 장바구니에 담는 상품 — 배송 상품, 날짜가 정해진 워크숍, 금액을 고르는 기부."
   page_icon: 'ph:bold/storefront'
   intro: '판매 중인 상품입니다. 원하는 상품을 선택하여 장바구니에 담으세요.'
   cart: 장바구니
@@ -80,6 +90,7 @@ ko:
 
 bn:
   page_title: দোকান
+  page_description: "অনলাইন দোকানের ক্যাটালগ: কনফিগার করে কার্টে যোগ করার পণ্য — পাঠানো পণ্য, নির্দিষ্ট তারিখের কর্মশালা, পছন্দের অঙ্কের দান।"
   page_icon: 'ph:bold/storefront'
   intro: 'কী বিক্রি হচ্ছে। একটি খুলুন যাতে আপনি যা চান তা বেছে নিতে পারেন এবং আপনার কার্টে রাখতে পারেন।'
   cart: কার্ট
@@ -88,6 +99,7 @@ bn:
 
 th:
   page_title: ร้านค้า
+  page_description: "แคตตาล็อกร้านค้าออนไลน์: สินค้าที่ปรับตั้งค่าและใส่ตะกร้าได้ — สินค้าจัดส่ง เวิร์กช็อปตามวัน และการบริจาคตามจำนวนที่เลือก"
   page_icon: 'ph:bold/storefront'
   intro: 'สิ่งที่มีจำหน่าย เปิดดูเพื่อตัดสินใจเลือกสิ่งที่คุณต้องการและใส่ในรถเข็นของคุณ'
   cart: รถเข็น
@@ -96,6 +108,7 @@ th:
 
 de:
   page_title: Shop
+  page_description: "Der Katalog eines Onlineshops: Produkte zum Konfigurieren und in den Warenkorb legen — versandte Waren, terminierte Workshops, Spenden in freier Höhe."
   page_icon: 'ph:bold/storefront'
   intro: 'Was zum Verkauf steht. Öffne einen, um auszuwählen, was du möchtest und es in deinen Warenkorb zu legen.'
   cart: Warenkorb
@@ -104,6 +117,7 @@ de:
 
 fi:
   page_title: Kauppa
+  page_description: "Verkkokaupan luettelo: tuotteita muokattavaksi ja ostoskoriin lisättäväksi — lähetettävät tuotteet, päivätyt työpajat ja vapaavalintaiset lahjoitukset."
   page_icon: 'ph:bold/storefront'
   intro: 'Mitä on myynnissä. Avaa yksi valitaksesi mitä haluat ja laittaaksesi sen ostoskoriisi.'
   cart: Ostoskori
@@ -112,6 +126,7 @@ fi:
 
 ru:
   page_title: Магазин
+  page_description: "Каталог интернет-магазина: товары, которые настраиваются и кладутся в корзину, — товары с доставкой, мастер-классы по датам, пожертвования на выбранную сумму."
   page_icon: 'ph:bold/storefront'
   intro: 'Что продается. Откройте один, чтобы выбрать то, что хотите, и положить в корзину.'
   cart: Корзина
@@ -120,6 +135,7 @@ ru:
 
 pl:
   page_title: Sklep
+  page_description: "Katalog sklepu internetowego: produkty do skonfigurowania i dodania do koszyka — towary wysyłkowe, warsztaty z datami, darowizny w wybranej kwocie."
   page_icon: 'ph:bold/storefront'
   intro: 'Co jest na sprzedaż. Otwórz, aby wybrać to, co chcesz i włożyć do swojego koszyka.'
   cart: Koszyk
@@ -128,6 +144,7 @@ pl:
 
 es:
   page_title: Tienda
+  page_description: "El catálogo de una tienda online: productos para configurar y añadir al carrito — artículos enviados, talleres con fecha y donaciones del importe elegido."
   page_icon: 'ph:bold/storefront'
   intro: 'Lo que está a la venta. Abre uno para elegir lo que deseas y añadirlo a tu carrito.'
   cart: Carrito
@@ -136,6 +153,7 @@ es:
 
 it:
   page_title: Negozio
+  page_description: "Il catalogo di un negozio online: prodotti da configurare e aggiungere al carrello — articoli spediti, workshop con date, donazioni dell'importo scelto."
   page_icon: 'ph:bold/storefront'
   intro: 'Cosa è in vendita. Aprine uno per scegliere cosa desideri e metterlo nel tuo carrello.'
   cart: Carrello
@@ -144,6 +162,7 @@ it:
 
 pt_BR:
   page_title: Loja
+  page_description: "O catálogo de uma loja online: produtos para configurar e pôr no carrinho — itens enviados, workshops com data e doações do valor escolhido."
   page_icon: 'ph:bold/storefront'
   intro: 'O que está à venda. Abra uma para escolher o que você quer e colocá-lo no seu carrinho.'
   cart: Carrinho
@@ -152,6 +171,7 @@ pt_BR:
 
 tr:
   page_title: Mağaza
+  page_description: "Bir çevrimiçi mağaza kataloğu: yapılandırılıp sepete eklenen ürünler — kargolanan mallar, tarihli atölyeler, seçilen tutarda bağışlar."
   page_icon: 'ph:bold/storefront'
   intro: 'Satışta olanlar. İstediğinizi seçmek ve sepetinize eklemek için birini açın.'
   cart: Sepet
@@ -160,6 +180,7 @@ tr:
 
 vi:
   page_title: 'Cửa hàng'
+  page_description: "Danh mục cửa hàng trực tuyến: sản phẩm để tùy chỉnh và cho vào giỏ — hàng giao tận nơi, workshop theo ngày, quyên góp với số tiền tùy chọn."
   page_icon: 'ph:bold/storefront'
   intro: 'Những gì đang được bán. Mở một cái để chọn những gì bạn muốn và cho vào giỏ hàng.'
   cart: 'Giỏ hàng'
@@ -168,6 +189,7 @@ vi:
 
 id:
   page_title: Toko
+  page_description: "Katalog toko daring: produk untuk diatur dan dimasukkan ke keranjang — barang kiriman, lokakarya bertanggal, donasi dengan nominal pilihan."
   page_icon: 'ph:bold/storefront'
   intro: 'Apa yang dijual. Buka untuk memilih apa yang Anda inginkan dan masukkan ke keranjang Anda.'
   cart: Keranjang
@@ -176,6 +198,7 @@ id:
 
 nl:
   page_title: Winkel
+  page_description: "De catalogus van een webwinkel: producten om in te stellen en in de winkelwagen te leggen — verzonden artikelen, workshops op datum, donaties van een gekozen bedrag."
   page_icon: 'ph:bold/storefront'
   intro: 'Wat te koop is. Open een om te kiezen wat je wilt en het in je winkelwagentje te plaatsen.'
   cart: Winkelwagentje
