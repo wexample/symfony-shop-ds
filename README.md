@@ -1,6 +1,6 @@
 # symfony-shop-ds
 
-Version: 2.1.1
+Version: 2.1.2
 
 The interface of symfony-shop: a shop, its cart, the purchase tunnel, the buyer's orders and their administration
 
@@ -25,19 +25,19 @@ The suite includes packages for configuration management, file handling, prompts
 
 - php: >=8.5
 - wexample/symfony-helpers: >=17.0.0
-- wexample/symfony-loader: >=23.2.0
-- wexample/symfony-design-system: >=37.0.0
+- wexample/symfony-loader: >=23.3.0
+- wexample/symfony-design-system: >=38.0.0
 - wexample/symfony-api: >=14.0.0
-- wexample/symfony-forms: >=13.0.0
+- wexample/symfony-forms: >=14.0.0
 - wexample/symfony-money: >=7.0.0
-- wexample/symfony-geo: >=7.0.0
+- wexample/symfony-geo: >=8.0.0
 - wexample/symfony-tunnels: >=11.0.0
 - wexample/symfony-shop: >=4.0.0
 - wexample/symfony-payment: >=4.0.0
 - wexample/symfony-payment-ds: >=3.0.0
-- wexample/symfony-user: >=13.0.0
+- wexample/symfony-user: >=14.0.0
 - wexample/symfony-user-ds: >=5.1.0
-- wexample/symfony-mail: >=2.0.0
+- wexample/symfony-mail: >=3.0.0
 - wexample/symfony-geo-ds: >=3.0.0
 
 ## Versioning & Compatibility Policy
