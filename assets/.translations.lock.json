@@ -6734,7 +6734,8 @@
     "pages/shop/index.fr.yml": {
         "document_title": {
             "hash": "6acf5d8bf6e79cf95e424bacfdf4f7c7",
-            "engine": "syrtis"
+            "engine": "syrtis",
+            "reviewed": "agent"
         }
     },
     "pages/shop/index.he.yml": {
