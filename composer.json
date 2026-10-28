@@ -1,6 +1,6 @@
 {
   "name": "wexample/symfony-shop-ds",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "type": "library",
   "license": "MIT",
   "description": "The interface of symfony-shop: a shop, its cart, the purchase tunnel, the buyer's orders and their administration",
@@ -22,10 +22,10 @@
   ],
   "require": {
     "php": ">=8.5",
-    "wexample/symfony-helpers": ">=18.0.2",
+    "wexample/symfony-helpers": ">=19.0.0",
     "wexample/symfony-loader": ">=25.3.0",
     "wexample/symfony-design-system": ">=40.0.0",
-    "wexample/symfony-api": ">=15.0.0",
+    "wexample/symfony-api": ">=16.0.0",
     "wexample/symfony-forms": ">=14.0.2",
     "wexample/symfony-money": ">=8.0.0",
     "wexample/symfony-geo": ">=8.0.2",
@@ -33,8 +33,8 @@
     "wexample/symfony-shop": ">=5.0.1",
     "wexample/symfony-payment": ">=5.0.0",
     "wexample/symfony-payment-ds": ">=3.0.5",
-    "wexample/symfony-user": ">=16.0.0",
-    "wexample/symfony-user-ds": ">=7.0.0",
+    "wexample/symfony-user": ">=17.0.0",
+    "wexample/symfony-user-ds": ">=7.1.0",
     "wexample/symfony-mail": ">=4.0.0",
     "wexample/symfony-geo-ds": ">=3.0.9"
   },
