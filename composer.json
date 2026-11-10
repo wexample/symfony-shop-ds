@@ -1,6 +1,6 @@
 {
   "name": "wexample/symfony-shop-ds",
-  "version": "3.0.14",
+  "version": "3.0.15",
   "type": "library",
   "license": "MIT",
   "description": "The interface of symfony-shop: a shop, its cart, the purchase tunnel, the buyer's orders and their administration",
@@ -34,7 +34,7 @@
     "wexample/symfony-payment": ">=5.0.0",
     "wexample/symfony-payment-ds": ">=3.0.5",
     "wexample/symfony-user": ">=21.0.0",
-    "wexample/symfony-user-ds": ">=9.0.0",
+    "wexample/symfony-user-ds": ">=10.0.0",
     "wexample/symfony-mail": ">=4.0.0",
     "wexample/symfony-geo-ds": ">=3.0.9"
   },
