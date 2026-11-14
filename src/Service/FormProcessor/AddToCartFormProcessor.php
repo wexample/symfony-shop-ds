@@ -116,8 +116,10 @@ class AddToCartFormProcessor extends AbstractFormProcessor
             return false;
         }
 
+        // The amount chosen, read in the major unit and kept in the minor one
+        // without a float product rounding a cent away.
         $amount = $form->has(AddToCartForm::FIELD_AMOUNT)
-            ? (int) round((float) $form->get(AddToCartForm::FIELD_AMOUNT)->getData() * 10 ** MoneyHelper::getDecimals($this->product->getCurrencyCode()))
+            ? MoneyHelper::fromDecimal($form->get(AddToCartForm::FIELD_AMOUNT)->getData() ?? 0, $this->product->getCurrencyCode())
             : null;
 
         $this->carts->addProduct(
