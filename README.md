@@ -1,6 +1,6 @@
 # symfony-shop-ds
 
-Version: 3.0.17
+Version: 4.0.0
 
 The interface of symfony-shop: a shop, its cart, the purchase tunnel, the buyer's orders and their administration
 
