@@ -13,10 +13,12 @@
             {%- for product in products -%}
                 {#- Opened beside the list, in a modal: put in the cart, the list is
                     still there. A full page still, opened in a new tab. -#}
+                {#- Its words in the reader's language (#[Translatable]). -#}
+                {%- set words = translated(product) -%}
                 {%- set card -%}
-                    <span class="block--link-title">{{ product.title }}</span>
-                    {%- if product.description -%}
-                        <span class="block--link-description">{{ product.description|length > 120 ? product.description|slice(0, 119) ~ '…' : product.description }}</span>
+                    <span class="block--link-title">{{ words.title }}</span>
+                    {%- if words.description -%}
+                        <span class="block--link-description">{{ words.description|length > 120 ? words.description|slice(0, 119) ~ '…' : words.description }}</span>
                     {%- endif -%}
                     <span class="cluster">
                         <strong>{{ product.freeAmount ? '@page::free_amount' | trans : product.calcPriceFinal()|price(product.currencyCode, app.request.locale) }}</strong>

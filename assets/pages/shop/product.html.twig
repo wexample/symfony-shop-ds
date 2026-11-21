@@ -3,7 +3,9 @@
 {%- set page_show_title = true -%}
 {#- A page under another: the way back to it, its actions beside, on top. -#}
 {%- set page_trail = 'back' -%}
-{%- set page_title = product.title -%}
+{#- Its words in the reader's language (#[Translatable]). -#}
+{%- set words = translated(product) -%}
+{%- set page_title = words.title -%}
 {#- Described for the engines with its offers (ProductSchemaOrgNormalizer). -#}
 {%- set document_subject = product -%}
 
@@ -14,20 +16,20 @@
     {%- set common = 'WexampleSymfonyShopDsBundle.common.cart::' -%}
     {%- set price = product.freeAmount ? null : product.calcPriceFinal() -%}
     {%- set lines = offers|filter(offer => offer.remaining is not null or offer.priceFinal != price) -%}
-    {%- if product.description -%}
-        <p class="lead">{{ product.description }}</p>
+    {%- if words.description -%}
+        <p class="lead">{{ words.description }}</p>
     {%- endif -%}
 
     <section class="block block--card">
         <div class="block--title">
             <span class="block--title-leading">{{ icon('ph:bold/tag') }}</span>
-            <span class="block--title-label">{{ product.title }}</span>
+            <span class="block--title-label">{{ words.title }}</span>
             <span class="block--title-trailing">{{ product.freeAmount ? '@page::free_amount' | trans : product.calcPriceFinal()|price(product.currencyCode, app.request.locale) }}</span>
         </div>
         <div class="block--body stack--vertical">
             {%- if lines|length -%}
                 {{ properties(lines|map(offer => {
-                    key: [offer.schedule ? (offer.schedule.label ?: offer.schedule.dateStart|date('Y-m-d H:i')) : null, offer.variation ? offer.variation.name ~ ' — ' ~ offer.variation.value : null]|filter(v => v)|join(' · ') ?: product.title,
+                    key: [offer.schedule ? (offer.schedule.label ?: offer.schedule.dateStart|date('Y-m-d H:i')) : null, offer.variation ? offer.variation.name ~ ' — ' ~ offer.variation.value : null]|filter(v => v)|join(' · ') ?: words.title,
                     value: [
                         offer.priceFinal != price ? offer.priceFinal|price(offer.currencyCode, app.request.locale) : null,
                         offer.remaining is null ? null : (offer.remaining == 0 ? (common ~ 'sold_out') | trans : (common ~ 'left') | trans({ '%count%': offer.remaining })),
