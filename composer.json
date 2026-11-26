@@ -1,6 +1,6 @@
 {
   "name": "wexample/symfony-shop-ds",
-  "version": "4.0.15",
+  "version": "4.0.16",
   "type": "library",
   "license": "MIT",
   "description": "The interface of symfony-shop: a shop, its cart, the purchase tunnel, the buyer's orders and their administration",
@@ -23,7 +23,7 @@
   "require": {
     "php": ">=8.5",
     "wexample/symfony-helpers": ">=19.3.0",
-    "wexample/symfony-translations": ">=20.0.1",
+    "wexample/symfony-translations": ">=22.0.0",
     "wexample/symfony-loader": ">=28.0.0",
     "wexample/symfony-design-system": ">=54.0.0",
     "wexample/symfony-api": ">=23.0.0",
